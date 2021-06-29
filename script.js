@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     const periodicTable = document.getElementById('periodic-Table');
-    const description = document.querySelector('.content');
-    const close  = document.querySelector('.close')
+    const description = document.querySelector('#content');
+    const close  = document.querySelector('#close')
     const popup = document.querySelector('.description')
 
     fetch('PeriodicTable.json')
@@ -19,16 +19,18 @@ window.addEventListener('DOMContentLoaded', () => {
                     if(id == element.atomicNumber) {
                         description.innerHTML = 
                         `<strong>Atomic-mass: </strong> ${element.atomicMass} <br/> <br/>
-                        <strong>Year discovered: </strong> ${element.discovered} <br/> <br/>
                         <strong>Appearance: </strong> ${element.appearance} <br/> <br/>
                         <strong>Melting point: </strong> ${element.meltingPoint} <br/> <br/>
                         <strong>Boiling point: </strong> ${element.boilingPoint} <br/> <br/>
-                        <strong>Density (at STP): </strong> ${element.density} <br/> <br/>
-                        <strong>State (at STP): </strong> ${element.state} <br/> <br/>
                         <strong>Category: </strong> ${element.category} <br/> <br/>
+                        <strong>State (at STP): </strong> ${element.state} <br/> <br/>
+                        <strong>Density (at STP): </strong> ${element.density} <br/> <br/>
+                        <strong>Year discovered: </strong> ${element.discovered} <br/> <br/>
                         <strong>Discovered by: </strong> ${element.discoveredBy} <br/> <br/>
                         <strong>Description: </strong> <br/> ${element.description}`
                         popup.style.display = 'block';
+                        description.className = element.category
+                        close.className = element.category
                     }
                 })
             });

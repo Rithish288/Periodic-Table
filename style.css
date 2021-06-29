@@ -55,7 +55,7 @@ div.periodic-Table {
      var(--size)
      var(--size)
      var(--size);
-    gap: 0.5em;
+    gap: 0.6em;
 }
 
 .element {
@@ -63,7 +63,8 @@ div.periodic-Table {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 0.3em;
+    border-radius: 5px;
+    padding: 0.3em 0.5em;
     cursor: pointer;
 }
 
@@ -71,14 +72,13 @@ div.periodic-Table {
     min-width: 100vw;
     min-height: 100vh;
     background-color:rgba(0, 0, 0, 0.562);
-    position: absolute;
+    position: fixed;
     display: none;
     padding: 1em;
 }
 
-.content {
+#content {
     padding: 1em;
-    background-color:rgb(35, 255, 171);
     width: 40vw;
     border-radius: 10px;
     box-shadow: 0 0 10px white;
@@ -90,14 +90,13 @@ div.periodic-Table {
     min-height: 10vh;
 }
 
-.close {
+#close {
     font-size: 150%;
     right: 0;
     cursor: pointer;
     position: absolute;
     margin-right: 1em;
     color: rgb(0, 0, 0);
-    background-color: rgb(35, 255, 171);
     padding: 0.2em 0.5em;
     border-radius: 50%;
 }
@@ -119,6 +118,15 @@ p{
 }
 .Alkali-Metals {
     background-color: rgb(255, 197, 111)
+}
+.Metalloids {
+    background-color:rgb(255, 142, 142)
+}
+.Halogens {
+    background-color: rgb(228, 116, 250)
+}
+.Alkaline-Earth-Metals {
+    background-color: rgb(255, 192, 203)
 }
 
 .n3, .n11, .n19, .n37, .n55, .n87 {
