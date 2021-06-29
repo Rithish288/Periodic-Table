@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --size: 60px;
+    --background: aquamarine;
+    --font-size: 30% 
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.periodic-Table {
+    display: grid;
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--font-size);
+    grid-template-columns:
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size);
+    grid-template-rows: 
+     var(--size) 
+     var(--size) 
+     var(--size) 
+     var(--size)
+     var(--size)
+     var(--size)
+     var(--size)
+     var(--size)
+     var(--size)
+     var(--size);
+    gap: 0.5em;
+}
+
+.element {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.3em;
+    cursor: pointer;
+}
+
+.description {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color:rgba(0, 0, 0, 0.562);
+    position: fixed;
+    display: none;
+    padding: 1em
+}
+
+.content {
+    padding: 1em;
+    background-color:rgb(35, 255, 171);
+    width: 40vw;
+    min-width: 300px;
+    position: absolute;
+    font-family: 'Quicksand';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 10vh;
+}
+
+.close {
+    font-size: 150%;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    margin-right: 1em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(35, 255, 171);
+    padding: 0.1em 0.5em;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: auto;
+    font-size: 400%;
+}
+
+p{
+    margin: auto;
+}
+
+.Noble-gases {
+    background-color: rgb(35, 255, 171)
+}
+
+.n3, .n11, .n19, .n37, .n55, .n87 {
+    grid-column: 1;
+}
+
+.n2, .n10, .n18, .n36, .n54, .n86, .n118 {
+    grid-column: 18;
+} 
+
+.n5, .n13 {
+    grid-column: 13
+}
+
+.n72, .n104 {
+    grid-column: 4
+}
+
+.n57, .n58, .n59 {
+    grid-row: 9;
+}
+
+.n89 {
+    grid-row: 10;
+    grid-column: 1;
+}
+
+.n90{
+    grid-column: 2;
+    grid-row: 10
+}
+
+.n60, .n61, .n62, .n63, .n64, .n65, .n66, .n67, .n68, .n69, .n70, .n71 {
+    grid-row: 9
+}
+
+.n89 .n90, .n91, .n92, .n93, .n94, .n95, .n96, .n97, .n98, .n99, .n100, .n101, .n102, .n103 {
+    grid-row: 10;
+}
+
+.n57, .n89 {
+    grid-column: 3
+}
+
+.n58, .n90 {
+    grid-column: 4
+}
+
+.n59, .n91 {
+    grid-column: 5
+}
+
+.n60, .n92 {
+    grid-column: 6
+}
+
+.n61, .n93 {
+    grid-column: 7
+}
+
+.n62, .n94 {
+    grid-column: 8
+}
+
+.n63, .n95 {
+    grid-column: 9
+}
+
+.n64, .n96 {
+    grid-column: 10
+}
+
+.n65, .n97 {
+    grid-column: 11
+}
+
+.n66, .n98 {
+    grid-column: 12
+}
+
+.n67, .n99 {
+    grid-column: 13
+}
+
+.n68, .n100 {
+    grid-column: 14
+}
+
+.n69, .n101 {
+    grid-column: 15
+}
+
+.n70, .n102{
+    grid-column: 16
+}
+
+.n71, .n103 {
+    grid-column: 17
+}
+
+
+
+
+
