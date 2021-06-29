@@ -27,8 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
                         <strong>State (at STP): </strong> ${element.state} <br/> <br/>
                         <strong>Category: </strong> ${element.category} <br/> <br/>
                         <strong>Discovered by: </strong> ${element.discoveredBy} <br/> <br/>
-                        <strong>Description: </strong> <br/> ${element.description}<br/> `
-                        popup.style.display = 'block'
+                        <strong>Description: </strong> <br/> ${element.description}`
+                        popup.style.display = 'block';
                     }
                 })
             });

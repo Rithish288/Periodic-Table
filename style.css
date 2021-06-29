@@ -5,10 +5,11 @@
 }
 
 :root {
-    --size: 60px;
+    --size: 65px;
     --background: aquamarine;
-    --font-size: 30% 
+    --font-size: 30% ;
 }
+
 
 body {
     min-width: 100vw;
@@ -22,7 +23,7 @@ body {
 
 div.periodic-Table {
     display: grid;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: var(--font-size);
     grid-template-columns:
      var(--size) 
@@ -58,7 +59,7 @@ div.periodic-Table {
 }
 
 .element {
-    background-color: aquamarine;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -70,20 +71,21 @@ div.periodic-Table {
     min-width: 100vw;
     min-height: 100vh;
     background-color:rgba(0, 0, 0, 0.562);
-    position: fixed;
+    position: absolute;
     display: none;
-    padding: 1em
+    padding: 1em;
 }
 
 .content {
     padding: 1em;
     background-color:rgb(35, 255, 171);
     width: 40vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
     min-width: 300px;
     position: absolute;
     font-family: 'Quicksand';
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     min-height: 10vh;
 }
@@ -96,13 +98,13 @@ div.periodic-Table {
     margin-right: 1em;
     color: rgb(0, 0, 0);
     background-color: rgb(35, 255, 171);
-    padding: 0.1em 0.5em;
+    padding: 0.2em 0.5em;
     border-radius: 50%;
 }
 
 h1 {
-    margin: auto;
-    font-size: 400%;
+    margin: -5px auto;
+    font-size: 5em;
 }
 
 p{
@@ -110,7 +112,13 @@ p{
 }
 
 .Noble-gases {
-    background-color: rgb(35, 255, 171)
+    background-color: rgb(18, 253, 124)
+}
+.Other-non-metals {
+    background-color: rgb(57, 242, 255)
+}
+.Alkali-Metals {
+    background-color: rgb(255, 197, 111)
 }
 
 .n3, .n11, .n19, .n37, .n55, .n87 {
@@ -211,7 +219,17 @@ p{
     grid-column: 17
 }
 
+.empty2 {
+    grid-row: 7;
+    grid-column:3;
+    background-color:rgb(214, 214, 214)
+}
 
+.empty1 {
+    grid-column:3;
+    grid-row: 6;
+    background-color:rgb(214, 214, 214)
+}
 
 
 
