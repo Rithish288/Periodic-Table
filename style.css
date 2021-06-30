@@ -95,12 +95,15 @@ h1 {margin: -5px auto; font-size: 5em;}
 
 p{margin: auto; font-size: 2em} 
 
-.Noble-gases {border: 2px solid rgb(18, 253, 124); box-shadow: inset 0 0 3px rgb(18, 253, 124); }
-.Other-non-metals {border: 2px solid rgb(57, 242, 255);  box-shadow: inset 0 0 3px rgb(57, 242, 255);}
-.Alkali-Metals {border: 2px solid rgb(255, 197, 111); box-shadow: inset 0 0 3px rgb(255, 197, 111); }
-.Metalloids {border: 2px solid rgb(255, 142, 142); box-shadow: inset 0 0 3px rgb(255, 142, 142); }
-.Halogens {border: 2px solid rgb(228, 116, 250); box-shadow: inset 0 0 3px rgb(228, 116, 250); }
-.Alkaline-Earth-Metals {border: 2px solid rgb(255, 192, 203); box-shadow: inset 0 0 3px rgb(255, 192, 203); }
+p.number {margin: 0}
+
+.Noble-gases {border: 2px solid rgb(18, 253, 124); box-shadow: 0 0 3px rgb(18, 253, 124); }
+.Other-non-metals {border: 2px solid rgb(57, 242, 255);  box-shadow: 0 0 3px rgb(57, 242, 255);}
+.Alkali-Metals {border: 2px solid rgb(255, 197, 111); box-shadow: 0 0 3px rgb(255, 197, 111); }
+.Metalloids {border: 2px solid rgb(255, 142, 142); box-shadow: 0 0 3px rgb(255, 142, 142); }
+.Halogens {border: 2px solid rgb(228, 116, 250); box-shadow: 0 0 3px rgb(228, 116, 250); }
+.Alkaline-Earth-Metals {border: 2px solid rgb(255, 192, 203); box-shadow: 0 0 3px rgb(255, 192, 203); }
+.Transition-metals{border: 2px solid rgb(255, 247, 142); box-shadow: 0 0 3px rgb(255, 247, 142);}
 
 .n60, .n61, .n62, .n63, .n64, .n65, .n66, .n67, .n68, .n69, .n70, .n71 {
     grid-row: 9

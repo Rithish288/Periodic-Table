@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 const elem = document.createElement('div');
                 let id = i += 1
                 elem.className = 'element' + ' n' + id + ' ' + element.category;
-                elem.innerHTML = element.atomicNumber + '<h1>' + element.symbol + '</h1>' + '<p>' + element.name + '</p>';
+                elem.innerHTML = '<p class="number">' + element.atomicNumber + '</p>' + '<h1>' + element.symbol + '</h1>' + '<p>' + element.name + '</p>';
                 periodicTable.appendChild(elem);
                 elem.addEventListener('click', () => {
                     if(id == element.atomicNumber) {
