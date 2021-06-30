@@ -13,7 +13,7 @@
         "category": "Other-non-metals",
         "state": "gas",
         "description": "Hydrogen is the chemical element with the symbol H and atomic number 1. With a standard atomic weight of 1.008, hydrogen is the lightest element in the periodic table. Hydrogen is the most abundant chemical substance in the universe, constituting roughly 75% of all baryonic mass.",
-        "image": "./hydrogen.png"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Electron_shell_001_Hydrogen_-_no_label.svg/600px-Electron_shell_001_Hydrogen_-_no_label.svg.png"
     },
     {
         "atomicNumber": "2", 
@@ -28,7 +28,8 @@
         "density": "0.1786 g/L",
         "category": "Noble-gases",
         "state": "gas",
-        "description": "Helium is the first in the noble gas group in the periodic table and the second lightest and second most abundant element in the observable universe following Hydrogen. Its boiling point is the lowest among all the elements."
+        "description": "Helium is the first in the noble gas group in the periodic table and the second lightest and second most abundant element in the observable universe following Hydrogen. Its boiling point is the lowest among all the elements.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Electron_shell_002_Helium_-_no_label.svg/800px-Electron_shell_002_Helium_-_no_label.svg.png"
     },
     {
         "atomicNumber": "3", 

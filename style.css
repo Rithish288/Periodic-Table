@@ -58,7 +58,9 @@ img {
     position: absolute;
     background-color:white;
     z-index: 2;
-    max-width: 0;
+    max-width: 100px;
+    top: 50%;
+    left: 50%;
 }
 .description {
     min-width: 100vw;
@@ -66,7 +68,7 @@ img {
     background-color:rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(1px);
     position: fixed;
-    display: none;
+display: none;
     padding: 1em;
 }
 
@@ -84,7 +86,7 @@ img {
     min-height: 10vh;
 }
 
-canvas {position: absolute;
+canvas#background {position: absolute;
 z-index: -1;}
 
 #close {
