@@ -26,35 +26,17 @@ div.periodic-Table {
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: var(--font-size);
     grid-template-columns:
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size);
+     var(--size) var(--size) var(--size) var(--size)
+     var(--size) var(--size) var(--size) var(--size)
+     var(--size) var(--size) var(--size) var(--size)
+     var(--size) var(--size) var(--size) var(--size)
+     var(--size) var(--size);
     grid-template-rows: 
-     var(--size) 
-     var(--size) 
-     var(--size) 
-     var(--size)
-     var(--size)
-     var(--size)
-     var(--size)
-     var(--size)
-     var(--size)
-     var(--size);
+     var(--size) var(--size)
+     var(--size) var(--size)
+     var(--size) var(--size)
+     var(--size) var(--size)
+     var(--size) var(--size);
     gap: 0.6em;
 }
 
@@ -101,63 +83,16 @@ div.periodic-Table {
     border-radius: 50%;
 }
 
-h1 {
-    margin: -5px auto;
-    font-size: 5em;
-}
+h1 {margin: -5px auto; font-size: 5em;}
 
-p{
-    margin: auto;
-}
+p{margin: auto; font-size: 2em} 
 
-.Noble-gases {
-    background-color: rgb(18, 253, 124)
-}
-.Other-non-metals {
-    background-color: rgb(57, 242, 255)
-}
-.Alkali-Metals {
-    background-color: rgb(255, 197, 111)
-}
-.Metalloids {
-    background-color:rgb(255, 142, 142)
-}
-.Halogens {
-    background-color: rgb(228, 116, 250)
-}
-.Alkaline-Earth-Metals {
-    background-color: rgb(255, 192, 203)
-}
-
-.n3, .n11, .n19, .n37, .n55, .n87 {
-    grid-column: 1;
-}
-
-.n2, .n10, .n18, .n36, .n54, .n86, .n118 {
-    grid-column: 18;
-} 
-
-.n5, .n13 {
-    grid-column: 13
-}
-
-.n72, .n104 {
-    grid-column: 4
-}
-
-.n57, .n58, .n59 {
-    grid-row: 9;
-}
-
-.n89 {
-    grid-row: 10;
-    grid-column: 1;
-}
-
-.n90{
-    grid-column: 2;
-    grid-row: 10
-}
+.Noble-gases {background-color: rgb(18, 253, 124)}
+.Other-non-metals {background-color: rgb(57, 242, 255)}
+.Alkali-Metals {background-color: rgb(255, 197, 111)}
+.Metalloids {background-color:rgb(255, 142, 142)}
+.Halogens {background-color: rgb(228, 116, 250)}
+.Alkaline-Earth-Metals {background-color: rgb(255, 192, 203)}
 
 .n60, .n61, .n62, .n63, .n64, .n65, .n66, .n67, .n68, .n69, .n70, .n71 {
     grid-row: 9
@@ -167,65 +102,28 @@ p{
     grid-row: 10;
 }
 
-.n57, .n89 {
-    grid-column: 3
-}
-
-.n58, .n90 {
-    grid-column: 4
-}
-
-.n59, .n91 {
-    grid-column: 5
-}
-
-.n60, .n92 {
-    grid-column: 6
-}
-
-.n61, .n93 {
-    grid-column: 7
-}
-
-.n62, .n94 {
-    grid-column: 8
-}
-
-.n63, .n95 {
-    grid-column: 9
-}
-
-.n64, .n96 {
-    grid-column: 10
-}
-
-.n65, .n97 {
-    grid-column: 11
-}
-
-.n66, .n98 {
-    grid-column: 12
-}
-
-.n67, .n99 {
-    grid-column: 13
-}
-
-.n68, .n100 {
-    grid-column: 14
-}
-
-.n69, .n101 {
-    grid-column: 15
-}
-
-.n70, .n102{
-    grid-column: 16
-}
-
-.n71, .n103 {
-    grid-column: 17
-}
+.n3, .n11, .n19, .n37, .n55, .n87 {grid-column: 1;}
+.n2, .n10, .n18, .n36, .n54, .n86, .n118 {grid-column: 18;} 
+.n5, .n13 {grid-column: 13}
+.n72, .n104 {grid-column: 4}
+.n57, .n58, .n59 {grid-row: 9;}
+.n89 {grid-row: 10; grid-column: 1;}
+.n90{grid-column: 2; grid-row: 10}
+.n57, .n89 {grid-column: 3}
+.n58, .n90 {grid-column: 4}
+.n59, .n91 {grid-column: 5}
+.n60, .n92 {grid-column: 6}
+.n61, .n93 {grid-column: 7}
+.n62, .n94 {grid-column: 8}
+.n63, .n95 {grid-column: 9}
+.n64, .n96 {grid-column: 10}
+.n65, .n97 {grid-column: 11}
+.n66, .n98 {grid-column: 12}
+.n67, .n99 {grid-column: 13}
+.n68, .n100 {grid-column: 14}
+.n69, .n101 {grid-column: 15}
+.n70, .n102 {grid-column: 16}
+.n71, .n103 {grid-column: 17}
 
 .empty2 {
     grid-row: 7;
