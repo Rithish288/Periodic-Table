@@ -12,7 +12,8 @@
         "density": "0.08988 g/L",
         "category": "Other-non-metals",
         "state": "gas",
-        "description": "Hydrogen is the chemical element with the symbol H and atomic number 1. With a standard atomic weight of 1.008, hydrogen is the lightest element in the periodic table. Hydrogen is the most abundant chemical substance in the universe, constituting roughly 75% of all baryonic mass."
+        "description": "Hydrogen is the chemical element with the symbol H and atomic number 1. With a standard atomic weight of 1.008, hydrogen is the lightest element in the periodic table. Hydrogen is the most abundant chemical substance in the universe, constituting roughly 75% of all baryonic mass.",
+        "image": "./hydrogen.png"
     },
     {
         "atomicNumber": "2", 

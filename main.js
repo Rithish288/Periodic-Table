@@ -1,20 +1,48 @@
 window.addEventListener('DOMContentLoaded', () => {
+
     const periodicTable = document.getElementById('periodic-Table');
     const description = document.querySelector('#content');
     const close  = document.querySelector('#close')
-    const popup = document.querySelector('.description')
+    const popup = document.querySelector('.description');
+    //Acessing the dom ↑ ↑ ↑
 
-    fetch('PeriodicTable.json')
+    fetch('PeriodicTable.json')//Fetching data
         .then((response) => {
             return response.json()
         })
+
         .then((elements) => {
-            elements.forEach((element, i) => {
+            elements.forEach((element, i) => { //Creating a div for each object
                 const elem = document.createElement('div');
                 let id = i += 1
                 elem.className = 'element' + ' n' + id + ' ' + element.category;
                 elem.innerHTML = '<p class="number">' + element.atomicNumber + '</p>' + '<h1>' + element.symbol + '</h1>' + '<p>' + element.name + '</p>';
                 periodicTable.appendChild(elem);
+                const image = document.createElement('img');
+
+
+                //Event listeners
+                elem.addEventListener('mouseover', (e) => {
+                    image.src = element.image;
+                    image.style.maxWidth = 100 + 'px';
+                    console.log(e)
+
+                    let mouse = {
+                        x: e.clientX,
+                        y: e.clientY
+                    }
+                    
+                    image.style.top = mouse.y + 'px';
+                    image.style.left = (mouse.x - 100) + 'px';
+                    elem.appendChild(image);
+                })
+
+                elem.addEventListener('mouseleave', () => {
+                    if(elem.appendChild(image)) {
+                        elem.removeChild(image)
+                    }
+                })
+
                 elem.addEventListener('click', () => {
                     if(id == element.atomicNumber) {
                         description.innerHTML = 

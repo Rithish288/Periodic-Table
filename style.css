@@ -21,22 +21,23 @@ body {
     justify-content: center;
 }
 
+
 div.periodic-Table {
     display: grid;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: var(--font-size);
     grid-template-columns:
-     var(--size) var(--size) var(--size) var(--size)
-     var(--size) var(--size) var(--size) var(--size)
-     var(--size) var(--size) var(--size) var(--size)
-     var(--size) var(--size) var(--size) var(--size)
-     var(--size) var(--size);
+    var(--size) var(--size) var(--size) var(--size)
+    var(--size) var(--size) var(--size) var(--size)
+    var(--size) var(--size) var(--size) var(--size)
+    var(--size) var(--size) var(--size) var(--size)
+    var(--size) var(--size);
     grid-template-rows: 
-     var(--size) var(--size)
-     var(--size) var(--size)
-     var(--size) var(--size)
-     var(--size) var(--size)
-     var(--size) var(--size);
+    var(--size) var(--size)
+    var(--size) var(--size)
+    var(--size) var(--size)
+    var(--size) var(--size)
+    var(--size) var(--size);
     gap: 0.6em;
 }
 
@@ -45,6 +46,7 @@ div.periodic-Table {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
@@ -52,6 +54,12 @@ div.periodic-Table {
     cursor: pointer;
 }
 
+img {
+    position: absolute;
+    background-color:white;
+    z-index: 2;
+    max-width: 0;
+}
 .description {
     min-width: 100vw;
     min-height: 100vh;
