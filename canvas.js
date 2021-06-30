@@ -15,7 +15,15 @@ window.addEventListener("mousemove", function(e) {
 	mouse.y = e.clientY;
 });
 
+window.addEventListener("touchstart", function(e) {
+	mouse.x = e.clientX;
+	mouse.y = e.clientY;
+})
 window.addEventListener("touchmove", function(e) {
+	mouse.x = e.clientX;
+	mouse.y = e.clientY;
+})
+window.addEventListener("touchend", function(e) {
 	mouse.x = e.clientX;
 	mouse.y = e.clientY;
 })
