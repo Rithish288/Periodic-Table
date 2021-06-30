@@ -46,6 +46,8 @@ div.periodic-Table {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
     padding: 0.3em 0.5em;
     cursor: pointer;
 }
@@ -53,7 +55,8 @@ div.periodic-Table {
 .description {
     min-width: 100vw;
     min-height: 100vh;
-    background-color:rgba(0, 0, 0, 0.562);
+    background-color:rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
     position: fixed;
     display: none;
     padding: 1em;
@@ -64,6 +67,7 @@ div.periodic-Table {
     width: 40vw;
     border-radius: 10px;
     box-shadow: 0 0 10px white;
+    color: white;
     min-width: 300px;
     position: absolute;
     font-family: 'Quicksand';
@@ -72,13 +76,17 @@ div.periodic-Table {
     min-height: 10vh;
 }
 
+canvas {position: absolute;
+z-index: -1;}
+
 #close {
     font-size: 150%;
     right: 0;
+    color: white;
     cursor: pointer;
     position: absolute;
     margin-right: 1em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 0.2em 0.5em;
     border-radius: 50%;
 }
@@ -87,12 +95,12 @@ h1 {margin: -5px auto; font-size: 5em;}
 
 p{margin: auto; font-size: 2em} 
 
-.Noble-gases {background-color: rgb(18, 253, 124)}
-.Other-non-metals {background-color: rgb(57, 242, 255)}
-.Alkali-Metals {background-color: rgb(255, 197, 111)}
-.Metalloids {background-color:rgb(255, 142, 142)}
-.Halogens {background-color: rgb(228, 116, 250)}
-.Alkaline-Earth-Metals {background-color: rgb(255, 192, 203)}
+.Noble-gases {border: 2px solid rgba(18, 253, 124); }
+.Other-non-metals {border: 2px solid rgb(57, 242, 255); }
+.Alkali-Metals {border: 2px solid rgb(255, 197, 111); }
+.Metalloids {border: 2px solid rgb(255, 142, 142); }
+.Halogens {border: 2px solid rgb(228, 116, 250); }
+.Alkaline-Earth-Metals {border: 2px solid rgb(255, 192, 203); }
 
 .n60, .n61, .n62, .n63, .n64, .n65, .n66, .n67, .n68, .n69, .n70, .n71 {
     grid-row: 9
