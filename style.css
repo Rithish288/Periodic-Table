@@ -41,6 +41,7 @@ div.periodic-Table {
     gap: 0.6em;
 }
 
+
 .element {
     background-color: var(--background);
     display: flex;
@@ -53,6 +54,29 @@ div.periodic-Table {
     padding: 0.3em 0.5em;
     cursor: pointer;
 }
+
+select {
+    margin-left: 0.5em;
+    padding: 4px;
+    border-radius: 500px;
+    border: none;outline: none;
+    color: white;
+    background-color: rgba(214, 214, 214, 0.2)
+}
+
+ option {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    outline: 3px solid white;
+    border: 3px solid white;
+}
+
+select:hover, select:focus {
+    outline: none;
+    border: none;
+}
+
+
 
 img {
     position: absolute;
@@ -68,7 +92,7 @@ img {
     background-color:rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(1px);
     position: fixed;
-display: none;
+    display: none;
     padding: 1em;
 }
 
@@ -78,9 +102,10 @@ display: none;
     border-radius: 10px;
     background-color: transparent;
     color: white;
-    min-width: 300px;
+    min-width: 400px;
     position: absolute;
     font-family: 'Quicksand';
+    overflow-y: auto;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     min-height: 10vh;
