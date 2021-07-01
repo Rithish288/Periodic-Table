@@ -23,7 +23,8 @@ window.addEventListener('load', () => {
                 elem.addEventListener('click', () => {
                     if(id == element.atomicNumber) {
                         description.innerHTML = 
-                        `<strong>Atomic-mass : </strong> ${element.atomicMass} <br/> <br/>
+                        `<canvas id="structure"></canvas>
+                        <strong>Atomic-mass : </strong> ${element.atomicMass} <br/> <br/>
                         
                         <strong>Appearance : </strong> ${element.appearance} <br/> <br/>
 
@@ -65,6 +66,11 @@ window.addEventListener('load', () => {
                         close.className = element.category
                     }
 
+                    const canvas = document.querySelector('canvas#structure');
+           
+                    drawCanvas(canvas)
+
+
                     const units = document.querySelectorAll('select');
                     units.forEach(unit => {
                         let point = unit.previousSibling.textContent;
@@ -79,6 +85,54 @@ window.addEventListener('load', () => {
                         })
                     })
                 })
+                function drawCanvas(canvas) {
+                    let c = canvas.getContext('2d');
+                    canvas.width = 200;
+                    canvas.height = 200;
+
+
+                    class Atom {
+                        constructor(count, radius, width) {
+                            this.count = count
+                            this.radius = radius;
+                            this.radians = Math.PI * 2 / this.count;
+                            this.width = width
+
+                            this.spreadRings = function () {
+                                let x = canvas.width/2;
+                                let y = canvas.height/2
+                            
+                                for (let i = 0; i <= this.count; i++) {
+                                    c.beginPath();
+                                    c.arc(x, y,i * this.width, 0 , 2 * Math.PI, false);
+                                    c.strokeStyle = 'white';
+                                    c.stroke();
+                                }
+                            }
+
+                            
+                            this.drawElectrons = function () {
+                                let formula = 2 * Math.pow(this.count, 2);
+                                for (let i = 0; i < formula; i++) {
+                                    let x = Math.cos(this.radians * i) * width + canvas.width/2;
+                                    let y = Math.sin(this.radians * i) * width + canvas.height/2;
+                                    c.beginPath();
+                                    c.arc(x, y, this.radius, 0, 2 * Math.PI, false);
+                                    c.fillStyle = 'white';
+                                    c.fill();
+                                }
+                                this.spreadRings()
+                            }
+                            this.drawElectrons()
+                        }
+                    }
+
+                    let atomicNumber = parseInt(element.atomicNumber) ;
+
+
+                    var object = new Atom(atomicNumber, 2, 10)
+                
+                }
             });
         })
 

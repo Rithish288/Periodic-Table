@@ -363,62 +363,62 @@
     },
     {
         "atomicNumber": "25", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
-        "category": "",
-        "state": "",
-        "description": ""
+        "name": "Manganese", 
+        "atomicMass": "54.938", 
+        "symbol": "Mn", 
+        "discovered": "1774",
+        "appearance": "silvery metallic",
+        "boilingPoint": "2061",
+        "meltingPoint": "1246",
+        "discoveredBy": "Carl Wilhelm Scheele",
+        "density": "7.21 g/cm3",
+        "category": "Transition-metals",
+        "state": "solidsolid",
+        "description": "Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent, as a rubber additive, in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide."
     },
     {
         "atomicNumber": "26", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
-        "category": "",
-        "state": "",
-        "description": ""
+        "name": "Iron", 
+        "atomicMass": "55.845", 
+        "symbol": "Fe", 
+        "discovered": "before 5000BC",
+        "appearance": "lustrous metallic with a grayish tinge",
+        "boilingPoint": "2862",
+        "meltingPoint": "1538",
+        "discoveredBy": "Unknown",
+        "density": "7.874 g/cm3",
+        "category": "Transition-metals",
+        "state": "solid",
+        "description": "Iron is, by mass, the most common element on Earth, right in front of oxygen (32.1% and 30.1%, respectively), forming much of Earth's outer and inner core. It is the fourth most common element in the Earth's crust. In its metallic state, iron is rare in the Earth's crust, limited mainly to deposition by meteorites."
     },
     {
         "atomicNumber": "27", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
-        "category": "",
-        "state": "",
-        "description": ""
+        "name": "Cobalt", 
+        "atomicMass": "58.933", 
+        "symbol": "Co", 
+        "discovered": "1735",
+        "appearance": "hard lustrous bluish gray metal",
+        "boilingPoint": "2927",
+        "meltingPoint": "1495",
+        "discoveredBy": "Georg Brandt",
+        "density": "8.90 g/cm3",
+        "category": "Transition-metals",
+        "state": "solid",
+        "description": "Cobalt is found in the Earth's crust only in a chemically combined form, save for small deposits found in alloys of natural meteoric iron. Cobalt is primarily used in lithium-ion batteries, and in the manufacture of magnetic, wear-resistant and high-strength alloys."
     },
     {
         "atomicNumber": "28", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
+        "name": "Nickel", 
+        "atomicMass": "58.6934", 
+        "symbol": "Ni", 
         "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
+        "appearance": "lustrous, metallic, and silver with a gold tinge",
+        "boilingPoint": "2730",
+        "meltingPoint": "1455",
         "discoveredBy": "",
-        "density": "",
-        "category": "",
-        "state": "",
+        "density": "8.908 g/cm3",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -432,8 +432,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -447,8 +447,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -582,8 +582,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -597,8 +597,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -612,8 +612,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -627,8 +627,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -642,8 +642,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -657,8 +657,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -672,8 +672,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -687,8 +687,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -702,8 +702,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -717,8 +717,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1077,8 +1077,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1092,8 +1092,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1107,8 +1107,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1122,8 +1122,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1137,8 +1137,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1152,8 +1152,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1167,8 +1167,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1182,8 +1182,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1197,8 +1197,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "liquid",
         "description": ""
     },
     {
@@ -1557,8 +1557,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1572,8 +1572,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1587,8 +1587,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1602,8 +1602,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1617,8 +1617,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1632,8 +1632,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1647,8 +1647,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1662,8 +1662,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1677,8 +1677,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Transition-metals",
+        "state": "solid",
         "description": ""
     },
     {
