@@ -69,11 +69,11 @@ window.addEventListener('load', () => {
                         let point = unit.previousSibling.textContent;
                         unit.addEventListener('change', (e) => {
                             if (e.target.value == '°F') {
-                                unit.previousSibling.textContent = ((parseInt(point) * 9 / 5) + 32).toPrecision(7)
+                                unit.previousSibling.textContent = ((parseInt(point) * 9 / 5) + 32).toPrecision(6)
                             } else if (e.target.value == '°C') {
                                 unit.previousSibling.textContent = point
                             } else if (e.target.value == 'K') {
-                                unit.previousSibling.textContent = (parseInt(point) + 273.15).toPrecision(7)
+                                unit.previousSibling.textContent = (parseInt(point) + 273.15).toPrecision(6)
                             }
                         })
                     })

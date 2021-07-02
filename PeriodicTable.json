@@ -704,22 +704,22 @@
         "density": "10.49 g/cm3",
         "category": "Transition-metals",
         "state": "solid",
-        "description": ""
+        "description": "Silver exhibits the highest electrical conductivity, thermal conductivity, and reflectivity of any metal. The metal is found in the Earth's crust in the pure, free elemental form, as an alloy with gold and other metals, and in minerals such as argentite and chlorargyrite. Other than in currency, silver is used in solar panels, water filtration, jewellery, ornaments, utensils, conductors, specialized mirrors, as a colorant in stained glass, etc."
     },
     {
         "atomicNumber": "48", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
+        "name": "Cadmium", 
+        "atomicMass": "112.414", 
+        "symbol": "Cd", 
+        "discovered": "1817",
+        "appearance": "silvery bluish-gray metallic",
+        "boilingPoint": "767",
+        "meltingPoint": "321.07",
+        "discoveredBy": "Karl Samuel Leberecht Hermann and Friedrich Stromeyer",
+        "density": "8.65 g/cm3",
         "category": "Transition-metals",
         "state": "solid",
-        "description": ""
+        "description": "Cadmium occurs as a minor component in most zinc ores and is a byproduct of zinc production. Cadmium was used for a long time as a corrosion-resistant plating on steel, and cadmium compounds are used as red, orange and yellow pigments, to color glass, and to stabilize plastic. Its use is generally decreasing because it is toxic. "
     },
     {
         "atomicNumber": "49", 
