@@ -1,5 +1,4 @@
 window.addEventListener('load', () => {
-
     const periodicTable = document.getElementById('periodic-Table');
     const description = document.querySelector('#content');
     const close = document.querySelector('#close')
@@ -23,11 +22,9 @@ window.addEventListener('load', () => {
                 elem.addEventListener('click', () => {
                     if (id == element.atomicNumber) {
                         description.innerHTML =
-                            `<canvas id="structure"></canvas>
+                        S`<canvas id="structure"></canvas>
                         <strong>Atomic-mass : </strong> ${element.atomicMass} <br/> <br/>
-                        
                         <strong>Appearance : </strong> ${element.appearance} <br/> <br/>
-
                         <div class="melting-unit">
                             <strong>Melting point : </strong> ${element.meltingPoint}
                             <select>
@@ -39,7 +36,6 @@ window.addEventListener('load', () => {
                             </select>
                              <br/> <br/>
                         </div>
-
                         <div class="boiling-unit">
                             <strong>Boiling point : </strong> ${element.boilingPoint}
                             <select>
@@ -51,15 +47,10 @@ window.addEventListener('load', () => {
                             </select> <br/> <br/>
                         </div>
                         <strong>Category : </strong> ${element.category} <br/> <br/>
-                        
                         <strong>State (at STP) : </strong> ${element.state} <br/> <br/>
-                        
                         <strong>Density (at STP) : </strong> ${element.density} <br/> <br/>
-                        
                         <strong>Year discovered : </strong> ${element.discovered} <br/> <br/>
-                        
                         <strong>Discovered by : </strong> ${element.discoveredBy} <br/> <br/>
-                        
                         <strong>Description: </strong> <br/> ${element.description}`
                         popup.style.display = 'block';
                         description.className = element.category
@@ -67,9 +58,7 @@ window.addEventListener('load', () => {
                     }
 
                     const canvas = document.querySelector('canvas#structure');
-
                     drawCanvas(canvas)
-
 
                     const units = document.querySelectorAll('select');
                     units.forEach(unit => {
@@ -90,12 +79,10 @@ window.addEventListener('load', () => {
                     canvas.width = 200;
                     canvas.height = 200;
 
-
                     // Utility Functions
                     function randomIntFromRange(min, max) {
                         return Math.floor(Math.random() * (max - min + 1) + min);
                     }
-
 
                     function Atom(x, y, radius, color) {
                         this.x = x;
@@ -131,27 +118,24 @@ window.addEventListener('load', () => {
                         };
                     }
 
-                    let stars;
-
+                    let atoms;
                     function init() {
-                        stars = [];
+                        atoms = [];
                         var x = canvas.width / 2;
                         var y = canvas.height / 2;
                         var radius = 2;
-                        stars.push(new Atom(x, y, 15, 'white'))
+                        atoms.push(new Atom(x, y, 15, 'white'))
 
                         for (var i = 0; i < element.atomicNumber; i++) {
-                            stars.push(new Atom(x, y, radius, "white"))
+                            atoms.push(new Atom(x, y, radius, "white"))
                         }
                     }
-
-
                     function animate() {
                         requestAnimationFrame(animate);
                         c.clearRect(0, 0, innerWidth, innerHeight);
 
-                        stars.forEach(star => {
-                            star.update()
+                        atoms.forEach(atom => {
+                            atom.update()
                         })
                     }
 
@@ -161,9 +145,8 @@ window.addEventListener('load', () => {
                 }
             });
         })
-
-
     close.addEventListener('click', () => {
+        description.innerHTML = '';
         popup.style.display = 'none';
     })
 })

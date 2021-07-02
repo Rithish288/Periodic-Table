@@ -14,10 +14,10 @@ window.addEventListener("mousemove", function(e) {
 	mouse.x = e.clientX;
 	mouse.y = e.clientY;
 });
-
 window.addEventListener("resize", function() {
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
+	init()
 });
 
 class Circle {
@@ -72,7 +72,7 @@ function init() {
 function animate() {
     requestAnimationFrame(animate);
 
-	c.fillStyle = 'rgba(0,0,0,0.08)';
+	c.fillStyle = 'rgba(0,0,0,0.3)';
 	c.fillRect(0,0,canvas.width,canvas.height);
 
 	circles.forEach(circle => {
