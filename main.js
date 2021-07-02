@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
 
     const periodicTable = document.getElementById('periodic-Table');
     const description = document.querySelector('#content');
-    const close  = document.querySelector('#close')
+    const close = document.querySelector('#close')
     const popup = document.querySelector('.description');
     //Acessing the dom ↑ ↑ ↑
 
@@ -21,9 +21,9 @@ window.addEventListener('load', () => {
 
                 //Event listeners
                 elem.addEventListener('click', () => {
-                    if(id == element.atomicNumber) {
-                        description.innerHTML = 
-                        `<canvas id="structure"></canvas>
+                    if (id == element.atomicNumber) {
+                        description.innerHTML =
+                            `<canvas id="structure"></canvas>
                         <strong>Atomic-mass : </strong> ${element.atomicMass} <br/> <br/>
                         
                         <strong>Appearance : </strong> ${element.appearance} <br/> <br/>
@@ -67,7 +67,7 @@ window.addEventListener('load', () => {
                     }
 
                     const canvas = document.querySelector('canvas#structure');
-           
+
                     drawCanvas(canvas)
 
 
@@ -75,13 +75,13 @@ window.addEventListener('load', () => {
                     units.forEach(unit => {
                         let point = unit.previousSibling.textContent;
                         unit.addEventListener('change', (e) => {
-                            if(e.target.value == '°F') {
-                                unit.previousSibling.textContent = ((parseInt(point) * 9/5) + 32).toPrecision(5)
-                            } else if(e.target.value == '°C') {
+                            if (e.target.value == '°F') {
+                                unit.previousSibling.textContent = ((parseInt(point) * 9 / 5) + 32).toPrecision(5)
+                            } else if (e.target.value == '°C') {
                                 unit.previousSibling.textContent = point
-                            } else if(e.target.value == 'K') {
+                            } else if (e.target.value == 'K') {
                                 unit.previousSibling.textContent = (parseInt(point) + 273.15).toPrecision(5)
-                            }   
+                            }
                         })
                     })
                 })
@@ -91,53 +91,79 @@ window.addEventListener('load', () => {
                     canvas.height = 200;
 
 
-                    class Atom {
-                        constructor(count, radius, width) {
-                            this.count = count
-                            this.radius = radius;
-                            this.radians = Math.PI * 2 / this.count;
-                            this.width = width
+                    // Utility Functions
+                    function randomIntFromRange(min, max) {
+                        return Math.floor(Math.random() * (max - min + 1) + min);
+                    }
 
-                            this.spreadRings = function () {
-                                let x = canvas.width/2;
-                                let y = canvas.height/2
-                            
-                                for (let i = 0; i <= this.count; i++) {
-                                    c.beginPath();
-                                    c.arc(x, y,i * this.width, 0 , 2 * Math.PI, false);
-                                    c.strokeStyle = 'white';
-                                    c.stroke();
-                                }
-                            }
 
-                            
-                            this.drawElectrons = function () {
-                                let formula = 2 * Math.pow(this.count, 2);
-                                for (let i = 0; i < formula; i++) {
-                                    let x = Math.cos(this.radians * i) * width + canvas.width/2;
-                                    let y = Math.sin(this.radians * i) * width + canvas.height/2;
-                                    c.beginPath();
-                                    c.arc(x, y, this.radius, 0, 2 * Math.PI, false);
-                                    c.fillStyle = 'white';
-                                    c.fill();
-                                }
-                                this.spreadRings()
+                    function Atom(x, y, radius, color) {
+                        this.x = x;
+                        this.y = y;
+                        this.radius = radius;
+                        this.color = color;
+                        this.radians = Math.random() * 360
+                        this.dfc = {
+                            x: randomIntFromRange(10, canvas.height/2 - 10),
+                            y: randomIntFromRange(10, canvas.height/2 - 10)
+                        }
+
+                        this.update = function () {
+                            if (this.radius <= 5) {
+                                this.radians += 0.04
+                                this.x = x + Math.cos(this.radians) * this.dfc.x;
+                                this.y = y + Math.sin(this.radians) * this.dfc.y;
                             }
-                            this.drawElectrons()
+                            this.draw()
+                        }
+
+                        this.draw = function () {
+                            c.beginPath();
+                            c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                            c.fillStyle = this.color;
+                            c.fill();
+
+                            c.font = '15px Verdana';
+                            c.textAlign = 'center';
+                            c.textBaseline = 'middle'
+                            c.fillStyle = 'black';
+                            c.fillText(element.symbol, canvas.width/2, canvas.height/2)
+                        };
+                    }
+
+                    let stars;
+
+                    function init() {
+                        stars = [];
+                        var x = canvas.width / 2;
+                        var y = canvas.height / 2;
+                        var radius = 2;
+                        stars.push(new Atom(x, y, 15, 'white'))
+
+                        for (var i = 0; i < element.atomicNumber; i++) {
+                            stars.push(new Atom(x, y, radius, "white"))
                         }
                     }
 
-                    let atomicNumber = parseInt(element.atomicNumber) ;
 
+                    function animate() {
+                        requestAnimationFrame(animate);
+                        c.clearRect(0, 0, innerWidth, innerHeight);
 
-                    var object = new Atom(atomicNumber, 2, 10)
-                
+                        stars.forEach(star => {
+                            star.update()
+                        })
+                    }
+
+                    init();
+                    animate();
+
                 }
             });
         })
 
 
-        close.addEventListener('click', () => {
-            popup.style.display = 'none';
-        })
+    close.addEventListener('click', () => {
+        popup.style.display = 'none';
+    })
 })

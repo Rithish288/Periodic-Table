@@ -97,7 +97,6 @@ img {
 }
 
 canvas#structure {
-    border: 2px solid white;
     position: absolute;
     top: 20%;
     left: 52%;
