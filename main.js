@@ -3,7 +3,10 @@ window.addEventListener('load', () => {
     const description = document.querySelector('#content');
     const close = document.querySelector('#close')
     const popup = document.querySelector('.description');
+
     //Acessing the dom ↑ ↑ ↑
+
+    document.body.removeChild(popup)
 
     fetch('PeriodicTable.json')//Fetching data
         .then((response) => {
@@ -20,9 +23,10 @@ window.addEventListener('load', () => {
 
                 //Event listeners
                 elem.addEventListener('click', () => {
+                    document.body.appendChild(popup)
                     if (id == element.atomicNumber) {
                         description.innerHTML =
-                        S`<canvas id="structure"></canvas>
+                        `<canvas id="structure"></canvas> <p>${element.name}</p>
                         <strong>Atomic-mass : </strong> ${element.atomicMass} <br/> <br/>
                         <strong>Appearance : </strong> ${element.appearance} <br/> <br/>
                         <div class="melting-unit">
@@ -65,11 +69,11 @@ window.addEventListener('load', () => {
                         let point = unit.previousSibling.textContent;
                         unit.addEventListener('change', (e) => {
                             if (e.target.value == '°F') {
-                                unit.previousSibling.textContent = ((parseInt(point) * 9 / 5) + 32).toPrecision(5)
+                                unit.previousSibling.textContent = ((parseInt(point) * 9 / 5) + 32).toPrecision(7)
                             } else if (e.target.value == '°C') {
                                 unit.previousSibling.textContent = point
                             } else if (e.target.value == 'K') {
-                                unit.previousSibling.textContent = (parseInt(point) + 273.15).toPrecision(5)
+                                unit.previousSibling.textContent = (parseInt(point) + 273.15).toPrecision(7)
                             }
                         })
                     })
@@ -91,13 +95,13 @@ window.addEventListener('load', () => {
                         this.color = color;
                         this.radians = Math.random() * 360
                         this.dfc = {
-                            x: randomIntFromRange(10, canvas.height/2 - 10),
-                            y: randomIntFromRange(10, canvas.height/2 - 10)
+                            x: randomIntFromRange(15, canvas.height/2 - 10),
+                            y: randomIntFromRange(15, canvas.height/2 - 10)
                         }
 
                         this.update = function () {
                             if (this.radius <= 5) {
-                                this.radians += 0.04
+                                this.radians += 0.03
                                 this.x = x + Math.cos(this.radians) * this.dfc.x;
                                 this.y = y + Math.sin(this.radians) * this.dfc.y;
                             }
@@ -114,7 +118,7 @@ window.addEventListener('load', () => {
                             c.textAlign = 'center';
                             c.textBaseline = 'middle'
                             c.fillStyle = 'black';
-                            c.fillText(element.symbol, canvas.width/2, canvas.height/2)
+                            c.fillText(element.symbol, canvas.width/2, canvas.height/2);
                         };
                     }
 
@@ -145,8 +149,10 @@ window.addEventListener('load', () => {
                 }
             });
         })
+
+    
+
     close.addEventListener('click', () => {
-        description.innerHTML = '';
-        popup.style.display = 'none';
+        document.body.removeChild(popup)
     })
 })
