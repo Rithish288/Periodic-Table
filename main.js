@@ -3,8 +3,14 @@ window.addEventListener('load', () => {
     const description = document.querySelector('#content');
     const close = document.querySelector('#close')
     const popup = document.querySelector('.description');
+    const remove = document.querySelector('button');
+    const bgCanvas = document.querySelector('canvas#background')
 
     //Acessing the dom ↑ ↑ ↑
+
+    remove.addEventListener('click', () => {
+            bgCanvas.classList.toggle('none')
+    })
 
     document.body.removeChild(popup)
 

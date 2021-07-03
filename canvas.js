@@ -72,7 +72,7 @@ function init() {
 function animate() {
     requestAnimationFrame(animate);
 
-	c.fillStyle = 'rgba(0,0,0,0.3)';
+	c.fillStyle = 'rgba(0,0,0,0.2)';
 	c.fillRect(0,0,canvas.width,canvas.height);
 
 	circles.forEach(circle => {
