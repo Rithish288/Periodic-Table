@@ -75,7 +75,7 @@ select {
     background-color: rgba(214, 214, 214, 0.2)
 }
 
- option {
+option {
     color: white;
     background-color: rgb(0, 0, 0, 0.8);
     font-size: 1.2em;
@@ -118,11 +118,9 @@ img {
     text-shadow: 0 0 5px white;
 }
 
-canvas#structure {
-    position: absolute;
-    top: 20%;
-    left: 52%;
-}
+canvas#structure { position: absolute; top: 20%; left: 52%;}
+canvas#background { position: absolute; z-index: -1;}
+.none {display: none;}
 
 #content {
     padding: 1em;
@@ -139,8 +137,6 @@ canvas#structure {
     min-height: 10vh;
 }
 
-canvas#background {position: absolute;z-index: -1;}
-.none {display: none;}
 
 #close {
     font-size: 150%;
@@ -155,9 +151,7 @@ canvas#background {position: absolute;z-index: -1;}
 }
 
 h1 {margin: -5px auto; font-size: 5em;}
-
 p{margin: auto; font-size: 2em;} 
-
 p.number {margin: 0}
 
 .Noble-gases {border: 2px solid rgb(18, 253, 124); box-shadow: 0 0 3px rgb(18, 253, 124); }
@@ -210,6 +204,3 @@ p.number {margin: 0}
     grid-row: 6;
     background-color:rgb(214, 214, 214)
 }
-
-
-

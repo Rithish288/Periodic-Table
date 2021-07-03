@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     const periodicTable = document.getElementById('periodic-Table');
     const description = document.querySelector('#content');
     const close = document.querySelector('#close')
@@ -9,17 +9,17 @@ window.addEventListener('load', () => {
     //Acessing the dom ↑ ↑ ↑
 
     remove.addEventListener('click', () => {
-            bgCanvas.classList.toggle('none')
+        bgCanvas.classList.toggle('none')
     })
 
     document.body.removeChild(popup)
 
     fetch('PeriodicTable.json')//Fetching data
-        .then((response) => {
+        .then(response => {
             return response.json()
         })
 
-        .then((elements) => {
+        .then(elements => {
             elements.forEach((element, i) => { //Creating a div for each object
                 const elem = document.createElement('div');
                 let id = i += 1
@@ -63,7 +63,7 @@ window.addEventListener('load', () => {
                         <strong>Discovered by : </strong> ${element.discoveredBy} <br/> <br/>
                         <strong>Description: </strong> <br/> ${element.description}`
                         popup.style.display = 'block';
-                        description.className = element.category
+                        description.className = element.category;
                         close.className = element.category
                     }
 
@@ -75,7 +75,7 @@ window.addEventListener('load', () => {
                         let point = unit.previousSibling.textContent;
                         unit.addEventListener('change', (e) => {
                             if (e.target.value == '°F') {
-                                unit.previousSibling.textContent = ((parseInt(point) * 9 / 5) + 32).toPrecision(6)
+                                unit.previousSibling.textContent = ((parseInt(point) * (9 / 5)) + 32).toPrecision(6)
                             } else if (e.target.value == '°C') {
                                 unit.previousSibling.textContent = point
                             } else if (e.target.value == 'K') {
@@ -155,9 +155,6 @@ window.addEventListener('load', () => {
                 }
             });
         })
-
-    
-
     close.addEventListener('click', () => {
         document.body.removeChild(popup)
     })
