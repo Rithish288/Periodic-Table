@@ -5,15 +5,12 @@
 }
 
 :root {
-    --size: 65px;
-    --extra: calc(var(--size) + 3px);
+    --size: 4.3vw;
+    --extra: calc(var(--size) + 5px);
     --background: aquamarine;
-    --font-size: 25% ;
+    --font-size: 30% ;
 }
 
-/* button {
-    position: absolute;
-} */
 
 body {
     min-width: 100vw;
