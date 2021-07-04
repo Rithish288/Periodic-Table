@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     }
 
                     const canvas = document.querySelector('canvas#structure');
-                    drawCanvas(canvas)
+                    drawAtom(canvas, element.atomicNumber, element.symbol)
 
                     const units = document.querySelectorAll('select');
                     units.forEach(unit => {
@@ -84,77 +84,72 @@ window.addEventListener('DOMContentLoaded', () => {
                         })
                     })
                 })
-                function drawCanvas(canvas) {
-                    let c = canvas.getContext('2d');
-                    canvas.width = 200;
-                    canvas.height = 200;
-
-                    // Utility Functions
-                    function randomIntFromRange(min, max) {
-                        return Math.floor(Math.random() * (max - min + 1) + min);
-                    }
-
-                    function Atom(x, y, radius, color) {
-                        this.x = x;
-                        this.y = y;
-                        this.radius = radius;
-                        this.color = color;
-                        this.radians = Math.random() * 360
-                        this.dfc = {
-                            x: randomIntFromRange(15, canvas.height/2 - 10),
-                            y: randomIntFromRange(15, canvas.height/2 - 10)
-                        }
-
-                        this.update = function () {
-                            if (this.radius <= 5) {
-                                this.radians += 0.03
-                                this.x = x + Math.cos(this.radians) * this.dfc.x;
-                                this.y = y + Math.sin(this.radians) * this.dfc.y;
-                            }
-                            this.draw()
-                        }
-
-                        this.draw = function () {
-                            c.beginPath();
-                            c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-                            c.fillStyle = this.color;
-                            c.fill();
-
-                            c.font = '15px Verdana';
-                            c.textAlign = 'center';
-                            c.textBaseline = 'middle'
-                            c.fillStyle = 'black';
-                            c.fillText(element.symbol, canvas.width/2, canvas.height/2);
-                        };
-                    }
-
-                    let atoms;
-                    function init() {
-                        atoms = [];
-                        var x = canvas.width / 2;
-                        var y = canvas.height / 2;
-                        var radius = 2;
-                        atoms.push(new Atom(x, y, 15, 'white'))
-
-                        for (var i = 0; i < element.atomicNumber; i++) {
-                            atoms.push(new Atom(x, y, radius, "white"))
-                        }
-                    }
-                    function animate() {
-                        requestAnimationFrame(animate);
-                        c.clearRect(0, 0, innerWidth, innerHeight);
-
-                        atoms.forEach(atom => {
-                            atom.update()
-                        })
-                    }
-
-                    init();
-                    animate();
-
-                }
             });
         })
+    function drawAtom(canvas, electronCount, text) {
+        let c = canvas.getContext('2d');
+        canvas.width = 200;
+        canvas.height = 200;
+        // Utility Functions
+        function randomIntFromRange(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+        class Atom {
+            constructor(x, y, radius, color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+                this.radians = Math.random() * 360;
+                this.dfc = {
+                    x: randomIntFromRange(15, canvas.height / 2 - 10),
+                    y: randomIntFromRange(15, canvas.height / 2 - 10)
+                };
+
+                this.update = function () {
+                    if (this.radius <= 5) {
+                        this.radians += 0.03;
+                        this.x = x + Math.cos(this.radians) * this.dfc.x;
+                        this.y = y + Math.sin(this.radians) * this.dfc.y;
+                    }
+                    this.draw();
+                };
+                
+                this.draw = function () {
+                    c.beginPath();
+                    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                    c.fillStyle = this.color;
+                    c.fill();
+                    c.font = '15px Verdana';
+                    c.textAlign = 'center';
+                    c.textBaseline = 'middle';
+                    c.fillStyle = 'black';
+                    c.fillText(text, canvas.width / 2, canvas.height / 2);
+                };
+            }
+        }
+
+        let atoms;
+        function init() {
+            atoms = [];
+            var x = canvas.width / 2;
+            var y = canvas.height / 2;
+            var radius = 2;
+            atoms.push(new Atom(x, y, 15, 'white'))
+            for (var i = 0; i < electronCount; i++) {
+                atoms.push(new Atom(x, y, radius, "white"))
+            }
+        }
+        function animate() {
+            requestAnimationFrame(animate);
+            c.clearRect(0, 0, innerWidth, innerHeight);
+            atoms.forEach(atom => {
+                atom.update()
+            })
+        }
+        init();
+        animate();
+    }
     close.addEventListener('click', () => {
         document.body.removeChild(popup)
     })

@@ -37,18 +37,8 @@ div.periodic-Table {
     display: grid;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: var(--font-size);
-    grid-template-columns:
-    var(--extra) var(--extra) var(--extra) var(--extra)
-    var(--extra) var(--extra) var(--extra) var(--extra)
-    var(--extra) var(--extra) var(--extra) var(--extra)
-    var(--extra) var(--extra) var(--extra) var(--extra)
-    var(--extra) var(--extra);
-    grid-template-rows: 
-    var(--size) var(--size)
-    var(--size) var(--size)
-    var(--size) var(--size)
-    var(--size) var(--size)
-    var(--size) var(--size);
+    grid-template-columns: repeat(18, var(--extra));
+    grid-template-rows: repeat(10, var(--size));
     gap: 0.6em;
 }
 
