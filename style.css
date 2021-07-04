@@ -143,6 +143,14 @@ h1 {margin: -5px auto; font-size: 4em;}
 p{margin: auto; font-size: 2em;} 
 p.number {margin: 0}
 
+@media screen and (max-width: 500px) and (orientation: landscape) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p{
+        font-size: 10px;
+    }
+}
 
 .Noble-gases {border: 2px solid rgb(18, 253, 124); box-shadow: 0 0 3px rgb(18, 253, 124); }
 .Other-non-metals {border: 2px solid rgb(57, 242, 255);  box-shadow: 0 0 3px rgb(57, 242, 255);}
