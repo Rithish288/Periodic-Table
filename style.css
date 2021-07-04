@@ -144,6 +144,15 @@ h1 {margin: -5px auto; font-size: 5em;}
 p{margin: auto; font-size: 2em;} 
 p.number {margin: 0}
 
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+    }
+    p, p.number {
+        font-size: 5px;
+    }
+
+}
 .Noble-gases {border: 2px solid rgb(18, 253, 124); box-shadow: 0 0 3px rgb(18, 253, 124); }
 .Other-non-metals {border: 2px solid rgb(57, 242, 255);  box-shadow: 0 0 3px rgb(57, 242, 255);}
 .Alkali-Metals {border: 2px solid rgb(255, 197, 111); box-shadow: 0 0 3px rgb(255, 197, 111); }

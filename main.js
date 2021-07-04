@@ -1,3 +1,4 @@
+'use strict';
 window.addEventListener('DOMContentLoaded', () => {
     const periodicTable = document.getElementById('periodic-Table');
     const description = document.querySelector('#content');
@@ -22,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
         .then(elements => {
             elements.forEach((element, i) => { //Creating a div for each object
                 const elem = document.createElement('div');
-                let id = i += 1
+                let id = i += 1;
                 elem.className = 'element' + ' n' + id + ' ' + element.category;
                 elem.innerHTML = '<p class="number">' + element.atomicNumber + '</p>' + '<h1>' + element.symbol + '</h1>' + '<p>' + element.name + '</p>';
                 periodicTable.appendChild(elem);
@@ -114,7 +115,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     }
                     this.draw();
                 };
-                
+
                 this.draw = function () {
                     c.beginPath();
                     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
