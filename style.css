@@ -6,7 +6,6 @@
 
 :root {
     --size: 4.3vw;
-    --extra: calc(var(--size) + 5px);
     --background: aquamarine;
     --font-size: 30% ;
 }
@@ -37,7 +36,7 @@ div.periodic-Table {
     display: grid;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: var(--font-size);
-    grid-template-columns: repeat(18, var(--extra));
+    grid-template-columns: repeat(18, calc(var(--size) + 5px));
     grid-template-rows: repeat(10, var(--size));
     gap: 0.6em;
 }
@@ -146,8 +145,8 @@ p.number {margin: 0}
 
 @media only screen and (max-width: 400px) {
     div.periodic-Table {
-        grid-template-columns: 7vw;
-        grid-template-rows: 7vw;
+        grid-template-columns: repeat(18, 15vw);
+        grid-template-rows: repeat(10, 15vw);
     }
     h1 {
         font-size: 1em;
