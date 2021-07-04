@@ -22,7 +22,7 @@ button {
 body {
     min-width: 100vw;
     min-height: 100vh;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -143,13 +143,13 @@ h1 {margin: -5px auto; font-size: 4em;}
 p{margin: auto; font-size: 2em;} 
 p.number {margin: 0}
 
-@media only screen and (max-width: 400px) and (orientation: la) {
+@media only screen and (max-width: 750px) and (orientation: la) {
     div.periodic-Table {
-        grid-template-columns: repeat(18, 15vw);
-        grid-template-rows: repeat(10, 15vw);
+        grid-template-columns: repeat(18, 7vw);
+        grid-template-rows: repeat(10, 7vw);
     }
     h1 {
-        font-size: 3em;
+        font-size: 5em;
     }
     p, p.number {
         font-size: 5px;
