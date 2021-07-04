@@ -144,9 +144,13 @@ h1 {margin: -5px auto; font-size: 5em;}
 p{margin: auto; font-size: 2em;} 
 p.number {margin: 0}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
+    div.periodic-Table {
+        grid-template-columns: 7vw;
+        grid-template-rows: 7vw;
+    }
     h1 {
-        font-size: 2em;
+        font-size: 1em;
     }
     p, p.number {
         font-size: 5px;
