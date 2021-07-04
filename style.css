@@ -139,17 +139,22 @@ canvas#background { position: absolute; z-index: -1;}
     border-radius: 50%;
 }
 
-h1 {margin: -5px auto; font-size: 4em;}
+h1 {margin: -3px auto; font-size: 4em;}
 p{margin: auto; font-size: 2em;} 
 p.number {margin: 0}
 
-@media screen and (max-width: 500px) and (orientation: landscape) {
-    h1 {
-        font-size: 2.5em;
-    }
-    p{
-        font-size: 10px;
-    }
+@media screen and (max-width: 978px) {
+    h1 {font-size: 3em;}
+    p {font-size: 1.5em;}
+}
+@media screen and (max-width: 850px) {
+    h1 {font-size: 2.5em;}
+    p {font-size: 1em;}
+}
+
+@media screen and (max-width: 500px) {
+    h1 {font-size: 1em;color: green;}
+    p, p.number{font-size: 0.5em;}
 }
 
 .Noble-gases {border: 2px solid rgb(18, 253, 124); box-shadow: 0 0 3px rgb(18, 253, 124); }
