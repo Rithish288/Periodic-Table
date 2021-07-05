@@ -9,6 +9,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Acessing the dom ↑ ↑ ↑
 
+    // window.setTimeout(() => {
+    //     alert('Use a Laptop or desktop for best user experience')
+    // }, 2000)
+
     remove.addEventListener('click', () => {
         bgCanvas.classList.toggle('none')
     })
@@ -76,17 +80,18 @@ window.addEventListener('DOMContentLoaded', () => {
                         let point = unit.previousSibling.textContent;
                         unit.addEventListener('change', (e) => {
                             if (e.target.value == '°F') {
-                                unit.previousSibling.textContent = ((parseInt(point) * (9 / 5)) + 32).toPrecision(6)
+                                unit.previousSibling.textContent = ((parseFloat(point) * (9 / 5)) + 32).toPrecision(6)
                             } else if (e.target.value == '°C') {
                                 unit.previousSibling.textContent = point
                             } else if (e.target.value == 'K') {
-                                unit.previousSibling.textContent = (parseInt(point) + 273.15).toPrecision(6)
-                            }
+                                unit.previousSibling.textContent = (parseFloat(point) + 273.15).toPrecision(6)
+                            } 
                         })
                     })
                 })
             });
         })
+
     function drawAtom(canvas, electronCount, text) {
         let c = canvas.getContext('2d');
         canvas.width = 200;
@@ -103,8 +108,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 this.color = color;
                 this.radians = Math.random() * 360;
                 this.dfc = {
-                    x: randomIntFromRange(15, canvas.height / 2 - 10),
-                    y: randomIntFromRange(15, canvas.height / 2 - 10)
+                    x: randomIntFromRange(15, canvas.width / 2 - 2),
+                    y: randomIntFromRange(15, canvas.height / 2 - 2)
                 };
 
                 this.update = function () {
