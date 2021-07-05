@@ -159,6 +159,11 @@ p.number {margin: 0}
     button{display: none}
     .periodic-Table {margin-left: 100em;}
 }
+@media screen and (max-width: 770px) {
+    canvas#background {display:none}
+    button{display: none}
+    .periodic-Table {margin-left: 120em;}
+}
 
 @media screen and (max-width: 600px) {
     .periodic-Table {
