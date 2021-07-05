@@ -6,7 +6,6 @@
 
 :root {
     --size: 4.3vw;
-    --background: aquamarine;
     --font-size: 30% ;
 }
 
@@ -34,19 +33,20 @@ body {
 
 div.periodic-Table {
     display: grid;
+    max-width:auto;
+    max-height:auto;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: var(--font-size);
     grid-template-columns: repeat(18, calc(var(--size) + 5px));
     grid-template-rows: repeat(10, var(--size));
-    gap: 0.6em;
+    grid-gap: 0.6em;
 }
 
 
 .element {
-    background-color: var(--background);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -92,35 +92,36 @@ img {
     min-height: 100vh;
     background-color:rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(3px);
+    color: white;
     position: fixed;
     display: none;
-    padding: 1em;
+    padding: 10em;
+    overflow: auto;
 }
 
-.description p {
+.description #content p {
     position: absolute;
-    line-height: 0;
     top: 0;
     right: 0;
-    padding:1em;
+    padding:0.3em 1em;
     text-decoration: underline;
     text-shadow: 0 0 5px white;
 }
 
-canvas#structure { position: absolute; top: 20%; left: 52%;}
+canvas#properties { position: absolute; top: 20%; left: 52%;}
 canvas#background { position: absolute; z-index: -1;}
+
 .none {display: none;}
 
 #content {
     padding: 1em;
     width: 40vw;
+    min-width: 400px;
     border-radius: 10px;
     background-color: transparent;
-    color: white;
-    min-width: 400px;
     position: absolute;
     font-family: 'Quicksand';
-    overflow-y: auto;
+    overflow: auto;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     min-height: 10vh;
@@ -129,12 +130,11 @@ canvas#background { position: absolute; z-index: -1;}
 
 #close {
     font-size: 150%;
+    top: 5%;
     right: 0;
-    color: white;
     cursor: pointer;
     position: absolute;
     margin-right: 1em;
-    color: rgb(255, 255, 255);
     padding: 0.2em 0.5em;
     border-radius: 50%;
 }
@@ -144,26 +144,40 @@ p{margin: auto; font-size: 2em;}
 p.number {margin: 0}
 
 @media screen and (max-width: 978px) {
+    #content{width:60vw}
     h1 {font-size: 3em;}
     p {font-size: 1.5em;}
 }
 @media screen and (max-width: 850px) {
-    h1 {font-size: 2.5em;}
-    p {font-size: 1em;}
+    #content {width: 80vw;}
+    #close {margin-right: 0.2em;}
+    h1 {font-size: 2.5em; margin-bottom: 0.4em;}
+    .element p {display: none;} 
+    p.number{display: inline ; margin: 0}
 }
 
-@media screen and (max-width: 500px) {
-    h1 {font-size: 1em;}
+@media screen and (max-width: 600px) {
+    body{overflow: scroll}
+    .periodic-Table {
+        margin-left:10em;
+        grid-gap: 0em;
+        grid-template-columns: repeat(18, 6vw);
+        grid-template-rows: repeat(10, 7vw)
+    }
+        
+    #content p {font-size:1.5em;}
+    h1 {font-size: 1.5em;}
     p, p.number{font-size: 0.5em;}
 }
 
-.Noble-gases {border: 2px solid rgb(18, 253, 124); box-shadow: 0 0 3px rgb(18, 253, 124); }
-.Other-non-metals {border: 2px solid rgb(57, 242, 255);  box-shadow: 0 0 3px rgb(57, 242, 255);}
-.Alkali-Metals {border: 2px solid rgb(255, 197, 111); box-shadow: 0 0 3px rgb(255, 197, 111); }
-.Metalloids {border: 2px solid rgb(255, 142, 142); box-shadow: 0 0 3px rgb(255, 142, 142); }
-.Halogens {border: 2px solid rgb(228, 116, 250); box-shadow: 0 0 3px rgb(228, 116, 250); }
-.Alkaline-Earth-Metals {border: 2px solid rgb(255, 192, 203); box-shadow: 0 0 3px rgb(255, 192, 203); }
-.Transition-metals{border: 2px solid rgb(238, 227, 73); box-shadow: 0 0 3px rgb(238, 227, 73);}
+.Noble-gases {border: 2px solid rgb(18, 253, 124); box-shadow: 0 0 5px rgb(18, 253, 124); }
+.Other-non-metals {border: 2px solid rgb(57, 242, 255);  box-shadow: 0 0 5px rgb(57, 242, 255);}
+.Alkali-Metals {border: 2px solid rgb(255, 197, 111); box-shadow: 0 0 5px rgb(255, 197, 111); }
+.Metalloids {border: 2px solid rgb(255, 142, 142); box-shadow: 0 0 5px rgb(255, 142, 142); }
+.Halogens {border: 2px solid rgb(228, 116, 250); box-shadow: 0 0 5px rgb(228, 116, 250); }
+.Alkaline-Earth-Metals {border: 2px solid rgb(255, 192, 203); box-shadow: 0 0 5px rgb(255, 192, 203); }
+.Transition-metals{border: 2px solid rgb(238, 227, 73); box-shadow: 0 0 5px rgb(238, 227, 73);}
+.Lanthanides{border: 2px solid rgb(85, 111, 255); box-shadow: 0 0 5px rgb(85, 111, 255);}
 
 .n60, .n61, .n62, .n63, .n64, .n65, .n66, .n67, .n68, .n69, .n70, .n71 {
     grid-row: 9
@@ -199,7 +213,7 @@ p.number {margin: 0}
 .empty2 {
     grid-row: 7;
     grid-column:3;
-    background-color:rgb(214, 214, 214)
+    background-color:rgb(156, 48, 48)
 }
 
 .empty1 {

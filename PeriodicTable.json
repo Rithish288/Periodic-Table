@@ -843,48 +843,48 @@
     },
     {
         "atomicNumber": "57", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
-        "category": "",
-        "state": "",
-        "description": ""
+        "name": "Lanthanum", 
+        "atomicMass": "138.905", 
+        "symbol": "La", 
+        "discovered": "1838",
+        "appearance": "Silvery white",
+        "boilingPoint": "3464",
+        "meltingPoint": "920",
+        "discoveredBy": "Carl Gustaf Mosander",
+        "density": "6.162 g/cm3",
+        "category": "Lanthanides",
+        "state": "solid",
+        "description": "Lanthanum is traditionally counted among the rare earth elements. The usual oxidation state is +3. Lanthanum has no biological role in humans but is essential to some bacteria. It is not particularly toxic to humans but does show some antimicrobial activity."
     },
     {
         "atomicNumber": "58", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
-        "category": "",
-        "state": "",
-        "description": ""
+        "name": "Cerium", 
+        "atomicMass": "140.116", 
+        "symbol": "Ce", 
+        "discovered": "1803",
+        "appearance": "Silvery white",
+        "boilingPoint": "3443",
+        "meltingPoint": "795",
+        "discoveredBy": "Martin Heinrich Klaproth, Jöns Jakob Berzelius and Wilhelm Hisinger",
+        "density": "6.770 g/cm3",
+        "category": "Lanthanides",
+        "state": "solid",
+        "description": "Cerium is metal that tarnishes when exposed to air, and it is soft enough to be cut with a steel kitchen knife. Despite always occurring in combination with the other rare-earth elements in minerals, cerium is easy to extract from its ores, as it can be distinguished among the other lanthanides by its unique ability to be oxidized."
     },
     {
         "atomicNumber": "59", 
-        "name": "Oxygen",
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
-        "category": "",
-        "state": "",
-        "description": ""
+        "name": "Praseodymium",
+        "atomicMass": "140.907", 
+        "symbol": "Pr", 
+        "discovered": "1885",
+        "appearance": "grayish white",
+        "boilingPoint": "3130",
+        "meltingPoint": "935",
+        "discoveredBy": "Carl Auer von Welsbach",
+        "density": "6.77 g/cm3",
+        "category": "Lanthanides",
+        "state": "solid",
+        "description": "Praseodymium is a soft, malleable and ductile metal, valued for its magnetic, electrical, chemical, and optical properties. It is too reactive to be found in native form, and pure praseodymium metal slowly develops a green oxide coating when exposed to air. Praseodymium always occurs naturally together with the other rare-earth metals. It is the fourth most common rare-earth element, making up 9.1 parts per million of the Earth's crust."
     },
     {
         "atomicNumber": "60", 
@@ -897,8 +897,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -912,8 +912,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -927,8 +927,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -942,8 +942,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -957,8 +957,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -972,8 +972,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -987,8 +987,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1002,8 +1002,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1017,8 +1017,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1032,8 +1032,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1047,8 +1047,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {
@@ -1062,8 +1062,8 @@
         "meltingPoint": "",
         "discoveredBy": "",
         "density": "",
-        "category": "",
-        "state": "",
+        "category": "Lanthanides",
+        "state": "solid",
         "description": ""
     },
     {

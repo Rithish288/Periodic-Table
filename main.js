@@ -17,27 +17,32 @@ window.addEventListener('DOMContentLoaded', () => {
         bgCanvas.classList.toggle('none')
     })
 
+
+    
     document.body.removeChild(popup)
-
+    
     fetch('PeriodicTable.json')//Fetching data
-        .then(response => {
-            return response.json()
-        })
+    .then(response => {
+        return response.json()
+    })
+    
+    .then(elements => {
+        elements.forEach((element, i) => { //Creating a div for each object
+            const elem = document.createElement('div');
+            let id = i += 1;
+            elem.className = 'element' + ' n' + id + ' ' + element.category;
+            elem.innerHTML = '<p class="number">' + element.atomicNumber + '</p>' + '<h1>' + element.symbol + '</h1>' + '<p>' + element.name + '</p>';
+            periodicTable.appendChild(elem);
+            
+            //Event listeners
 
-        .then(elements => {
-            elements.forEach((element, i) => { //Creating a div for each object
-                const elem = document.createElement('div');
-                let id = i += 1;
-                elem.className = 'element' + ' n' + id + ' ' + element.category;
-                elem.innerHTML = '<p class="number">' + element.atomicNumber + '</p>' + '<h1>' + element.symbol + '</h1>' + '<p>' + element.name + '</p>';
-                periodicTable.appendChild(elem);
 
-                //Event listeners
+
                 elem.addEventListener('click', () => {
                     document.body.appendChild(popup)
                     if (id == element.atomicNumber) {
                         description.innerHTML =
-                        `<canvas id="structure"></canvas> <p>${element.name}</p>
+                        `<canvas id="properties"></canvas> <p>${element.name}</p>
                         <strong>Atomic-mass : </strong> ${element.atomicMass} <br/> <br/>
                         <strong>Appearance : </strong> ${element.appearance} <br/> <br/>
                         <div class="melting-unit">
@@ -72,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         close.className = element.category
                     }
 
-                    const canvas = document.querySelector('canvas#structure');
+                    const canvas = document.querySelector('canvas#properties');
                     drawAtom(canvas, element.atomicNumber, element.symbol)
 
                     const units = document.querySelectorAll('select');
