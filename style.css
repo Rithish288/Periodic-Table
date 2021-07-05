@@ -143,7 +143,7 @@ h1 {margin: -3px auto; font-size: 4em;}
 p{margin: auto; font-size: 2em;} 
 p.number {margin: 0}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
     #content{width:60vw}
     .periodic-Table {margin-left: 50em}
 }
@@ -163,6 +163,12 @@ p.number {margin: 0}
 @media screen and (max-width: 600px) {
     .periodic-Table {
         margin-left:130em;
+        grid-gap: 0em;
+    }
+}
+@media screen and (max-width: 350px) {
+    .periodic-Table {
+        margin-left:170em;
         grid-gap: 0em;
     }
 }
