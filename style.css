@@ -84,42 +84,40 @@ select:hover, select:focus {
     border: none;
 }
 
-.description {
-    min-width: 100vw;
-    width: 100%;
-    min-height: 100vh;
-    background-color:rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(3px);
-    color: white;
-    position: fixed;
-    display: none;
-}
-
-.description #content p {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding:0.3em 1em;
-    text-decoration: underline;
-    text-shadow: 0 0 5px white;
-}
 
 canvas#properties { position: absolute; top: 20%; left: 52%;}
 canvas#background { position: absolute; z-index: -1;}
 
 .none {display: none;}
 
+.description {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color:rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    color: white;
+    position: fixed;
+    align-items: center;
+    display: none;
+}
+
+.description #content p {
+    position: absolute;
+    top: 0; right: 0;
+    font-size: 2em;
+    padding:0.3em 1em;
+    text-decoration: underline;
+    text-shadow: 0 0 5px white;
+}
 #content {
+    margin: auto;
     padding: 1em;
     width: 40vw;
-    min-width: 400px;
     border-radius: 10px;
     background-color: transparent;
-    position: absolute;
+    position: relative;
     font-family: 'Quicksand';
-    overflow-y: auto;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    overflow: auto;
     min-height: 10vh;
 }
 

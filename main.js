@@ -1,4 +1,10 @@
 'use strict';
+function toFarenheit(num) {
+    return (num * (9 / 5) + 32).toPrecision(6)
+}
+function toKelvin(num) {
+    return (num + 273.15).toPrecision(6)
+}
 window.addEventListener('DOMContentLoaded', () => {
     const periodicTable = document.getElementById('periodic-Table');
     const description = document.querySelector('#content');
@@ -17,16 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
         bgCanvas.classList.toggle('none')
     })
 
-    function toFarenheit(num) {
-        return (num * (9 / 5) + 32).toPrecision(6)
-    }
-    function toKelvin(num) {
-        return (num + 273.15).toPrecision(6)
-    }
     
     document.body.removeChild(popup)
     
-    fetch('PeriodicTable.json')//Fetching data
+    let jsonData =  fetch('PeriodicTable.json')//Fetching data
     .then(response => {
         return response.json()
     })
@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         <strong>Year discovered : </strong> ${element.discovered} <br/> <br/>
                         <strong>Discovered by : </strong> ${element.discoveredBy} <br/> <br/>
                         <strong>Description: </strong> <br/> ${element.description}`
-                        popup.style.display = 'block';
+                        popup.style.display = 'flex';
                         description.className = element.category;
                         close.className = element.category
                     }
