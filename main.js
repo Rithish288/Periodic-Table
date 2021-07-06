@@ -17,7 +17,12 @@ window.addEventListener('DOMContentLoaded', () => {
         bgCanvas.classList.toggle('none')
     })
 
-
+    function toFarenheit(num) {
+        return (num * (9 / 5) + 32).toPrecision(6)
+    }
+    function toKelvin(num) {
+        return (num + 273.15).toPrecision(6)
+    }
     
     document.body.removeChild(popup)
     
@@ -85,11 +90,11 @@ window.addEventListener('DOMContentLoaded', () => {
                         let point = unit.previousSibling.textContent;
                         unit.addEventListener('change', (e) => {
                             if (e.target.value == '°F') {
-                                unit.previousSibling.textContent = ((parseFloat(point) * (9 / 5)) + 32).toPrecision(6)
+                                unit.previousSibling.textContent = toFarenheit(parseFloat(point))
                             } else if (e.target.value == '°C') {
                                 unit.previousSibling.textContent = point
                             } else if (e.target.value == 'K') {
-                                unit.previousSibling.textContent = (parseFloat(point) + 273.15).toPrecision(6)
+                                unit.previousSibling.textContent = toKelvin(parseFloat(point))
                             } 
                         })
                     })
