@@ -8,14 +8,16 @@
     --size: 4.1vw;
     --font-color: black;
     --font-size: 50% ;
-    --alkali: rgba(255, 197, 111, 1);
-    --alkali-earth: rgba(255, 192, 203, 1);
-    --halogens: rgb(255, 241, 117);
-    --transitionMetals: rgba(18, 253, 124, 1);
-    --lanthanides: rgb(121, 141, 255);
-    --noble-gases: rgba(228, 116, 250, 1);
-    --metalloids: rgba(255, 142, 142, 1);
-    --other: rgba(57, 242, 255, 1);
+    --alkali: #ffc56f;
+    --alkali-earth: #ffc0cb;
+    --halogens: #fff175;
+    --transitionMetals: #12fd7c;
+    --lanthanides: #798dff;
+    --actinides: #424379;
+    --noble-gases: #e474fa;
+    --post-transition: #00978a;
+    --metalloids: #ff5f5f;
+    --other: #39f2ff;
     --border-width: 3px;
 }
 
@@ -24,7 +26,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-evenly;
-    width: 80vw;
+    width: 80vw; margin-top: 5em;
     font-family: 'Quicksand';
 }
 
@@ -37,7 +39,7 @@ tag {
 }
 
 .description .card { 
-    min-width: 100px;min-height:10px;
+    min-width: 200px;min-height:10px;
     height: auto; font-size:1em;
     padding: 1em 2em; text-align: justify;
     background-color:white;
@@ -46,11 +48,11 @@ tag {
     margin: 1em;
 }
 
-.structure {
-    display: flex;
-    align-items: center; justify-content: space-evenly;
-    flex-wrap: wrap;
-}
+.discovery {max-width: 400px;}
+
+.structure {width: 60%}
+
+.structure canvas{width: 100%;}
 
 button {
     padding: 0.5em;
@@ -92,24 +94,29 @@ div.periodic-Table {
     border-top: none; border-left: none;border-right: none;
     color: var(--font-color);
     padding: 0.3em 0.5em;
+    background-color: rgba(0, 0, 0, 0.03);
+    transition: background 0.1s ease;
     cursor: pointer;
 }
 
-
-
+.element:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+}
 
 canvas#background { position: absolute; z-index: -1;}
 
 .none {display: none;}
 
-.Noble-gases { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--noble-gases); }
-.Other-non-metals { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--other); }
-.Alkali-Metals { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--alkali); }
-.Metalloids { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--metalloids); }
-.Halogens { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--halogens); ; }
-.Alkaline-Earth-Metals { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--alkali-earth); }
-.Transition-metals{ background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--transitionMetals); }
-.Lanthanides{ background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--lanthanides); }
+.Noble-gases {border-bottom: var(--border-width) solid var(--noble-gases); }
+.Other-non-metals {border-bottom: var(--border-width) solid var(--other); }
+.Alkali-Metals {border-bottom: var(--border-width) solid var(--alkali); }
+.Metalloids {border-bottom: var(--border-width) solid var(--metalloids); }
+.Halogens {border-bottom: var(--border-width) solid var(--halogens); ; }
+.Alkaline-Earth-Metals {border-bottom: var(--border-width) solid var(--alkali-earth); }
+.Transition-metals{border-bottom: var(--border-width) solid var(--transitionMetals); }
+.Post-Transition-Metals{border-bottom: var(--border-width) solid var(--post-transition); }
+.Lanthanides{border-bottom: var(--border-width) solid var(--lanthanides); }
+.Actinides {border-bottom: var(--border-width) solid var(--actinides)}
 
 h1 {margin: -3px auto; font-size: 2.3em}
 p{margin: auto; font-size: 1.1em; margin-bottom: 0} 
@@ -123,8 +130,7 @@ p.number {margin: 0; display: inline}
 
 @media only screen and (max-width: 978px) {
     .element p.number {display: inline; margin: 0; font-size: 0.5em;}
-    .description {font-size:0.8em}
-    select {height:10px; font-size:0.8em}
+    select {height:15px; font-size:0.8em}
     canvas#structure1 {transform: scale(0.9)}
     canvas#structure2 {transform: scale(0.9)}
     h1 {margin-bottom: 3px;}
@@ -134,14 +140,16 @@ p.number {margin: 0; display: inline}
     h1 {margin-bottom: 3px; font-size: 1.8em;}
 }
 @media only screen and (max-width: 726px) {
+    .structure {width: 100%}
     h1 {margin-bottom: 3px; font-size: 1.5em;}
     canvas#structure1 {transform: scale(0.7)}
     canvas#structure2 {transform: scale(0.7)}
-    .description {font-size: 0.5em; flex-direction: column;}
 }
 @media only screen and (max-width: 650px) {
+    .description {flex-direction: column;}
     .element p{margin: auto; font-size: 1.1em; margin-bottom: 0; display: inline}
     .element h1 {font-size: 2.3em; margin-top:0}
+    canvas#background, button {display: none}
     div.periodic-Table {
         --side: 7em;
         grid-template-columns: repeat(18, var(--side));
@@ -183,12 +191,12 @@ p.number {margin: 0; display: inline}
 
 .empty2 {
     grid-row: 7; grid-column:3;
-    color:white;
-    background-color:rgb(255, 103, 103)
+    color:var(--font-color);
+    border: 2px solid var(--actinides)
 }
 
 .empty1 {
     grid-column:3; grid-row: 6;
-    color: white;
+    color: var(--font-color);
     border: 2px solid var(--lanthanides)
 }

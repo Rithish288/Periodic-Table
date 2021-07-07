@@ -5,6 +5,9 @@ function toFarenheit(num) {
 function toKelvin(num) {
     return (num + 273.15).toPrecision(6)
 }
+
+/*<canvas id="structure2"></canvas>*/
+
 window.addEventListener('DOMContentLoaded', () => {
     const periodicTable = document.getElementById('periodic-Table');
     const remove = document.querySelector('button');
@@ -15,14 +18,9 @@ window.addEventListener('DOMContentLoaded', () => {
     let cProperties = document.querySelector('.c-properties');
     let particles = document.querySelector('.particles');
     let structure = document.querySelector('.structure');
-    let summary = document.querySelector('.summary')
-    let canvas1 = document.createElement('canvas');
-    let canvas2 = document.createElement('canvas');
-
-    canvas1.id = 'structure1';
-    canvas2.id = 'structure2';
-    structure.appendChild(canvas1)
-    structure.appendChild(canvas2)
+    let discovery = document.querySelector('.discovery');
+    let summary = document.querySelector('.summary');
+    let source = document.querySelector('.source');
 
     //Acessing the dom ↑ ↑ ↑
 
@@ -48,20 +46,23 @@ window.addEventListener('DOMContentLoaded', () => {
             elem.className = 'element' + ' n' + id + ' ' + element.category;
             elem.innerHTML = '<p class="number">' + element.atomicNumber + '</p>' + '<h1>' + element.symbol + '</h1>' + '<p>' + element.name + '</p>';
             periodicTable.appendChild(elem);
-            
+
             //Event listeners
             elem.addEventListener('click', () => {
                 name.classList = 'card ' + 'name ' + element.category
-                pProperties.classList = 'card ' + 'p-properties ' + element.category
-                cProperties.classList = 'card ' + 'c-properties ' + element.category
-                particles.classList = 'card ' + 'particles ' + element.category
-                structure.classList = 'card ' + 'structure ' + element.category
-                summary.classList = 'card ' + 'summary ' + element.category
+                pProperties.classList = 'card ' + 'p-properties ' + element.category;
+                cProperties.classList = 'card ' + 'c-properties ' + element.category;
+                particles.classList = 'card ' + 'particles ' + element.category;
+                structure.classList = 'card ' + 'structure ' + element.category;
+                discovery.classList = 'card ' + 'discovery ' + element.category;
+                summary.classList = 'card ' + 'summary ' + element.category;
+                source.classList = 'card ' + 'source ' + element.category;
                 if(id == element.atomicNumber) {
 
-
+                    structure.innerHTML = `<tag>Structure</tag> <br/> <br/>
+                    <canvas id="structure1"></canvas> `
                     
-                    name.innerHTML = ` <h3>${element.atomicNumber}</h3><br><br/>
+                    name.innerHTML = ` <h3>${element.atomicNumber}</h3> <br><br/>
                                     <h1>${element.symbol}</h1><br><br/>
                                     <h2>${element.name}</h2> `
                     pProperties.innerHTML = `<tag>Physical properties</tag> <br/><br/>
@@ -91,10 +92,16 @@ window.addEventListener('DOMContentLoaded', () => {
                                         <strong>Protons : </strong> ${element.atomicNumber} <br/><br/>
                                         <strong>Neutrons : </strong> ${Math.round(element.atomicMass) - element.atomicNumber}`
 
-                    summary.innerHTML = element.description 
+                    discovery.innerHTML = ` <tag>Discovery</tag> <br/><br/>
+                                            <strong>Discovered by : </strong>${element.discoveredBy} <br/><br/>
+                                            <strong>Discovered on : </strong>${element.discovered}`
 
-                    drawAtom(canvas1, element.atomicNumber, element.symbol);
-                    drawAtom(canvas2, element.atomicNumber, element.symbol);
+                    summary.innerHTML = element.description ;
+
+                    source.innerHTML = `<a href="https://en.wikipedia.org/wiki/${element.name}" target="_blank">Wikipedia</a>`
+
+                    drawAtom(document.querySelector('#structure1'), element.atomicNumber, element.symbol);
+                    // drawAtom(document.querySelector('#structure2'), element.atomicNumber, element.symbol);
 
                     const units = document.querySelectorAll('select');
                     units.forEach(unit => {
@@ -116,8 +123,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function drawAtom(canvas, electronCount, text) {
         let c = canvas.getContext('2d');
-        canvas.width = 200;
-        canvas.height = 200;
+        canvas.width = 400;
+        canvas.height = 300;
         // Utility Functions
         function randomIntFromRange(min, max) {
             return Math.floor(Math.random() * (max - min + 1) + min);
