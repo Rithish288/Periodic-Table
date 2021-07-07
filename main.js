@@ -7,11 +7,22 @@ function toKelvin(num) {
 }
 window.addEventListener('DOMContentLoaded', () => {
     const periodicTable = document.getElementById('periodic-Table');
-    const description = document.querySelector('#content');
-    const close = document.querySelector('#close')
-    const popup = document.querySelector('.description');
     const remove = document.querySelector('button');
     const bgCanvas = document.querySelector('canvas#background')
+
+    let name = document.querySelector('.name');
+    let pProperties = document.querySelector('.p-properties');
+    let cProperties = document.querySelector('.c-properties');
+    let particles = document.querySelector('.particles');
+    let structure = document.querySelector('.structure');
+    let summary = document.querySelector('.summary')
+    let canvas1 = document.createElement('canvas');
+    let canvas2 = document.createElement('canvas');
+
+    canvas1.id = 'structure1';
+    canvas2.id = 'structure2';
+    structure.appendChild(canvas1)
+    structure.appendChild(canvas2)
 
     //Acessing the dom ↑ ↑ ↑
 
@@ -24,10 +35,9 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     
-    document.body.removeChild(popup)
     
     let jsonData =  fetch('PeriodicTable.json')//Fetching data
-    .then(response => {
+    jsonData.then(response => {
         return response.json()
     })
     
@@ -40,50 +50,51 @@ window.addEventListener('DOMContentLoaded', () => {
             periodicTable.appendChild(elem);
             
             //Event listeners
+            elem.addEventListener('click', () => {
+                name.classList = 'card ' + 'name ' + element.category
+                pProperties.classList = 'card ' + 'p-properties ' + element.category
+                cProperties.classList = 'card ' + 'c-properties ' + element.category
+                particles.classList = 'card ' + 'particles ' + element.category
+                structure.classList = 'card ' + 'structure ' + element.category
+                summary.classList = 'card ' + 'summary ' + element.category
+                if(id == element.atomicNumber) {
 
 
+                    
+                    name.innerHTML = ` <h3>${element.atomicNumber}</h3><br><br/>
+                                    <h1>${element.symbol}</h1><br><br/>
+                                    <h2>${element.name}</h2> `
+                    pProperties.innerHTML = `<tag>Physical properties</tag> <br/><br/>
+                                            <strong>Appearance : </strong> ${element.appearance} <br/><br/>
+                                            <strong>State (STP) : </strong> ${element.state}`;
+                    
+                    cProperties.innerHTML = `<tag>Chemical properties</tag> <br/><br/>
+                                            <strong>Boiling-point : </strong> ${element.boilingPoint} 
+                                            <select>
+                                                <option value="°C" selected>°C</option>
+                                                <option value="°F">°F</option>
+                                                <option value="K">K</option>
+                                            </select>
+                                            <br/><br/>
+                                            <strong>Melting-point : </strong> ${element.meltingPoint} 
+                                            <select>
+                                                <option value="°C" selected>°C</option>
+                                                <option value="°F">°F</option>
+                                                <option value="K">K</option>
+                                            </select>
+                                            <br/><br/>
+                                            <strong>Density : </strong> ${element.density} <br/><br/>
+                                            <strong>Atomic mass : </strong> ${element.atomicMass} g/mol`;
+                            
+                    particles.innerHTML = `<tag>Particle data</tag> <br/><br/>
+                                        <strong>Electrons : </strong> ${element.atomicNumber} <br/><br/>
+                                        <strong>Protons : </strong> ${element.atomicNumber} <br/><br/>
+                                        <strong>Neutrons : </strong> ${Math.round(element.atomicMass) - element.atomicNumber}`
 
-                elem.addEventListener('click', () => {
-                    document.body.appendChild(popup)
-                    if (id == element.atomicNumber) {
-                        description.innerHTML =
-                        `<canvas id="properties"></canvas> <p>${element.name}</p>
-                        <strong>Atomic-mass : </strong> ${element.atomicMass} <br/> <br/>
-                        <strong>Appearance : </strong> ${element.appearance} <br/> <br/>
-                        <div class="melting-unit">
-                            <strong>Melting point : </strong> ${element.meltingPoint}
-                            <select>
-                                <ul>
-                                <li><option value="°C">°C</option></li>
-                                <li><option value="°F">°F</option></li>
-                                <li><option value="K">K</option></li>
-                                </ul>
-                            </select>
-                             <br/> <br/>
-                        </div>
-                        <div class="boiling-unit">
-                            <strong>Boiling point : </strong> ${element.boilingPoint}
-                            <select>
-                                <ul>
-                                <li><option value="°C">°C</option></li>
-                                <li><option value="°F">°F</option></li>
-                                <li><option value="K">K</option></li>
-                                </ul>
-                            </select> <br/> <br/>
-                        </div>
-                        <strong>Category : </strong> ${element.category} <br/> <br/>
-                        <strong>State (at STP) : </strong> ${element.state} <br/> <br/>
-                        <strong>Density (at STP) : </strong> ${element.density} <br/> <br/>
-                        <strong>Year discovered : </strong> ${element.discovered} <br/> <br/>
-                        <strong>Discovered by : </strong> ${element.discoveredBy} <br/> <br/>
-                        <strong>Description: </strong> <br/> ${element.description}`
-                        popup.style.display = 'flex';
-                        description.className = element.category;
-                        close.className = element.category
-                    }
+                    summary.innerHTML = element.description 
 
-                    const canvas = document.querySelector('canvas#properties');
-                    drawAtom(canvas, element.atomicNumber, element.symbol)
+                    drawAtom(canvas1, element.atomicNumber, element.symbol);
+                    drawAtom(canvas2, element.atomicNumber, element.symbol);
 
                     const units = document.querySelectorAll('select');
                     units.forEach(unit => {
@@ -98,7 +109,8 @@ window.addEventListener('DOMContentLoaded', () => {
                             } 
                         })
                     })
-                })
+                }
+            })
             });
         })
 
@@ -139,7 +151,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     c.font = '15px Verdana';
                     c.textAlign = 'center';
                     c.textBaseline = 'middle';
-                    c.fillStyle = 'black';
+                    c.fillStyle = 'white';
                     c.fillText(text, canvas.width / 2, canvas.height / 2);
                 };
             }
@@ -151,9 +163,9 @@ window.addEventListener('DOMContentLoaded', () => {
             var x = canvas.width / 2;
             var y = canvas.height / 2;
             var radius = 2;
-            atoms.push(new Atom(x, y, 15, 'white'))
+            atoms.push(new Atom(x, y, 15, 'black'))
             for (var i = 0; i < electronCount; i++) {
-                atoms.push(new Atom(x, y, radius, "white"))
+                atoms.push(new Atom(x, y, radius, "black"))
             }
         }
         function animate() {
@@ -166,7 +178,4 @@ window.addEventListener('DOMContentLoaded', () => {
         init();
         animate();
     }
-    close.addEventListener('click', () => {
-        document.body.removeChild(popup)
-    })
 })

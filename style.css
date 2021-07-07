@@ -6,22 +6,56 @@
 
 :root {
     --size: 4.1vw;
+    --font-color: black;
     --font-size: 50% ;
-    --alkali: rgb(255, 197, 111);
-    --alkali-earth: rgb(255, 192, 203);
-    --halogens: rgb(228, 116, 250);
-    --transitionMetals: rgb(238, 227, 73);
-    --lanthanides: rgb(85, 111, 255);
-    --noble-gases: rgb(18, 253, 124);
-    --metalloids: rgb(255, 142, 142);
-    --other: rgb(57, 242, 255);
+    --alkali: rgba(255, 197, 111, 1);
+    --alkali-earth: rgba(255, 192, 203, 1);
+    --halogens: rgb(255, 241, 117);
+    --transitionMetals: rgba(18, 253, 124, 1);
+    --lanthanides: rgb(121, 141, 255);
+    --noble-gases: rgba(228, 116, 250, 1);
+    --metalloids: rgba(255, 142, 142, 1);
+    --other: rgba(57, 242, 255, 1);
+    --border-width: 3px;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 80vw;
+    font-family: 'Quicksand';
+}
+
+tag {
+    background-color:grey;
+    color: white;
+    padding: 0.5em 1em;
+    opacity: 0.7;
+    border-radius: 100vw;    
+}
+
+.description .card { 
+    min-width: 100px;min-height:10px;
+    height: auto; font-size:1em;
+    padding: 1em 2em; text-align: justify;
+    background-color:white;
+    box-shadow: 0 3px 8px grey;
+    border-width: 5px;
+    margin: 1em;
+}
+
+.structure {
+    display: flex;
+    align-items: center; justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 button {
     padding: 0.5em;
     position: fixed;
     bottom: 5%;
-    border-radius: 10vw;
     left: 1%;;
 }
 
@@ -30,117 +64,52 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     max-width: 100vw;
-    overflow-x: auto;
-    overflow-y: auto;
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(0,0,0,1);
+    background-color:white;
 }
 
 
 div.periodic-Table {
     display: grid;
-    padding: 0 5em;
+    max-width: inherit;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: var(--font-size);
     grid-template-columns: repeat(18, calc(var(--size) + 5px));
     grid-template-rows: repeat(10, var(--size));
-    margin: auto auto;
-    grid-gap: 0.6em;
+    grid-gap: 0.5em;
+    margin: 2em auto;
+    overflow: auto
 }
-
 
 .element {
     display: flex;
     flex-direction: column;
+    text-overflow: ellipsis;
     justify-content: space-around;
-    position: relative;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.05);
-    color: white;
+    border-top: none; border-left: none;border-right: none;
+    color: var(--font-color);
     padding: 0.3em 0.5em;
     cursor: pointer;
 }
 
-select {
-    margin-left: 0.5em;
-    padding: 4px;
-    border-radius: 500px;
-    border: none;outline: none;
-    color: white;
-    background-color: rgba(214, 214, 214, 0.2)
-}
-
-option {
-    color: white;
-    background-color: rgb(0, 0, 0, 0.8);
-    font-size: 1.2em;
-}
-
-select:hover, select:focus {
-    outline: none;
-    border: none;
-}
 
 
-canvas#properties { position: absolute; top: 20%; left: 52%;}
+
 canvas#background { position: absolute; z-index: -1;}
 
 .none {display: none;}
 
-.description {
-    min-width: 100vw;
-    min-height: 100vh;
-    background-color:rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(3px);
-    color: white;
-    position: fixed;
-    align-items: center;
-    display: none;
-}
-
-.description #content p {
-    position: absolute;
-    top: 0; right: 0;
-    font-size: 2em;
-    padding:0.3em 1em;
-    text-decoration: underline;
-    text-shadow: 0 0 5px white;
-}
-#content {
-    margin: auto;
-    padding: 1em;
-    width: 40vw;
-    border-radius: 10px;
-    background-color: transparent;
-    position: relative;
-    font-family: 'Quicksand';
-    overflow: auto;
-    min-height: 10vh;
-}
-
-
-#close {
-    font-size: 150%;
-    top: 5%;
-    right: 0;
-    cursor: pointer;
-    position: absolute;
-    margin-right: 1em;
-    padding: 0.2em 0.5em;
-    border-radius: 50%;
-}
-
-.Noble-gases {border: 2px solid var(--noble-gases); box-shadow: 0 0 5px var(--noble-gases); }
-.Other-non-metals {border: 2px solid var(--other);  box-shadow: 0 0 5px var(--other);}
-.Alkali-Metals {border: 2px solid var(--alkali); box-shadow: 0 0 5px var(--alkali); }
-.Metalloids {border: 2px solid var(--metalloids); box-shadow: 0 0 5px var(--metalloids); }
-.Halogens {border: 2px solid var(--halogens); box-shadow: 0 0 5px var(--halogens); }
-.Alkaline-Earth-Metals {border: 2px solid var(--alkali-earth); box-shadow: 0 0 5px var(--alkali-earth); }
-.Transition-metals{border: 2px solid var(--transitionMetals); box-shadow: 0 0 5px var(--transitionMetals);}
-.Lanthanides{border: 2px solid var(--lanthanides); box-shadow: 0 0 5px var(--lanthanides);}
+.Noble-gases { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--noble-gases); }
+.Other-non-metals { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--other); }
+.Alkali-Metals { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--alkali); }
+.Metalloids { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--metalloids); }
+.Halogens { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--halogens); ; }
+.Alkaline-Earth-Metals { background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--alkali-earth); }
+.Transition-metals{ background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--transitionMetals); }
+.Lanthanides{ background-color: rgba(0, 0, 0, 0.03);border-bottom: var(--border-width) solid var(--lanthanides); }
 
 h1 {margin: -3px auto; font-size: 2.3em}
 p{margin: auto; font-size: 1.1em; margin-bottom: 0} 
@@ -148,25 +117,27 @@ p.number {margin: 0; display: inline}
 
 @media only screen and (max-width: 1024px) {
     h1 {font-size: 2em;}
+    select {font-size:1em}
     p{margin: auto; font-size: 0.7em; margin-bottom: 0}
 }
 
 @media only screen and (max-width: 978px) {
     .element p.number {display: inline; margin: 0; font-size: 0.5em;}
+    .description {font-size:0.8em}
+    select {height:10px; font-size:0.8em}
+    canvas#structure1 {transform: scale(0.9)}
+    canvas#structure2 {transform: scale(0.9)}
     h1 {margin-bottom: 3px;}
     .element p {display: none};
 }
 @media only screen and (max-width: 876px) {
-    .description {font-size: 0.8em}
-    .description #content p {font-size: 2em}
-    #close {top: 20%; right: 3%}
-    canvas#properties{transform: scale(0.7)}
     h1 {margin-bottom: 3px; font-size: 1.8em;}
 }
 @media only screen and (max-width: 726px) {
-    .description {font-size: 0.6em}
-    canvas#properties {transform: scale(0.6)}
     h1 {margin-bottom: 3px; font-size: 1.5em;}
+    canvas#structure1 {transform: scale(0.7)}
+    canvas#structure2 {transform: scale(0.7)}
+    .description {font-size: 0.5em; flex-direction: column;}
 }
 @media only screen and (max-width: 650px) {
     .element p{margin: auto; font-size: 1.1em; margin-bottom: 0; display: inline}
