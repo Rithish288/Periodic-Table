@@ -25,9 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Acessing the dom ↑ ↑ ↑
 
-    // window.setTimeout(() => {
-    //     alert('Use a Laptop or desktop for best user experience')
-    // }, 2000)
+    window.setTimeout(() => {
+        alert('Use a Laptop or desktop for best user experience')
+    }, 2000)
 
     remove.addEventListener('click', () => {
         bgCanvas.classList.toggle('none')
