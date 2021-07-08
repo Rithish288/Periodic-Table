@@ -181,18 +181,18 @@
     },
     {
         "atomicNumber": "13", 
-        "name": "Alumium", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
+        "name": "Aluminium", 
+        "atomicMass": "26.981", 
+        "symbol": "Al", 
+        "discovered": "1824",
+        "appearance": "silvery grey metallic",
+        "boilingPoint": "2470",
+        "meltingPoint": "660.32",
+        "discoveredBy": "Hans Christian Ørsted",
+        "density": "2.70 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
-        "state": "",
-        "description": ""
+        "state": "solid",
+        "description": "Aluminium has a density lower than those of other common metals, at approximately one third that of steel. It has a great affinity towards oxygen, and forms a protective layer of oxide on the surface when exposed to air. Aluminium visually resembles silver, both in its color and in its great ability to reflect light. It is soft, non-magnetic and ductile. It has one stable isotope, <sup>27</sup>Al; this isotope is very common, making aluminium the twelfth most common element in the Universe."
     },
     {
         "atomicNumber": "14", 
@@ -369,7 +369,7 @@
         "boilingPoint": "2061",
         "meltingPoint": "1246",
         "discoveredBy": "Carl Wilhelm Scheele",
-        "density": "7.21 g/cm3",
+        "density": "7.21 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solidsolid",
         "description": "Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent, as a rubber additive, in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide."
@@ -384,7 +384,7 @@
         "boilingPoint": "2862",
         "meltingPoint": "1538",
         "discoveredBy": "Unknown",
-        "density": "7.874 g/cm3",
+        "density": "7.874 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Iron is, by mass, the most common element on Earth, right in front of oxygen (32.1% and 30.1%, respectively), forming much of Earth's outer and inner core. It is the fourth most common element in the Earth's crust. In its metallic state, iron is rare in the Earth's crust, limited mainly to deposition by meteorites."
@@ -399,7 +399,7 @@
         "boilingPoint": "2927",
         "meltingPoint": "1495",
         "discoveredBy": "Georg Brandt",
-        "density": "8.90 g/cm3",
+        "density": "8.90 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Cobalt is found in the Earth's crust only in a chemically combined form, save for small deposits found in alloys of natural meteoric iron. Cobalt is primarily used in lithium-ion batteries, and in the manufacture of magnetic, wear-resistant and high-strength alloys."
@@ -414,7 +414,7 @@
         "boilingPoint": "2730",
         "meltingPoint": "1455",
         "discoveredBy": "Axel Fredrik Cronstedt",
-        "density": "8.908 g/cm3",
+        "density": "8.908 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": " Pure nickel, powdered to maximize the reactive surface area, shows a significant chemical activity, but larger pieces are slow to react with air under standard conditions because an oxide layer forms on the surface and prevents further corrosion. Even so, pure native nickel is found in Earth's crust only in tiny amounts."
@@ -429,7 +429,7 @@
         "boilingPoint": "2562",
         "meltingPoint": "1084.62",
         "discoveredBy": "Middle east",
-        "density": "8.96 g/cm3",
+        "density": "8.96 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "A freshly exposed surface of pure copper has a pinkish-orange color. Copper is used as a conductor of heat and electricity, as a building material, and as a constituent of various metal alloys, such as sterling silver used in jewelry, cupronickel used to make marine hardware and coins, and constantan used in strain gauges and thermocouples for temperature measurement."
@@ -444,25 +444,25 @@
         "boilingPoint": "907",
         "meltingPoint": "419.53",
         "discoveredBy": "Andreas Sigismund Marggraf",
-        "density": "7.14 g/cm3",
+        "density": "7.14 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Zinc is a slightly brittle metal at room temperature and has a silvery-greyish appearance when oxidation is removed. It is the 24th most abundant element in Earth's crust and has five stable isotopes. The mines of Rajasthan have given definite evidence of zinc production going back to the 6th century BC."
     },
     {
         "atomicNumber": "31", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
+        "name": "Gallium", 
+        "atomicMass": "69.723", 
+        "symbol": "Ga", 
+        "discovered": "1875",
+        "appearance": "silvery blue",
+        "boilingPoint": "2400",
+        "meltingPoint": "29.7646",
+        "discoveredBy": "Lecoq de Boisbaudran",
+        "density": "5.91 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "description": ""
+        "description": "Elemental gallium is a soft, silvery metal at standard temperature and pressure; however in its liquid state it becomes silvery white. If too much force is applied, the gallium may fracture conchoidally. Gallium does not occur as a free element in nature, but as gallium (III) compounds in trace amounts in zinc ores such as sphalerite and in bauxite. Gallium alloys are used in thermometers as a non-toxic and environmentally friendly alternative to mercury, and can withstand higher temperatures than mercury."
     },
     {
         "atomicNumber": "32", 
@@ -579,7 +579,7 @@
         "boilingPoint": "2930",
         "meltingPoint": "1526",
         "discoveredBy": "Johan Gadolin",
-        "density": "4.472 g/cm3",
+        "density": "4.472 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Yttrium is almost always found in combination with lanthanide elements in rare-earth minerals, and is never found in nature as a free element. Yttrium is also used in the production of electrodes, electrolytes, electronic filters, lasers, superconductors, various medical applications, and tracing various materials to enhance their properties."
@@ -594,7 +594,7 @@
         "boilingPoint": "4377",
         "meltingPoint": "1855",
         "discoveredBy": "Martin Heinrich Klaproth",
-        "density": "6.52 g/cm3",
+        "density": "6.52 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Zirconium is mainly used as a refractory and opacifier, although small amounts are used as an alloying agent for its strong resistance to corrosion. Zirconium forms a variety of inorganic and organometallic compounds such as zirconium dioxide and zirconocene dichloride, respectively. Five isotopes occur naturally, three of which are stable."
@@ -609,7 +609,7 @@
         "boilingPoint": "4744",
         "meltingPoint": "2477",
         "discoveredBy": "Charles Hatchett",
-        "density": "8.57 g/cm3",
+        "density": "8.57 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Niobium oxidizes in the earth's atmosphere very slowly, hence its application in jewelry as a hypoallergenic alternative to nickel. It is used mostly in alloys, the largest part in special steel such as that used in gas pipelines. Although these alloys contain a maximum of 0.1%, the small percentage of niobium enhances the strength of the steel."
@@ -624,7 +624,7 @@
         "boilingPoint": "4639",
         "meltingPoint": "2623",
         "discoveredBy": "Carl Wilhelm Scheele",
-        "density": "10.28 g/cm3",
+        "density": "10.28 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Molybdenum does not occur naturally as a free metal on Earth; it is found only in various oxidation states in minerals. It readily forms hard, stable carbides in alloys, and for this reason most of the world production of the element is used in steel alloys, including high-strength alloys and superalloys."
@@ -639,7 +639,7 @@
         "boilingPoint": "4265",
         "meltingPoint": "2157",
         "discoveredBy": "Emilio Segrè and Carlo Perrier",
-        "density": "11 g/cm3",
+        "density": "11 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Naturally occurring technetium is a spontaneous fission product in uranium ore and thorium ore, the most common source, or the product of neutron capture in molybdenum ores. Many of technetium's properties had been predicted by Dmitri Mendeleev before it was discovered."
@@ -654,7 +654,7 @@
         "boilingPoint": "4150",
         "meltingPoint": "2334",
         "discoveredBy": "Karl Ernst Claus ",
-        "density": "12.45 g/cm3",
+        "density": "12.45 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Ruthenium is usually found as a minor component of platinum ores. Most ruthenium produced is used in wear-resistant electrical contacts and thick-film resistors. A minor application for ruthenium is in platinum alloys and as a chemistry catalyst.  Ruthenium is also used in some advanced high-temperature single-crystal superalloys, with applications that include the turbines in jet engines."
@@ -669,7 +669,7 @@
         "boilingPoint": "3695",
         "meltingPoint": "1964",
         "discoveredBy": "William Hyde Wollaston",
-        "density": "12.41 g/cm3",
+        "density": "12.41 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Rhodium is an extraordinarily rare, silvery-white, hard, corrosion-resistant, and chemically inert transition metal. Naturally occurring rhodium is usually found as a free metal, as an alloy with similar metals, and rarely as a chemical compound in minerals"
@@ -684,7 +684,7 @@
         "boilingPoint": "2963",
         "meltingPoint": "1554.9",
         "discoveredBy": "William Hyde Wollaston",
-        "density": "12.023 g/cm3",
+        "density": "12.023 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "More than half the supply of palladium and its congener platinum is used in catalytic converters, which convert as much as 90% of the harmful gases in automobile exhaust into less noxious substances. Palladium is a key component of fuel cells, which react hydrogen with oxygen to produce electricity, heat, and water.  It is soft and ductile when annealed and is greatly increased in strength and hardness when cold-worked. "
@@ -699,7 +699,7 @@
         "boilingPoint": "2162",
         "meltingPoint": "961.78",
         "discoveredBy": "ancient Greeks and Turks",
-        "density": "10.49 g/cm3",
+        "density": "10.49 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Silver exhibits the highest electrical conductivity, thermal conductivity, and reflectivity of any metal. The metal is found in the Earth's crust in the pure, free elemental form, as an alloy with gold and other metals, and in minerals such as argentite and chlorargyrite. Other than in currency, silver is used in solar panels, water filtration, jewellery, ornaments, utensils, conductors, specialized mirrors, as a colorant in stained glass, etc."
@@ -714,40 +714,40 @@
         "boilingPoint": "767",
         "meltingPoint": "321.07",
         "discoveredBy": "Karl Samuel Leberecht Hermann and Friedrich Stromeyer",
-        "density": "8.65 g/cm3",
+        "density": "8.65 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Cadmium occurs as a minor component in most zinc ores and is a byproduct of zinc production. Cadmium was used for a long time as a corrosion-resistant plating on steel, and cadmium compounds are used as red, orange and yellow pigments, to color glass, and to stabilize plastic. Its use is generally decreasing because it is toxic. "
     },
     {
         "atomicNumber": "49", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
+        "name": "Indium", 
+        "atomicMass": "114.818", 
+        "symbol": "In", 
+        "discovered": "1863",
+        "appearance": "Silvery lustrous gray",
+        "boilingPoint": "2072",
+        "meltingPoint": "156.5985",
+        "discoveredBy": "Ferdinand Reich and Hieronymous Theodor Richter ",
+        "density": "7.31 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "description": ""
+        "description": "Indium is the softest metal that is not an alkali metal. It is a silvery-white metal that resembles tin in appearance. It is a post-transition metal that makes up 0.21 parts per million of the Earth's crust. Indium is a minor component in zinc sulfide ores and is produced as a byproduct of zinc refinement. It is most notably used in the semiconductor industry, in low-melting-point metal alloys such as solders, and in the production of transparent conductive coatings of indium tin oxide (ITO) on glass."
     },
     {
         "atomicNumber": "50", 
-        "name": "Oxygen", 
-        "atomicMass": "14.0067", 
-        "symbol": "N", 
-        "discovered": "1772",
-        "appearance": "",
-        "boilingPoint": "",
-        "meltingPoint": "",
-        "discoveredBy": "",
-        "density": "",
+        "name": "Tin", 
+        "atomicMass": "118.710", 
+        "symbol": "Sn", 
+        "discovered": "around 35th century BC",
+        "appearance": "silvery white",
+        "boilingPoint": "2602",
+        "meltingPoint": "231.93",
+        "discoveredBy": "Unknown",
+        "density": "7.265 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "description": ""
+        "description": "Tin is a silvery metal that characteristically has a faint yellow hue. Tin, like indium, is soft enough to be cut without much force. When a bar of tin is bent, the so-called “tin cry” can be heard as a result of twinning in tin crystals; this trait is shared by indium, cadmium, zinc, and frozen mercury. Pure tin after solidifying keeps a mirror-like appearance similar to most metals. However, in most tin alloys, the metal solidifies with a dull gray color."
     },
     {
         "atomicNumber": "51", 
@@ -849,7 +849,7 @@
         "boilingPoint": "3464",
         "meltingPoint": "920",
         "discoveredBy": "Carl Gustaf Mosander",
-        "density": "6.162 g/cm3",
+        "density": "6.162 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Lanthanum is traditionally counted among the rare earth elements. The usual oxidation state is +3. Lanthanum has no biological role in humans but is essential to some bacteria. It is not particularly toxic to humans but does show some antimicrobial activity."
@@ -864,7 +864,7 @@
         "boilingPoint": "3443",
         "meltingPoint": "795",
         "discoveredBy": "Martin Heinrich Klaproth, Jöns Jakob Berzelius and Wilhelm Hisinger",
-        "density": "6.770 g/cm3",
+        "density": "6.770 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Cerium is metal that tarnishes when exposed to air, and it is soft enough to be cut with a steel kitchen knife. Despite always occurring in combination with the other rare-earth elements in minerals, cerium is easy to extract from its ores, as it can be distinguished among the other lanthanides by its unique ability to be oxidized."
@@ -879,7 +879,7 @@
         "boilingPoint": "3130",
         "meltingPoint": "935",
         "discoveredBy": "Carl Auer von Welsbach",
-        "density": "6.77 g/cm3",
+        "density": "6.77 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Praseodymium is a soft, malleable and ductile metal, valued for its magnetic, electrical, chemical, and optical properties. It is too reactive to be found in native form, and pure praseodymium metal slowly develops a green oxide coating when exposed to air. Praseodymium always occurs naturally together with the other rare-earth metals. It is the fourth most common rare-earth element, making up 9.1 parts per million of the Earth's crust."
@@ -894,7 +894,7 @@
         "boilingPoint": "307",
         "meltingPoint": "1024",
         "discoveredBy": "Carl Auer von Welsbach",
-        "density": "7.01 g/cm3",
+        "density": "7.01 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Neodymium is a hard, slightly malleable silvery metal that quickly tarnishes in air and moisture. When oxidized, neodymium reacts quickly to produce pink, purple/blue and yellow compounds in the +2, +3 and +4 oxidation states. Although neodymium is classed as a rare-earth element, it is fairly common, no rarer than cobalt, nickel, or copper, and is widely distributed in the Earth's crust."
@@ -909,7 +909,7 @@
         "boilingPoint": "3000",
         "meltingPoint": "1042",
         "discoveredBy": "Charles D. Coryell, Jacob A. Marinsky and Lawrence E. Glendenin",
-        "density": "7.26 g/cm3",
+        "density": "7.26 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "All of promethium's isotopes are radioactive; it is extremely rare, with only about 500–600 grams naturally occurring in Earth's crust at any given time. Because natural promethium is exceedingly scarce, it is typically synthesized by bombarding uranium-235 (enriched uranium) with thermal neutrons to produce promethium-147 as a fission product."
@@ -924,7 +924,7 @@
         "boilingPoint": "1900",
         "meltingPoint": "1072",
         "discoveredBy": "Lecoq de Boisbaudran",
-        "density": "7.52 g/cm3",
+        "density": "7.52 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Samarium is a moderately hard silvery metal that slowly oxidizes in air. The major commercial application of samarium is in samarium–cobalt magnets, which have permanent magnetization second only to neodymium magnets. The radioactive isotope samarium-153 is the active component of the drug samarium lexidronam, which kills cancer cells in the treatment of lung cancer, prostate cancer, breast cancer and osteosarcoma."
@@ -939,7 +939,7 @@
         "boilingPoint": "1529",
         "meltingPoint": "826",
         "discoveredBy": "Eugène-Anatole Demarçay",
-        "density": "5.264 g/cm3",
+        "density": "5.264 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Europium is the most reactive lanthanide by far, having to be stored under an inert fluid to protect it from atmospheric oxygen or moisture. Europium is also the softest lanthanide, as it can be dented with a fingernail and easily cut with a knife. When oxidation is removed a shiny-white metal is visible."
@@ -954,7 +954,7 @@
         "boilingPoint": "3000",
         "meltingPoint": "1312",
         "discoveredBy": "Jean Charles Galissard de Marignac",
-        "density": "7.90 g/cm3",
+        "density": "7.90 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Gadolinium is a silvery-white metal when oxidation is removed. It is only slightly malleable and is a ductile rare-earth element. It reacts with atmospheric oxygen or moisture slowly to form a black coating. When separated, it usually has impurities of the other rare-earths because of their similar chemical properties."
@@ -969,7 +969,7 @@
         "boilingPoint": "3123",
         "meltingPoint": "1356",
         "discoveredBy": "Carl Gustaf Mosander",
-        "density": "8.23 g/cm3",
+        "density": "8.23 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "The ninth member of the lanthanide series, terbium is a fairly electropositive metal that reacts with water, evolving hydrogen gas. Terbium is never found in nature as a free element, but it is contained in many minerals, including cerite, gadolinite, etc. Most of the world's terbium supply is used in green phosphors. Terbium oxide is in fluorescent lamps and television and monitor cathode ray tubes (CRTs)."
@@ -984,7 +984,7 @@
         "boilingPoint": "2562",
         "meltingPoint": "1407",
         "discoveredBy": "Lecoq de Boisbaudran",
-        "density": "8.540 g/cm3",
+        "density": "8.540 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Dysprosium is a rare-earth element with a metallic silver luster. It is never found in nature as a free element, though it is found in various minerals. Naturally occurring dysprosium is composed of seven isotopes. It is used for its high thermal neutron absorption cross-section in making control rods in nuclear reactors, for its high magnetic susceptibility in data-storage applications."
@@ -999,7 +999,7 @@
         "boilingPoint": "2600",
         "meltingPoint": "1461",
         "discoveredBy": "Jacques-Louis Soret and Marc Delafontaine",
-        "density": "8.79 g/cm3",
+        "density": "8.79 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Elemental holmium is a relatively soft and malleable silvery-white metal. It is too reactive to be found uncombined in nature, but when isolated, is relatively stable in dry air at room temperature. However, it reacts with water and corrodes readily and also burns in air when heated."
@@ -1014,7 +1014,7 @@
         "boilingPoint": "2868",
         "meltingPoint": "1529",
         "discoveredBy": "Carl Gustaf Mosander",
-        "density": "9.066 g/cm3",
+        "density": "9.066 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Erbium is a silvery-white solid metal when artificially isolated, natural erbium is always found in chemical combination with other elements. It is a lanthanide, a rare earth element, originally found in the gadolinite mine in Ytterby in Sweden, from which it got its name."
@@ -1029,7 +1029,7 @@
         "boilingPoint": "1950",
         "meltingPoint": "1545",
         "discoveredBy": "Per Teodor Cleve",
-        "density": "9.32 g/cm3",
+        "density": "9.32 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Thulium is the second-least abundant of the lanthanides, after radioactively unstable promethium which is only found in trace quantities on Earth. It is fairly soft and slowly tarnishes in air. Despite its high price and rarity, thulium is used as the radiation source in portable X-ray devices, and in some solid-state lasers."
@@ -1044,7 +1044,7 @@
         "boilingPoint": "1196",
         "meltingPoint": "824",
         "discoveredBy": "Jean Charles Galissard de Marignac ",
-        "density": "6.90 g/cm3",
+        "density": "6.90 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Ytterbium is a soft, malleable and ductile chemical element that displays a bright silvery luster when pure. It is a rare-earth element, and it is readily dissolved by the strong mineral acids. It reacts slowly with cold water and it oxidizes slowly in air."
@@ -1059,7 +1059,7 @@
         "boilingPoint": "3402",
         "meltingPoint": "1652",
         "discoveredBy": "Carl Auer von Welsbach and Georges Urbain",
-        "density": "9.841 g/cm3",
+        "density": "9.841 g/cm<sup>3</sup>",
         "category": "Lanthanides",
         "state": "solid",
         "description": "Lutetium is not a particularly abundant element, although it is significantly more common than silver in the earth's crust. It is a silvery white metal, which resists corrosion in dry air, but not in moist air. Lutetium usually occurs in association with the element yttrium and is sometimes used in metal alloys and as a catalyst in various chemical reactions. "
@@ -1074,7 +1074,7 @@
         "boilingPoint": "4603",
         "meltingPoint": "2233",
         "discoveredBy": "Dirk Coster and George de Hevesy ",
-        "density": "13.31 g/cm3",
+        "density": "13.31 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Hafnium's large neutron capture cross section makes it a good material for neutron absorption in control rods in nuclear power plants. Some superalloys used for special applications contain hafnium in combination with niobium, titanium, or tungsten."
@@ -1089,7 +1089,7 @@
         "boilingPoint": "5458",
         "meltingPoint": "3017",
         "discoveredBy": "Anders Gustaf Ekeberg",
-        "density": "16.69 g/cm3",
+        "density": "16.69 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Tantalum is a rare, hard, blue-gray, lustrous transition metal that is highly corrosion-resistant. It is part of the refractory metals group, which are widely used as minor components in alloys. The chemical inertness of tantalum makes it a valuable substance for laboratory equipment, and as a substitute for platinum."
@@ -1104,7 +1104,7 @@
         "boilingPoint": "5930",
         "meltingPoint": "3422",
         "discoveredBy": "Juan José Elhuyar and Fausto Elhuyar",
-        "density": "19.3 g/cm3",
+        "density": "19.3 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Tungsten is remarkable for its robustness, especially the fact that it has the highest melting point of all the elements discovered. Tungsten occurs in many alloys, which have numerous applications, including incandescent light bulb filaments, X-ray tubes, etc. Its hardness and high density make it suitable for military applications in penetrating projectiles."
@@ -1119,7 +1119,7 @@
         "boilingPoint": "5630",
         "meltingPoint": "3186",
         "discoveredBy": "Walter Noddack, Ida Noddack, Otto Berg",
-        "density": "21.02 g/cm3",
+        "density": "21.02 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Rhenium is one of the rarest elements in the Earth's crust. It has the third-highest melting point and second-highest boiling point of any stable element. Rhenium is an excellent catalyst for hydrogenation and isomerization, and is used for example in catalytic reforming of naphtha for use in gasoline."
@@ -1134,7 +1134,7 @@
         "boilingPoint": "5012",
         "meltingPoint": "3033",
         "discoveredBy": "Smithson Tennant",
-        "density": "22.59 g/cm3",
+        "density": "22.59 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Osmium is found as a trace element in alloys, mostly in platinum ores. Manufacturers use its alloys with platinum, iridium, and other platinum-group metals to make fountain pen nib tipping, electrical contacts, and in other applications that require extreme durability and hardness. It is estimated to be about 0.6 parts per billion in the universe and is therefore the rarest precious metal."
@@ -1149,7 +1149,7 @@
         "boilingPoint": "4130",
         "meltingPoint": "2446",
         "discoveredBy": "Smithson Tennant",
-        "density": "22.56 g/cm3",
+        "density": "22.56 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Iridium is considered to be the second-densest metal as defined by experimental X-ray crystallography. It is the most corrosion-resistant metal, even at temperatures as high as 2000 °C. Although only certain molten salts and halogens are corrosive to solid iridium, finely divided iridium dust is much more reactive and can be flammable."
@@ -1164,7 +1164,7 @@
         "boilingPoint": "3825",
         "meltingPoint": "1768.3",
         "discoveredBy": "Antonio de Ulloa",
-        "density": "21.45 g/cm3",
+        "density": "21.45 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Platinum is one of the rarer elements in Earth's crust, with an average abundance of approximately 5 μg/kg. It occurs in some nickel and copper ores along with some native deposits. Because of its scarcity in Earth's crust, only a few hundred tonnes are produced annually, and given its important uses, it is highly valuable and is a major precious metal commodity."
@@ -1179,7 +1179,7 @@
         "boilingPoint": "2970",
         "meltingPoint": "1064.18",
         "discoveredBy": "Middle east",
-        "density": "19.30 g/cm3",
+        "density": "19.30 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Gold often occurs in free elemental (native) form, as nuggets or grains, in rocks, in veins, and in alluvial deposits. Gold is resistant to most acids, though it does dissolve in aqua regia (a mixture of nitric acid and hydrochloric acid), which forms a soluble tetrachloroaurate anion."
@@ -1194,7 +1194,7 @@
         "boilingPoint": "356.73",
         "meltingPoint": "-38.829",
         "discoveredBy": "Ancient Egyptians(maybe ancient Hindus or Chinese)",
-        "density": "13.534 g/cm3",
+        "density": "13.534 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "liquid",
         "description": "Mercury is used in thermometers, barometers, manometers, sphygmomanometers, etc, though concerns about the element's toxicity have led to mercury thermometers and sphygmomanometers being largely phased out in clinical environments in favor of other alternatives. Mercury remains in use in scientific research applications in some locales. It is also used in fluorescent lighting and other devices. "
@@ -1209,7 +1209,7 @@
         "boilingPoint": "1473",
         "meltingPoint": "304",
         "discoveredBy": "William Crookes",
-        "density": "11.85 g/cm3",
+        "density": "11.85 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
         "description": "Thallium is a gray post-transition metal that is not found free in nature. When isolated, thallium resembles tin, but discolors when exposed to air. Commercially, thallium is produced not from potassium ores, but as a byproduct from refining of heavy-metal sulfide ores. Approximately 60–70% of thallium production is used in the electronics industry, and the remainder is used in the pharmaceutical industry and in glass manufacturing. It is also used in infrared detectors."
@@ -1224,7 +1224,7 @@
         "boilingPoint": "1749",
         "meltingPoint": "327.46",
         "discoveredBy": "Middle East",
-        "density": "11.34 g/cm3",
+        "density": "11.34 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
         "description": "Lead is a heavy metal that is denser than most common materials. Lead is soft and malleable, and also has a relatively low melting point. When freshly cut, lead is silvery with a hint of blue; it tarnishes to a dull gray color when exposed to air. Lead has the highest atomic number of any stable element. Lead is a neurotoxin that accumulates in soft tissues and bones; it damages the nervous system and interferes with the function of biological enzymes, causing neurological disorders, such as brain damage and behavioral problems."
@@ -1239,7 +1239,7 @@
         "boilingPoint": "1564",
         "meltingPoint": "271.5",
         "discoveredBy": "Arabic alchemists",
-        "density": "9.78 g/cm3",
+        "density": "9.78 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
         "description": "Elemental bismuth may occur naturally, although its sulfide and oxide form important commercial ores. The free element is 86% as dense as lead. It is a brittle metal with a silvery-white color when freshly produced, but surface oxidation can give it an iridescent tinge in numerous colours. Bismuth is the most naturally diamagnetic element and has one of the lowest values of thermal conductivity among metals."
@@ -1329,7 +1329,7 @@
         "boilingPoint": "3200",
         "meltingPoint": "1227",
         "discoveredBy": "Friedrich Oskar Giesel",
-        "density": "10 g/cm3",
+        "density": "10 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Actinium is a soft, silvery-white radioactive metal, actinium reacts rapidly with oxygen and moisture in air forming a white coating of actinium oxide that prevents further oxidation. As with most lanthanides and many actinides, actinium assumes oxidation state +3 in nearly all its chemical compounds."
@@ -1344,7 +1344,7 @@
         "boilingPoint": "4788",
         "meltingPoint": "1750",
         "discoveredBy": "Jöns Jakob Berzelius",
-        "density": "11.7 g/cm3",
+        "density": "11.7 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Thorium is silvery and tarnishes black when it is exposed to air, forming thorium dioxide; it is moderately soft, malleable, and has a high melting point. Thorium is an electropositive actinide whose chemistry is dominated by the +4 oxidation state; it is quite reactive and can ignite in air when finely divided. On Earth, thorium and uranium are the only significantly radioactive elements that still occur naturally in large quantities as primordial elements."
@@ -1359,7 +1359,7 @@
         "boilingPoint": "4027",
         "meltingPoint": "1568",
         "discoveredBy": "Kasimir Fajans and Oswald Helmuth Göhring",
-        "density": "15.37 g/cm3",
+        "density": "15.37 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Protactinium is a dense, silvery-gray actinide metal which readily reacts with oxygen, water vapor and inorganic acids. Concentrations of protactinium in the Earth's crust are typically a few parts per trillion, but may reach up to a few parts per million in some uraninite ore deposits. Because of its scarcity, high radioactivity and high toxicity, there are currently no uses for protactinium outside scientific research."
@@ -1374,7 +1374,7 @@
         "boilingPoint": "4131",
         "meltingPoint": "1132.2",
         "discoveredBy": "Martin Heinrich Klaproth",
-        "density": "19.1 g/cm3",
+        "density": "19.1 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Uranium is weakly radioactive because all isotopes of uranium are unstable. Uranium has the highest atomic weight of the primordially occurring elements. Its density is about 70% higher than that of lead, and slightly lower than that of gold or tungsten. It occurs naturally in low concentrations of a few parts per million in soil, rock and water, and is commercially extracted from uranium-bearing minerals such as uraninite."
@@ -1389,7 +1389,7 @@
         "boilingPoint": "4174",
         "meltingPoint": "639",
         "discoveredBy": "Edwin McMillan and Philip H. Abelson ",
-        "density": "20.45 g/cm3",
+        "density": "20.45 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Neptunium metal is silvery and tarnishes when exposed to air. The element occurs in three allotropic forms and it normally exhibits five oxidation states. It is radioactive, poisonous, pyrophoric, and capable of accumulating in bones, which makes the handling of neptunium dangerous. The longest-lived isotope of neptunium, neptunium-237, is a by-product of nuclear reactors and plutonium production."
@@ -1404,7 +1404,7 @@
         "boilingPoint": "3228",
         "meltingPoint": "639.4",
         "discoveredBy": "Glenn T. Seaborg, Arthur Wahl, Joseph W. Kennedy and Edwin McMillan",
-        "density": "19.85 g/cm3",
+        "density": "19.85 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Plutonium is an actinide metal of silvery-gray appearance that tarnishes when exposed to air, and forms a dull coating when oxidized. The element normally exhibits six allotropes and four oxidation states. When exposed to moist air, it forms oxides and hydrides that can expand the sample up to 70% in volume, which in turn flake off as a powder that is pyrophoric. It is radioactive and can accumulate in bones, which makes the handling of plutonium dangerous."
@@ -1419,7 +1419,7 @@
         "boilingPoint": "2607",
         "meltingPoint": "1176",
         "discoveredBy": "Glenn T. Seaborg, Ralph A. James, Leon O. Morgan and Albert Ghiorso",
-        "density": "12 g/cm3",
+        "density": "12 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Most americium is produced by uranium or plutonium being bombarded with neutrons in nuclear reactors – one tonne of spent nuclear fuel contains about 100 grams of americium. It is widely used in commercial ionization chamber smoke detectors, as well as in neutron sources and industrial gauges. Several unusual applications, such as nuclear batteries or fuel for space ships with nuclear propulsion, have been proposed for the isotope <sup>242</sup>Am."
@@ -1434,7 +1434,7 @@
         "boilingPoint": "3110",
         "meltingPoint": "1340",
         "discoveredBy": "Glenn T. Seaborg, Ralph A. James and Albert Ghiorso",
-        "density": "13.51 g/cm3",
+        "density": "13.51 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "This element of the actinide series was named after Marie and Pierre Curie, both known for their research on radioactivity. All known isotopes of curium are radioactive and have a small critical mass for a sustained nuclear chain reaction. They predominantly emit α-particles, and the heat released in this process can serve as a heat source in radioisotope thermoelectric generators."
@@ -1449,7 +1449,7 @@
         "boilingPoint": "2627",
         "meltingPoint": "986",
         "discoveredBy": "Lawrence Berkeley National Laboratory",
-        "density": "14.78 g/cm3",
+        "density": "14.78 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Just over one gram of berkelium has been produced in the United States since 1967. There is no practical application of berkelium outside scientific research. Berkelium is a soft, silvery-white, radioactive metal. The berkelium-249 isotope emits low-energy electrons and thus is relatively safe to handle."
@@ -1464,7 +1464,7 @@
         "boilingPoint": "1470",
         "meltingPoint": "900",
         "discoveredBy": "Lawrence Berkeley National Laboratory ",
-        "density": "15.1 g/cm3",
+        "density": "15.1 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Californium is one of the few transuranium elements that have practical applications. Most of these applications exploit the property of certain isotopes of californium to emit neutrons. For example, californium can be used to help start up nuclear reactors, and it is employed as a source of neutrons when studying materials using neutron diffraction and neutron spectroscopy."
@@ -1479,7 +1479,7 @@
         "boilingPoint": "996",
         "meltingPoint": "860",
         "discoveredBy": "Lawrence Berkeley National Laboratory",
-        "density": "8.84 g/cm3",
+        "density": "8.84 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Einsteinium was discovered as a component of the debris of the first hydrogen bomb explosion in 1952. Its most common isotope einsteinium-253 (half-life 20.47 days) is produced artificially from decay of californium-253 in a few dedicated high-power nuclear reactors with a total yield on the order of one milligram per year."
@@ -1494,7 +1494,7 @@
         "boilingPoint": "Unknown",
         "meltingPoint": "1527",
         "discoveredBy": "Lawrence Berkeley National Laboratory ",
-        "density": "9.7 g/cm3",
+        "density": "9.7 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Fermium is the heaviest element that can be formed by neutron bombardment of lighter elements, and hence the last element that can be prepared in macroscopic quantities, although pure fermium metal has not yet been prepared. A total of 19 isotopes are known, with <sup>257</sup>Fm being the longest-lived with a half-life of 100.5 days."
@@ -1509,7 +1509,7 @@
         "boilingPoint": "Unknown",
         "meltingPoint": "827",
         "discoveredBy": "Lawrence Berkeley National Laboratory ",
-        "density": "10.3 g/cm3",
+        "density": "10.3 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Mendelevium was discovered by bombarding einsteinium with alpha particles in 1955, the same method still used to produce it today. It was named after Dmitri Mendeleev, father of the periodic table of the chemical elements. Using available microgram quantities of the isotope einsteinium-253, over a million mendelevium atoms may be produced each hour."
@@ -1524,7 +1524,7 @@
         "boilingPoint": "Unknown",
         "meltingPoint": "827",
         "discoveredBy": "Joint Institute for Nuclear Research ",
-        "density": "9.9 g/cm3",
+        "density": "9.9 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Nobelium is named in honor of Alfred Nobel, the inventor of dynamite and benefactor of science. Like all elements with atomic number over 100, nobelium can only be produced in particle accelerators by bombarding lighter elements with charged particles. A total of twelve nobelium isotopes are known to exist. The chemical properties of nobelium are not completely known: they are mostly only known in aqueous solution."
@@ -1539,7 +1539,7 @@
         "boilingPoint": "Unknown",
         "meltingPoint": "1627",
         "discoveredBy": "Joint Institute for Nuclear Research",
-        "density": "14.4 g/cm3",
+        "density": "14.4 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
         "description": "Like all elements with atomic number over 100, lawrencium can only be produced in particle accelerators by bombarding lighter elements with charged particles. Fourteen isotopes of lawrencium are currently known; the most stable is <sup>266</sup>Lr with a half-life of 11 hours. Lawrencium is named in honor of Ernest Lawrence, inventor of the cyclotron, a device that was used to discover many artificial radioactive elements."
@@ -1554,7 +1554,7 @@
         "boilingPoint": "5500",
         "meltingPoint": "2100",
         "discoveredBy": "Joint Institute for Nuclear Research",
-        "density": "17 g/cm3",
+        "density": "17 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Rutherfordium is a synthetic chemical element that can only be created in a laboratory. Rutherfordium has no stable or naturally occurring isotopes. Several radioactive isotopes have been synthesized in the laboratory, either by fusing two atoms or by observing the decay of heavier elements."
@@ -1569,7 +1569,7 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Lawrence Berkeley Laboratory and the Joint Institute for Nuclear Research ",
-        "density": "21.6 g/cm3",
+        "density": "21.6 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Dubnium does not occur naturally on Earth and is produced artificially. Chemistry experiments have revealed that dubnium often behaves more like niobium rather than tantalum, breaking periodic trends."
@@ -1584,7 +1584,7 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Lawrence Berkeley National Laboratory",
-        "density": "23–24 g/cm3",
+        "density": "23–24 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "As a synthetic element, it can be created in a laboratory but is not found in nature. It is also radioactive; the most stable known isotope, 269Sg, has a half-life of approximately 14 minutes. The chemical properties of seaborgium are characterized only partly, but they compare well with the chemistry of the other group 6 elements."
@@ -1599,7 +1599,7 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Gesellschaft für Schwerionenforschung",
-        "density": "26–27 g/cm3",
+        "density": "26–27 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Bohrium is named after Danish physicist Niels Bohr. As a synthetic element, it can be created in a laboratory but is not found in nature. All known isotopes of bohrium are extremely radioactive."
@@ -1614,7 +1614,7 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Gesellschaft für Schwerionenforschung",
-        "density": "27–29 g/cm3",
+        "density": "27–29 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Hassium is highly radioactive; its most stable known isotopes have half-lives of approximately ten seconds. Hassium is a superheavy element; it has been produced in a laboratory only in very small quantities by fusing heavy nuclei with lighter ones. Natural occurrences of the element have been hypothesised but never found."
@@ -1629,7 +1629,7 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Gesellschaft für Schwerionenforschung",
-        "density": "27–28 g/cm3",
+        "density": "27–28 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Meitnerium is an extremely radioactive synthetic element (an element not found in nature, but can be created in a laboratory). The most stable known isotope, meitnerium-278, has a half-life of 4.5 seconds, although the unconfirmed meitnerium-282 may have a longer half-life of 67 seconds."
@@ -1644,7 +1644,7 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Gesellschaft für Schwerionenforschung",
-        "density": "26–27 g/cm3",
+        "density": "26–27 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Darmstadtium is an extremely radioactive synthetic element. The most stable known isotope, darmstadtium-281, has a half-life of approximately 12.7 seconds. Darmstadtium is calculated to have similar properties to its lighter homologues, nickel, palladium, and platinum."
@@ -1659,7 +1659,7 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Gesellschaft für Schwerionenforschung",
-        "density": "22–24 g/cm3",
+        "density": "22–24 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
         "description": "Roentgenium is an extremely radioactive synthetic element that can be created in a laboratory but is not found in nature. Only a few roentgenium atoms have ever been synthesized, and they contain no current practical application beyond that of scientific study."
@@ -1674,7 +1674,7 @@
         "boilingPoint": "67 ± 10",
         "meltingPoint": "10 ± 11",
         "discoveredBy": "Gesellschaft für Schwerionenforschung",
-        "density": "14.0 g/cm3",
+        "density": "14.0 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "liquid(predicted)",
         "description": "During reactions with gold, it has been shown to be an extremely volatile substance, so much so that it is possibly a gas or a volatile liquid at standard temperature and pressure. Predictions vary on whether solid copernicium would be a metal, semiconductor, or insulator."
@@ -1689,7 +1689,7 @@
         "boilingPoint": "1130",
         "meltingPoint": "430",
         "discoveredBy": "Riken (Japan)",
-        "density": "16 g/cm3",
+        "density": "16 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
         "description": "Nihonium is extremely radioactive; its most stable known isotope, nihonium-286, has a half-life of about 10 seconds. Very little is known about nihonium, as it has only been made in very small amounts that decay within seconds. The anomalously long lives of some superheavy nuclides, including some nihonium isotopes, are explained by the \"island of stability\" theory. Experiments support the theory, with the half-lives of the confirmed nihonium isotopes increasing from milliseconds to seconds as neutrons are added and the island is approached."
@@ -1704,7 +1704,7 @@
         "boilingPoint": "107",
         "meltingPoint": "-73",
         "discoveredBy": "Joint Institute for Nuclear Research",
-        "density": "9.928 g/cm3",
+        "density": "9.928 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "liquid",
         "description": "About 90 atoms of flerovium have been observed: 58 were synthesized directly, and the rest were made from the radioactive decay of heavier elements. All of these flerovium atoms have been shown to have mass numbers from 284 to 290. The most stable known flerovium isotope, flerovium-289, has a half-life of around 1.9 seconds, but it is possible that the unconfirmed flerovium-290 may have a longer half-life of 19 seconds; this would be one of the longest half-lives of any isotope of any element at these farthest reaches of the periodic table."
@@ -1719,7 +1719,7 @@
         "boilingPoint": "1100",
         "meltingPoint": "400",
         "discoveredBy": "Joint Institute for Nuclear Research",
-        "density": "13.5 g/cm3",
+        "density": "13.5 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
         "description": "Moscovium is an extremely radioactive element: its most stable known isotope, moscovium-290, has a half-life of only 0.65 seconds. Moscovium is calculated to have some properties similar to its lighter homologues, nitrogen, phosphorus, arsenic, antimony, and bismuth, and to be a post-transition metal, although it should also show several major differences from them. About 100 atoms of moscovium have been observed to date, all of which have been shown to have mass numbers from 287 to 290."
@@ -1734,7 +1734,7 @@
         "boilingPoint": "762",
         "meltingPoint": "364",
         "discoveredBy": "Joint Institute for Nuclear Research ",
-        "density": "12.9 g/cm3",
+        "density": "12.9 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
         "description": "Livermorium is an extremely radioactive element that has only been created in the laboratory and has not been observed in nature. The element is named after the Lawrence Livermore National Laboratory in the United States, which collaborated with the Joint Institute for Nuclear Research (JINR) in Dubna, Russia. Livermorium is calculated to have some similar properties to its lighter homologues (oxygen, sulfur, selenium, tellurium, and polonium), and be a post-transition metal, although it should also show several major differences from them."
