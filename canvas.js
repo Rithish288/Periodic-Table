@@ -60,7 +60,7 @@ function init() {
 	circles = [];
 	const red = "hsl(0, 100%, 60%)";
 	const blue = "hsl(250, 100%, 60%)";
-	const green = "hsl(130, 100%, 60%)"
+	const green = "hsl(130, 100%, 60%)";
 	circles.push(new Circle(0, -100, 50, red));
 	circles.push(new Circle(100, -50, 50, green));
 	circles.push(new Circle(100, 50, 50, blue));

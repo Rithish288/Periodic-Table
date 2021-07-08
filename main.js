@@ -17,16 +17,17 @@ window.addEventListener('DOMContentLoaded', () => {
     let pProperties = document.querySelector('.p-properties');
     let cProperties = document.querySelector('.c-properties');
     let particles = document.querySelector('.particles');
-    let structure = document.querySelector('.structure');
+    let structure = document.querySelector('.structure-3d');
+    let structure2 = document.querySelector('.structure-2d');
     let discovery = document.querySelector('.discovery');
     let summary = document.querySelector('.summary');
     let source = document.querySelector('.source');
 
     //Acessing the dom ↑ ↑ ↑
 
-    window.setTimeout(() => {
-        alert('Use a Laptop or desktop for best user experience')
-    }, 2000)
+    // window.setTimeout(() => {
+    //     alert('Use a Laptop or desktop for best user experience')
+    // }, 2000)
 
     remove.addEventListener('click', () => {
         bgCanvas.classList.toggle('none')
@@ -53,14 +54,18 @@ window.addEventListener('DOMContentLoaded', () => {
                 pProperties.classList = 'card ' + 'p-properties ' + element.category;
                 cProperties.classList = 'card ' + 'c-properties ' + element.category;
                 particles.classList = 'card ' + 'particles ' + element.category;
-                structure.classList = 'card ' + 'structure ' + element.category;
+                structure.classList = 'card ' + 'structure-3d ' + element.category;
+                structure2.classList = 'card ' + 'structure-2d ' + element.category;
                 discovery.classList = 'card ' + 'discovery ' + element.category;
                 summary.classList = 'card ' + 'summary ' + element.category;
                 source.classList = 'card ' + 'source ' + element.category;
                 if(id == element.atomicNumber) {
 
-                    structure.innerHTML = `<tag>Structure</tag> <br/> <br/>
+                    structure.innerHTML = `<tag>3-D Structure</tag> <br/> <br/>
                     <canvas id="structure1"></canvas> `
+
+                    structure2.innerHTML = `<tag>2-D Structure</tag> <br/> <br/>
+                    <canvas id="structure2"></canvas> `
                     
                     name.innerHTML = ` <h3>${element.atomicNumber}</h3> <br><br/>
                                     <h1>${element.symbol}</h1><br><br/>
@@ -101,7 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     source.innerHTML = `<a href="https://en.wikipedia.org/wiki/${element.name}" target="_blank">Wikipedia</a>`
 
                     drawAtom(document.querySelector('#structure1'), element.atomicNumber, element.symbol);
-                    // drawAtom(document.querySelector('#structure2'), element.atomicNumber, element.symbol);
+                    drawStructure(document.querySelector('#structure2'), element.shells, element.symbol);
 
                     const units = document.querySelectorAll('select');
                     units.forEach(unit => {
@@ -120,6 +125,55 @@ window.addEventListener('DOMContentLoaded', () => {
             })
             });
         })
+
+    function drawStructure(canvas, array, text) {
+        let c = canvas.getContext('2d');
+        canvas.width = 400;
+        canvas.height = 300;
+        class Atom {
+            constructor(x, y, radius, color) {
+                this.x = x;
+                this.y = y;
+                this.color = color;
+                this.ringRadius = radius;
+                this.radi = (canvas.height/2.2) / array.length;
+                
+                this.drawRings = function () {
+                    for (let shells = 0; shells <= array.length; shells++) {
+                        c.beginPath();
+                        c.arc(this.x, this.y, this.ringRadius * shells, 0, Math.PI * 2, false);
+                        c.strokeStyle = this.color;
+                        c.stroke();
+                    }
+                }
+                this.drawElectrons = function () {
+                    array.forEach((arr, i) => {
+                        i += 1
+                        for (let electrons = 0; electrons < arr; electrons++) {
+                            let radians = Math.PI * 2 / arr;
+                            radians += electrons;
+                            let x = canvas.width/2 + Math.sin(radians) * (i * this.radi);
+                            let y = canvas.height/2 + Math.cos(radians) * (i * this.radi);
+                            
+                            c.beginPath();
+                            c.arc(x, y, 5, 0, Math.PI * 2, false);
+                            c.fillStyle = this.color;
+                            c.fill();
+                        }
+                    })
+                    this.drawRings()
+                }
+            }
+        }
+        
+            let x = canvas.width/2;
+            let y = canvas.height/2;
+            let radi = (canvas.height/2.2) / array.length;
+
+            let atom = new Atom(x, y, radi, 'black');
+            atom.drawElectrons()
+            
+    }
 
     function drawAtom(canvas, electronCount, text) {
         let c = canvas.getContext('2d');

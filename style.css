@@ -47,11 +47,10 @@ tag {
     margin: 1em;
 }
 
+.summary {max-width: 70%;}
 .discovery {max-width: 400px;}
-
-.structure {width: 60%}
-
-.structure canvas{width: 100%;}
+.structure-3d, .structure-2d {width: 40%}
+.structure-3d canvas, .structure-2d canvas{width: 100%;}
 
 button {
     padding: 0.5em;
@@ -130,8 +129,6 @@ p.number {margin: 0; display: inline}
 @media only screen and (max-width: 978px) {
     .element p.number {display: inline; margin: 0; font-size: 0.5em;}
     select {height:15px; font-size:0.8em}
-    canvas#structure1 {transform: scale(0.9)}
-    canvas#structure2 {transform: scale(0.9)}
     h1 {margin-bottom: 3px;}
     .element p {display: none};
 }
@@ -141,11 +138,11 @@ p.number {margin: 0; display: inline}
 @media only screen and (max-width: 726px) {
     .structure {width: 100%}
     h1 {margin-bottom: 3px; font-size: 1.5em;}
-    canvas#structure1 {transform: scale(0.7)}
-    canvas#structure2 {transform: scale(0.7)}
 }
 @media only screen and (max-width: 650px) {
     .description {flex-direction: column;}
+    .description .card {width: 90%; max-width: 90%;}
+    /* .structure-2d, .structure-3d {max-width: 90%} */
     .element p{margin: auto; font-size: 1.1em; margin-bottom: 0; display: inline}
     .element h1 {font-size: 2.3em; margin-top:0}
     canvas#background, button {display: none}
