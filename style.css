@@ -20,6 +20,7 @@
     --border-width: 3px;
 }
 
+
 .description {
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +121,28 @@ h1 {margin: -3px auto; font-size: 2.3em}
 p{margin: auto; font-size: 1.1em; margin-bottom: 0} 
 p.number {margin: 0; display: inline}
 
+ul {
+    display: flex;
+    width: 50vw;
+    justify-content:space-around;
+    font-family: 'Quicksand';
+    list-style: none; 
+    box-shadow: 0 2px 5px grey;
+    font-size: 2em
+}
+
+.open{border-bottom: 2px solid black}
+
+div[data-tab-content] {
+    display: none
+}
+
+span.icon {color: rgba(0, 0, 0, 0.459)}
+
+li {
+    width: 30%; cursor: pointer;
+    text-align: center;
+}
 @media only screen and (max-width: 1024px) {
     h1 {font-size: 2em;}
     select {font-size:1em}

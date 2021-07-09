@@ -24,35 +24,43 @@
   </head>
   <body>
     <canvas id="background"></canvas>
-    <div class="periodic-Table" id="periodic-Table">
-      <button>Toggle canvas</button>
-      <!-- <canvas id="structure"></canvas> -->
-      <div class="empty1">
-        <p>
-          Lanthanides <br>
-          57 - 71 <br />
-          &RightArrow; &RightArrow; 
-        </p>
+
+    <ul>
+      <li id="tab1" data-targets="#periodic-Table">Table</li>
+      <li id="tab2" data-targets=".description">Detalis</li>
+    </ul>
+      
+    <div class="accordion content">
+      <div class="periodic-Table" id="periodic-Table" data-tab-content>
+        <button>Toggle canvas</button>
+        <!-- <canvas id="structure"></canvas> -->
+        <div class="empty1">
+          <p>
+            Lanthanides <br>
+            57 - 71 <br />
+            &RightArrow; &RightArrow; 
+          </p>
+        </div>
+        <div class="empty2">
+          <p>
+            Actinides <br />
+            89 - 103 <br />
+            &RightArrow; &RightArrow;
+          </p>
+        </div>
+        <!-- To be flled with javascript -->
       </div>
-      <div class="empty2">
-        <p>
-          Actinides <br />
-          89 - 103 <br />
-          &RightArrow; &RightArrow;
-        </p>
+      <div class="description" data-tab-content>
+        <div class="card name">Click an element to view its details here !</div>
+        <div class="card particles"></div>
+        <div class="card discovery"></div>
+        <div class="card p-properties"></div>
+        <div class="card c-properties"></div>
+        <div class="card summary"></div>
+        <div class="card structure-3d"></div>
+        <div class="card structure-2d"></div>
+        <div class="source"></div>
       </div>
-      <!-- To be flled with javascript -->
     </div>
-    <div class="description">
-      <div class="card name">Click an element to view its details here !</div>
-      <div class="card particles"></div>
-      <div class="card discovery"></div>
-      <div class="card p-properties"></div>
-      <div class="card c-properties"></div>
-      <div class="card summary"></div>
-      <div class="card structure-3d"></div>
-      <div class="card structure-2d"></div>
-    </div>
-    <div class="source"></div>
   </body>
 </html>

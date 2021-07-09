@@ -24,16 +24,35 @@ window.addEventListener('DOMContentLoaded', () => {
     let source = document.querySelector('.source');
 
     //Acessing the dom ↑ ↑ ↑
+    let mark = document.createElement('span')
+    mark.innerHTML = '&#33;';
+    mark.className = 'icon';
 
-    window.setTimeout(() => {
-        alert('Use a Laptop or desktop for best user experience')
-    }, 2000)
+    const tabs = document.querySelectorAll('[data-targets]');
+    const tabContent = document.querySelectorAll('[data-tab-content]');
+    periodicTable.removeAttribute('data-tab-content');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            let target = document.querySelector(tab.dataset.targets);
+            tabContent.forEach(tabCont => {
+                tabCont.setAttribute("data-tab-content", '')
+            })
+            tabs.forEach(tab => {
+                tab.classList.remove('open')
+            })
+            tab.classList.add('open')
+            target.removeAttribute('data-tab-content');
+            console.log(target)
+        })
+    })
+
+    // window.setTimeout(() => {
+    //     alert('Use a Laptop or desktop for best user experience')
+    // }, 2000)
 
     remove.addEventListener('click', () => {
         bgCanvas.classList.toggle('none')
     })
-
-    
     
     let jsonData =  fetch('PeriodicTable.json')//Fetching data
     jsonData.then(response => {
@@ -50,6 +69,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
             //Event listeners
             elem.addEventListener('click', () => {
+                document.querySelector('#tab2').appendChild(mark)
+                setTimeout(() => {
+                document.querySelector('#tab2').removeChild(mark)
+                }, 5000)
                 name.classList = 'card ' + 'name ' + element.category
                 pProperties.classList = 'card ' + 'p-properties ' + element.category;
                 cProperties.classList = 'card ' + 'c-properties ' + element.category;
@@ -106,7 +129,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     source.innerHTML = `<a href="https://en.wikipedia.org/wiki/${element.name}" target="_blank">Wikipedia</a>`
 
                     drawAtom(document.querySelector('#structure1'), element.atomicNumber, element.symbol);
-                    drawStructure(document.querySelector('#structure2'), element.shells, element.symbol);
+                    drawStructure(document.querySelector('#structure2'), element.shells);
 
                     const units = document.querySelectorAll('select');
                     units.forEach(unit => {
@@ -126,7 +149,7 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         })
 
-    function drawStructure(canvas, array, text) {
+    function drawStructure(canvas, array) {
         let c = canvas.getContext('2d');
         canvas.width = 400;
         canvas.height = 300;
