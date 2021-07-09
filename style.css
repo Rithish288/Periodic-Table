@@ -30,6 +30,27 @@
     font-family: 'Quicksand';
 }
 
+small {font-family: 'Encode Sans Semi Condensed', sans-serif;}
+
+::selection {
+    background-color: #001764;
+    color: white;
+}
+
+.footer {
+    background-color: rgb(231, 231, 231);
+    display: flex; padding: 2em;
+    align-items: center; 
+    justify-content: space-around;
+    width: 100%; 
+}
+
+.footer a {transition: all 0.2s ease-in-out;}
+
+.footer a:hover {
+    transform: scale(1.2);
+}
+
 tag {
     background-color:grey;
     color: white;
