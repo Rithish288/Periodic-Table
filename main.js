@@ -129,7 +129,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     source.innerHTML = `<a href="https://en.wikipedia.org/wiki/${element.name}" target="_blank">Wikipedia</a>`
 
                     drawAtom(document.querySelector('#structure1'), element.atomicNumber, element.symbol);
-                    drawStructure(document.querySelector('#structure2'), element.shells);
+                    drawStructure(document.querySelector('#structure2'), element.shells, element.symbol);
 
                     const units = document.querySelectorAll('select');
                     units.forEach(unit => {
@@ -149,7 +149,7 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         })
 
-    function drawStructure(canvas, array) {
+    function drawStructure(canvas, array, text) {
         let c = canvas.getContext('2d');
         canvas.width = 400;
         canvas.height = 300;
@@ -167,35 +167,53 @@ window.addEventListener('DOMContentLoaded', () => {
                         c.arc(this.x, this.y, this.ringRadius * shells, 0, Math.PI * 2, false);
                         c.strokeStyle = this.color;
                         c.stroke();
+
+                        c.font = '15px Verdana';
+                        c.textAlign = 'center';
+                        c.textBaseline = 'middle';
+                        c.fillStyle = 'black';
+                        c.fillText(text, canvas.width / 2, canvas.height / 2);
                     }
-                }
-                this.drawElectrons = function () {
-                    array.forEach((arr, i) => {
-                        i += 1
-                        for (let electrons = 0; electrons < arr; electrons++) {
-                            let radians = Math.PI * 2 / arr;
-                            radians += electrons;
-                            let x = canvas.width/2 + Math.sin(radians) * (i * this.radi);
-                            let y = canvas.height/2 + Math.cos(radians) * (i * this.radi);
-                            
-                            c.beginPath();
-                            c.arc(x, y, 5, 0, Math.PI * 2, false);
-                            c.fillStyle = this.color;
-                            c.fill();
-                        }
-                    })
-                    this.drawRings()
                 }
             }
         }
         
-            let x = canvas.width/2;
-            let y = canvas.height/2;
-            let radi = (canvas.height/2.2) / array.length;
+        class Electron {
+            constructor() {
+                this.radi = (canvas.height/2.2) / array.length;
+                this.radius = 4;
+                this.color = 'black';
+                
+                this.draw = function () {
+                    array.forEach((arr, i) => {
+                        i += 1
+                        for (let electrons = 0; electrons < arr; electrons++) {
+                            let radians = Math.PI * 2 / arr;
+                            let x = canvas.width / 2 + Math.sin(radians * electrons) * i * this.radi;
+                            let y = canvas.height / 2 + Math.cos(radians * electrons) * i * this.radi;
+                            
+                            c.beginPath();
+                            c.arc(x, y, this.radius, 0, Math.PI * 2, false);
+                            c.fillStyle = this.color;
+                            c.fill();
+                        }
+                    })
+                    
+                }
+            }
+        }
+        let electrons = new Electron()
+        electrons.draw()
 
+        function rings() {
+            let x = canvas.width / 2;
+            let y = canvas.height / 2;
+            let radi = (canvas.height/2.2) / array.length;
+    
             let atom = new Atom(x, y, radi, 'black');
-            atom.drawElectrons()
-            
+            atom.drawRings()
+        }
+        rings()   
     }
 
     function drawAtom(canvas, electronCount, text) {
