@@ -83,7 +83,7 @@ div.periodic-Table {
     grid-template-rows: repeat(10, var(--size));
     grid-gap: 0.5em;
     margin: 2em auto;
-    overflow: auto
+    overflow-x: auto
 }
 
 .element {
@@ -134,7 +134,7 @@ ul {
 .open{border-bottom: 2px solid black}
 
 div[data-tab-content] {
-    display: none
+    display: none;
 }
 
 span.icon {color: rgba(0, 0, 0, 0.459)}
