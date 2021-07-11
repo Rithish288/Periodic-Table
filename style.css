@@ -224,10 +224,8 @@ li {
     grid-row: 10;
 }
 
-.n3, .n11, .n19, .n37, .n55, .n87 {grid-column: 1;}
 .n2, .n10, .n18, .n36, .n54, .n86, .n118 {grid-column: 18;} 
 .n5, .n13 {grid-column: 13}
-.n72, .n104 {grid-column: 4}
 .n57, .n58, .n59 {grid-row: 9;}
 .n89 {grid-row: 10; grid-column: 1;}
 .n90{grid-column: 2; grid-row: 10}
