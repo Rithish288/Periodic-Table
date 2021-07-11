@@ -1,6 +1,6 @@
 [
     {
-        "atomicNumber": "1", 
+        "atomicNumber": 1, 
         "name": "Hydrogen", 
         "atomicMass": "1.00784", 
         "symbol": "H", 
@@ -16,7 +16,7 @@
         "description": "Hydrogen is the chemical element with the symbol H and atomic number 1. With a standard atomic weight of 1.008, hydrogen is the lightest element in the periodic table. Hydrogen is the most abundant chemical substance in the universe, constituting roughly 75% of all baryonic mass."
     },
     {
-        "atomicNumber": "2", 
+        "atomicNumber": 2, 
         "name": "Helium", 
         "atomicMass": "4.0026", 
         "symbol": "He", 
@@ -32,7 +32,7 @@
         "description": "Helium is the first in the noble gas group in the periodic table and the second lightest and second most abundant element in the observable universe following Hydrogen. Its boiling point is the lowest among all the elements."
     },
     {
-        "atomicNumber": "3", 
+        "atomicNumber": 3, 
         "name": "Lithium", 
         "atomicMass": "6.941", 
         "symbol": "Li", 
@@ -48,7 +48,7 @@
         "description": "Lithium is a soft, silvery-white alkali metal. Under standard conditions, it is the lightest metal and the lightest solid. lithium is highly reactive and flammable, and must be stored in vacuum, inert atmosphere or inert liquid."
     },
     {
-        "atomicNumber": "4", 
+        "atomicNumber": 4, 
         "name": "Beryllium", 
         "atomicMass": "9.0121", 
         "symbol": "Be", 
@@ -64,7 +64,7 @@
         "description": "Berylium is a steel-gray, strong, lightweight and brittle alkaline earth metal. It is a divalent element that occurs naturally only in combination with other elements to form minerals. It constitutes about 0.0004 percent by mass of Earth's crust."
     },
     {
-        "atomicNumber": "5", 
+        "atomicNumber": 5, 
         "name": "Boron", 
         "atomicMass": "10.811", 
         "symbol": "B", 
@@ -80,7 +80,7 @@
         "description": "Boron in its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder. It constitutes about 0.001 percent by weight of Earth's crust. Elemental boron is a metalloid that is found in small amounts in meteoroids but chemically uncombined boron is not otherwise found naturally on Earth."
     },
     {
-        "atomicNumber": "6", 
+        "atomicNumber": 6, 
         "name": "Carbon", 
         "atomicMass": "12.0107", 
         "symbol": "C", 
@@ -96,7 +96,7 @@
         "description": "Carbon is the 15th most abundant element in the Earth's crust, and the fourth most abundant element in the universe by mass after hydrogen, helium, and oxygen. Carbon's abundance, its unique diversity, and its unusual ability to form polymers at the temperatures commonly encountered on Earth enables this element to serve as a common element of all known life."
     },
     {
-        "atomicNumber": "7", 
+        "atomicNumber": 7, 
         "name": "Nitrogen", 
         "atomicMass": "14.0067", 
         "symbol": "N", 
@@ -112,7 +112,7 @@
         "description": "Nitrogen is a common element in the universe, estimated at about seventh in total abundance in the Milky Way and the Solar System. At standard temperature and pressure, two atoms of the element bind to form dinitrogen, a colourless and odorless diatomic gas.  Nitrogen occurs in all organisms, primarily in amino acids, nucleic acids and in adenosine triphosphate."
     },
     {
-        "atomicNumber": "8", 
+        "atomicNumber": 8, 
         "name": "Oxygen", 
         "atomicMass": "15.9994", 
         "symbol": "O", 
@@ -128,7 +128,7 @@
         "description": "Oxygen is a highly reactive nonmetal that readily forms oxides with most elements as well as with other compounds. It is the third-most abundant element in the universe by mass. Oxygen is continuously replenished in Earth's atmosphere by photosynthesis. Another form of oxygen, ozone, strongly absorbs UV rays and helps protect the biosphere from ultraviolet radiation."
     },
     {
-        "atomicNumber": "9", 
+        "atomicNumber": 9, 
         "name": "Fluorine", 
         "atomicMass": "18.9984", 
         "symbol": "F", 
@@ -144,7 +144,7 @@
         "description": "Among the elements, fluorine ranks 24th in universal abundance and 13th in terrestrial abundance. Fluorite, the primary mineral source of fluorine which gave the element its name, was first described in 1529; as it was added to metal ores to lower their melting points for smelting.  Fluorine is extremely reactive, as it reacts with all other elements, except for argon, neon, and helium."
     },
     {
-        "atomicNumber": "10", 
+        "atomicNumber": 10, 
         "name": "Neon", 
         "atomicMass": "20.1797", 
         "symbol": "Ne", 
@@ -160,7 +160,7 @@
         "description": "Neon is a colorless, odorless, inert monatomic Noble gas under standard conditions, with about two-thirds the density of air. It was discovered (along with krypton and xenon) in 1898 as one of the three residual rare inert elements remaining in dry air."
     },
     {
-        "atomicNumber": "11", 
+        "atomicNumber": 11, 
         "name": "Sodium", 
         "atomicMass": "22.9897", 
         "symbol": "Na", 
@@ -176,7 +176,7 @@
         "description": "Sodium is a soft, silvery-white, highly reactive metal. Sodium is the sixth most abundant element in the Earth's crust and exists in numerous minerals such as feldspars, sodalite, and rock salt (NaCl). Many salts of sodium are highly water-soluble."
     },
     {
-        "atomicNumber": "12", 
+        "atomicNumber": 12, 
         "name": "Magnesium", 
         "atomicMass": "24.307", 
         "symbol": "Mg", 
@@ -192,7 +192,7 @@
         "description": "Magnesiumis is produced in large, aging stars from the sequential addition of three helium nuclei to a carbon nucleus. When such stars explode as supernovas, much of the magnesium is expelled into the interstellar medium where it may recycle into new star systems. Magnesium is the eighth most abundant element in the Earth's crust and the fourth most common element in the Earth."
     },
     {
-        "atomicNumber": "13", 
+        "atomicNumber": 13, 
         "name": "Aluminium", 
         "atomicMass": "26.981", 
         "symbol": "Al", 
@@ -208,7 +208,7 @@
         "description": "Aluminium has a density lower than those of other common metals, at approximately one third that of steel. It has a great affinity towards oxygen, and forms a protective layer of oxide on the surface when exposed to air. Aluminium visually resembles silver, both in its color and in its great ability to reflect light. It is soft, non-magnetic and ductile. It has one stable isotope, <sup>27</sup>Al; this isotope is very common, making aluminium the twelfth most common element in the Universe."
     },
     {
-        "atomicNumber": "14", 
+        "atomicNumber": 14, 
         "name": "Silicon", 
         "atomicMass": "28.0855", 
         "symbol": "Si", 
@@ -224,7 +224,7 @@
         "description": "Silicon is a hard, brittle crystalline solid with a blue-grey metallic lustre, and is a tetravalent metalloid and semiconductor. Silicon is the eighth most common element in the universe by mass, but very rarely occurs as the pure element in the Earth's crust."
     },
     {
-        "atomicNumber": "15", 
+        "atomicNumber": 15, 
         "name": "Phosphorus", 
         "atomicMass": "30.9737", 
         "symbol": "P", 
@@ -240,7 +240,7 @@
         "description": "Elemental phosphorus exists in two major forms, white phosphorus and red phosphorus, but because it is highly reactive, phosphorus is never found as a free element on Earth. It has a concentration in the Earth's crust of about one gram per kilogram (compare copper at about 0.06 grams). In minerals, phosphorus generally occurs as phosphate."
     },
     {
-        "atomicNumber": "16", 
+        "atomicNumber": 16, 
         "name": "Sulfur", 
         "atomicMass": "32.065", 
         "symbol": "S", 
@@ -256,7 +256,7 @@
         "description": "Sulfur is the tenth most common element by mass in the universe, and the fifth most common on Earth. Though sometimes found in pure, native form, sulfur on Earth usually occurs as sulfide and sulfate minerals. Being abundant in native form, sulfur was known in ancient times, being mentioned for its uses in ancient India, ancient Greece, China, and Egypt."
     },
     {
-        "atomicNumber": "17", 
+        "atomicNumber": 17, 
         "name": "Chlorine", 
         "atomicMass": "35.453", 
         "symbol": "Cl", 
@@ -272,7 +272,7 @@
         "description": "Chlorine is a yellow-green gas at room temperature. It is an extremely reactive element and a strong oxidising agent. Chlorine played an important role in the experiments conducted by medieval alchemists, which commonly involved the heating of chloride salts like ammonium chloride and sodium chloride. As a chemical warfare agent, chlorine was first used in World War I as a poison gas weapon."
     },
     {
-        "atomicNumber": "18", 
+        "atomicNumber": 18, 
         "name": "Argon", 
         "atomicMass": "39.948", 
         "symbol": "Ar", 
@@ -288,7 +288,7 @@
         "description": "Argon is the third-most abundant gas in the Earth's atmosphere, at 0.934% (9340 ppmv). Nearly all of the argon in the Earth's atmosphere is radiogenic argon-40, derived from the decay of potassium-40 in the Earth's crust. In the universe, argon-36 is by far the most common argon isotope."
     },
     {
-        "atomicNumber": "19", 
+        "atomicNumber": 19, 
         "name": "Potassium", 
         "atomicMass": "39.0983", 
         "symbol": "K", 
@@ -304,7 +304,7 @@
         "description": "Potassium is a silvery-white metal that is soft enough to be cut with a knife with little force. In the periodic table, potassium is one of the alkali metals, all of which have a single valence electron in the outer electron shell, that is easily removed to create an ion with a positive charge – a cation, that combines with anions to form salts."
     },
     {
-        "atomicNumber": "20", 
+        "atomicNumber": 20, 
         "name": "Calcium", 
         "atomicMass": "40.078", 
         "symbol": "Ca", 
@@ -320,7 +320,7 @@
         "description": "Calcium is a reactive metal that forms a dark oxide-nitride layer when exposed to air.  It is the fifth most abundant element in Earth's crust, and the third most abundant metal, after iron and aluminium. The most common calcium compound on Earth is calcium carbonate, found in limestone and the fossilised remnants of early sea life."
     },
     {
-        "atomicNumber": "21", 
+        "atomicNumber": 21, 
         "name": "Scandium", 
         "atomicMass": "44.955", 
         "symbol": "Sc", 
@@ -336,7 +336,7 @@
         "description": "Scandium is present in most of the deposits of rare-earth and uranium compounds, but it is extracted from these ores in only a few mines worldwide.Scandium is a soft metal with a silvery appearance. It develops a slightly yellowish or pinkish cast when oxidized by air. It is susceptible to weathering and dissolves slowly in most dilute acids."
     },
     {
-        "atomicNumber": "22", 
+        "atomicNumber": 22, 
         "name": "Titanium", 
         "atomicMass": "47.867", 
         "symbol": "Ti", 
@@ -352,7 +352,7 @@
         "description": "Titanium occurs within a number of mineral deposits, principally rutile and ilmenite, which are widely distributed in the Earth's crust and lithosphere; it is found in almost all living things, as well as bodies of water, rocks, and soils. The two most useful properties of the metal are corrosion resistance and strength-to-density ratio, the highest of any metallic element. In its unalloyed condition, titanium is as strong as some steels, but less dense."
     },
     {
-        "atomicNumber": "23", 
+        "atomicNumber": 23, 
         "name": "Vanadium", 
         "atomicMass": "50.9415", 
         "symbol": "V", 
@@ -368,7 +368,7 @@
         "description": "Vanadium is rarely found in nature, but once isolated artificially, the formation of an oxide layer (passivation) somewhat stabilizes the free metal against further oxidation. Vanadium occurs naturally in about 65 minerals and in fossil fuel deposits. It is produced in China and Russia from steel smelter slag. Other countries produce it either from magnetite directly, flue dust of heavy oil, or as a byproduct of uranium mining."
     },
     {
-        "atomicNumber": "24", 
+        "atomicNumber": 24, 
         "name": "Chromium", 
         "atomicMass": "51.9961", 
         "symbol": "Cr", 
@@ -384,7 +384,7 @@
         "description": "Chromium is extremely hard, and is the third hardest element behind carbon (diamond) and boron. Its Mohs hardness is 8.5, which means that it can scratch samples of quartz and topaz. Chromium is the main additive in stainless steel, to which it adds anti-corrosive properties. Chromium is also highly valued as a metal that is able to be highly polished while resisting tarnishing."
     },
     {
-        "atomicNumber": "25", 
+        "atomicNumber": 25, 
         "name": "Manganese", 
         "atomicMass": "54.938", 
         "symbol": "Mn", 
@@ -400,7 +400,7 @@
         "description": "Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent, as a rubber additive, in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide."
     },
     {
-        "atomicNumber": "26", 
+        "atomicNumber": 26, 
         "name": "Iron", 
         "atomicMass": "55.845", 
         "symbol": "Fe", 
@@ -416,7 +416,7 @@
         "description": "Iron is, by mass, the most common element on Earth, right in front of oxygen (32.1% and 30.1%, respectively), forming much of Earth's outer and inner core. It is the fourth most common element in the Earth's crust. In its metallic state, iron is rare in the Earth's crust, limited mainly to deposition by meteorites."
     },
     {
-        "atomicNumber": "27", 
+        "atomicNumber": 27, 
         "name": "Cobalt", 
         "atomicMass": "58.933", 
         "symbol": "Co", 
@@ -432,7 +432,7 @@
         "description": "Cobalt is found in the Earth's crust only in a chemically combined form, save for small deposits found in alloys of natural meteoric iron. Cobalt is primarily used in lithium-ion batteries, and in the manufacture of magnetic, wear-resistant and high-strength alloys."
     },
     {
-        "atomicNumber": "28", 
+        "atomicNumber": 28, 
         "name": "Nickel", 
         "atomicMass": "58.6934", 
         "symbol": "Ni", 
@@ -448,7 +448,7 @@
         "description": " Pure nickel, powdered to maximize the reactive surface area, shows a significant chemical activity, but larger pieces are slow to react with air under standard conditions because an oxide layer forms on the surface and prevents further corrosion. Even so, pure native nickel is found in Earth's crust only in tiny amounts."
     },
     {
-        "atomicNumber": "29", 
+        "atomicNumber": 29, 
         "name": "Copper", 
         "atomicMass": "63.546", 
         "symbol": "Cu", 
@@ -464,7 +464,7 @@
         "description": "A freshly exposed surface of pure copper has a pinkish-orange color. Copper is used as a conductor of heat and electricity, as a building material, and as a constituent of various metal alloys, such as sterling silver used in jewelry, cupronickel used to make marine hardware and coins, and constantan used in strain gauges and thermocouples for temperature measurement."
     },
     {
-        "atomicNumber": "30", 
+        "atomicNumber": 30, 
         "name": "Zinc", 
         "atomicMass": "65.38", 
         "symbol": "Zn", 
@@ -480,7 +480,7 @@
         "description": "Zinc is a slightly brittle metal at room temperature and has a silvery-greyish appearance when oxidation is removed. It is the 24th most abundant element in Earth's crust and has five stable isotopes. The mines of Rajasthan have given definite evidence of zinc production going back to the 6th century BC."
     },
     {
-        "atomicNumber": "31", 
+        "atomicNumber": 31, 
         "name": "Gallium", 
         "atomicMass": "69.723", 
         "symbol": "Ga", 
@@ -496,7 +496,7 @@
         "description": "Elemental gallium is a soft, silvery metal at standard temperature and pressure; however in its liquid state it becomes silvery white. If too much force is applied, the gallium may fracture conchoidally. Gallium does not occur as a free element in nature, but as gallium (III) compounds in trace amounts in zinc ores such as sphalerite and in bauxite. Gallium alloys are used in thermometers as a non-toxic and environmentally friendly alternative to mercury, and can withstand higher temperatures than mercury."
     },
     {
-        "atomicNumber": "32", 
+        "atomicNumber": 32, 
         "name": "Germanium", 
         "atomicMass": "72.64", 
         "symbol": "Ge", 
@@ -512,7 +512,7 @@
         "description": "Germanium is a lustrous, hard-brittle, grayish-white metalloid in the carbon group, chemically similar to its group neighbors silicon and tin. Pure germanium is a semiconductor with an appearance similar to elemental silicon. Like silicon, germanium naturally reacts and forms complexes with oxygen in nature."
     },
     {
-        "atomicNumber": "33", 
+        "atomicNumber": 33, 
         "name": "Arsenic", 
         "atomicMass": "74.9216", 
         "symbol": "As", 
@@ -528,7 +528,7 @@
         "description": "Arsenic occurs in many minerals, usually in combination with sulfur and metals, but also as a pure elemental crystal. Arsenic is a metalloid. It has various allotropes, but only the gray form, which has a metallic appearance, is important to industry. The primary use of arsenic is in alloys of lead (for example, in car batteries and ammunition). "
     },
     {
-        "atomicNumber": "34", 
+        "atomicNumber": 34, 
         "name": "Selenium", 
         "atomicMass": "78.96", 
         "symbol": "Se", 
@@ -544,7 +544,7 @@
         "description": "Selenium is a nonmetal with properties that are intermediate between the elements above and below in the periodic table, sulfur and tellurium, and also has similarities to arsenic. It rarely occurs in its elemental state or as pure ore compounds in the Earth's crust."
     },
     {
-        "atomicNumber": "35", 
+        "atomicNumber": 35, 
         "name": "Bromine", 
         "atomicMass": "79.904", 
         "symbol": "Br", 
@@ -560,7 +560,7 @@
         "description": "Bromine is the third-lightest halogen, and is a fuming red-brown liquid at room temperature that evaporates readily to form a similarly coloured vapour. Its properties are intermediate between those of chlorine and iodine."
     },
     {
-        "atomicNumber": "36", 
+        "atomicNumber": 36, 
         "name": "Krypton", 
         "atomicMass": "83.798", 
         "symbol": "Kr", 
@@ -576,7 +576,7 @@
         "description": "Krypton is a colorless, odorless, tasteless noble gas that occurs in trace amounts in the atmosphere and is often used with other rare gases in fluorescent lamps. Krypton, like the other noble gases, is used in lighting and photography. Krypton light has many spectral lines, and krypton plasma is useful in bright, high-powered gas lasers."
     },
     {
-        "atomicNumber": "37", 
+        "atomicNumber": 37, 
         "name": "Rubidium", 
         "atomicMass": "85.467", 
         "symbol": "Rb", 
@@ -592,7 +592,7 @@
         "description": "Rubidium is a metal that shares similarities to potassium metal and caesium metal in physical appearance, softness and conductivity. Rubidium cannot be stored under atmospheric oxygen, as a highly exothermic reaction will ensue, sometimes even resulting in the metal catching fire."
     },
     {
-        "atomicNumber": "38", 
+        "atomicNumber": 38, 
         "name": "Strontium", 
         "atomicMass": "87.62", 
         "symbol": "Sr", 
@@ -608,7 +608,7 @@
         "description": "Strontium is a divalent silvery metal with a pale yellow tint whose properties are mostly intermediate between and similar to those of its group neighbors calcium and barium. It is softer than calcium and harder than barium."
     },
     {
-        "atomicNumber": "39", 
+        "atomicNumber": 39, 
         "name": "Yttrium", 
         "atomicMass": "88.905", 
         "symbol": "Y", 
@@ -624,7 +624,7 @@
         "description": "Yttrium is almost always found in combination with lanthanide elements in rare-earth minerals, and is never found in nature as a free element. Yttrium is also used in the production of electrodes, electrolytes, electronic filters, lasers, superconductors, various medical applications, and tracing various materials to enhance their properties."
     },
     {
-        "atomicNumber": "40", 
+        "atomicNumber": 40, 
         "name": "Zirconium", 
         "atomicMass": "91.224", 
         "symbol": "Zr", 
@@ -640,7 +640,7 @@
         "description": "Zirconium is mainly used as a refractory and opacifier, although small amounts are used as an alloying agent for its strong resistance to corrosion. Zirconium forms a variety of inorganic and organometallic compounds such as zirconium dioxide and zirconocene dichloride, respectively. Five isotopes occur naturally, three of which are stable."
     },
     {
-        "atomicNumber": "41", 
+        "atomicNumber": 41, 
         "name": "Niobium", 
         "atomicMass": "92.906", 
         "symbol": "Nb", 
@@ -656,7 +656,7 @@
         "description": "Niobium oxidizes in the earth's atmosphere very slowly, hence its application in jewelry as a hypoallergenic alternative to nickel. It is used mostly in alloys, the largest part in special steel such as that used in gas pipelines. Although these alloys contain a maximum of 0.1%, the small percentage of niobium enhances the strength of the steel."
     },
     {
-        "atomicNumber": "42", 
+        "atomicNumber": 42, 
         "name": "Molybdenum", 
         "atomicMass": "95.95", 
         "symbol": "Mo", 
@@ -672,7 +672,7 @@
         "description": "Molybdenum does not occur naturally as a free metal on Earth; it is found only in various oxidation states in minerals. It readily forms hard, stable carbides in alloys, and for this reason most of the world production of the element is used in steel alloys, including high-strength alloys and superalloys."
     },
     {
-        "atomicNumber": "43", 
+        "atomicNumber": 43, 
         "name": "Technetium", 
         "atomicMass": "97.00", 
         "symbol": "Tc", 
@@ -688,7 +688,7 @@
         "description": "Naturally occurring technetium is a spontaneous fission product in uranium ore and thorium ore, the most common source, or the product of neutron capture in molybdenum ores. Many of technetium's properties had been predicted by Dmitri Mendeleev before it was discovered."
     },
     {
-        "atomicNumber": "44", 
+        "atomicNumber": 44, 
         "name": "Ruthenium", 
         "atomicMass": "101.07", 
         "symbol": "Ru", 
@@ -704,7 +704,7 @@
         "description": "Ruthenium is usually found as a minor component of platinum ores. Most ruthenium produced is used in wear-resistant electrical contacts and thick-film resistors. A minor application for ruthenium is in platinum alloys and as a chemistry catalyst.  Ruthenium is also used in some advanced high-temperature single-crystal superalloys, with applications that include the turbines in jet engines."
     },
     {
-        "atomicNumber": "45", 
+        "atomicNumber": 45, 
         "name": "Rhodium", 
         "atomicMass": "102.905", 
         "symbol": "Rh", 
@@ -720,7 +720,7 @@
         "description": "Rhodium is an extraordinarily rare, silvery-white, hard, corrosion-resistant, and chemically inert transition metal. Naturally occurring rhodium is usually found as a free metal, as an alloy with similar metals, and rarely as a chemical compound in minerals"
     },
     {
-        "atomicNumber": "46", 
+        "atomicNumber": 46, 
         "name": "Palladium", 
         "atomicMass": "106.42", 
         "symbol": "Pd", 
@@ -736,7 +736,7 @@
         "description": "More than half the supply of palladium and its congener platinum is used in catalytic converters, which convert as much as 90% of the harmful gases in automobile exhaust into less noxious substances. Palladium is a key component of fuel cells, which react hydrogen with oxygen to produce electricity, heat, and water.  It is soft and ductile when annealed and is greatly increased in strength and hardness when cold-worked. "
     },
     {
-        "atomicNumber": "47", 
+        "atomicNumber": 47, 
         "name": "Silver", 
         "atomicMass": "107.8682", 
         "symbol": "Ag", 
@@ -752,7 +752,7 @@
         "description": "Silver exhibits the highest electrical conductivity, thermal conductivity, and reflectivity of any metal. The metal is found in the Earth's crust in the pure, free elemental form, as an alloy with gold and other metals, and in minerals such as argentite and chlorargyrite. Other than in currency, silver is used in solar panels, water filtration, jewellery, ornaments, utensils, conductors, specialized mirrors, as a colorant in stained glass, etc."
     },
     {
-        "atomicNumber": "48", 
+        "atomicNumber": 48, 
         "name": "Cadmium", 
         "atomicMass": "112.414", 
         "symbol": "Cd", 
@@ -768,7 +768,7 @@
         "description": "Cadmium occurs as a minor component in most zinc ores and is a byproduct of zinc production. Cadmium was used for a long time as a corrosion-resistant plating on steel, and cadmium compounds are used as red, orange and yellow pigments, to color glass, and to stabilize plastic. Its use is generally decreasing because it is toxic. "
     },
     {
-        "atomicNumber": "49", 
+        "atomicNumber": 49, 
         "name": "Indium", 
         "atomicMass": "114.818", 
         "symbol": "In", 
@@ -784,7 +784,7 @@
         "description": "Indium is the softest metal that is not an alkali metal. It is a silvery-white metal that resembles tin in appearance. It is a post-transition metal that makes up 0.21 parts per million of the Earth's crust. Indium is a minor component in zinc sulfide ores and is produced as a byproduct of zinc refinement. It is most notably used in the semiconductor industry, in low-melting-point metal alloys such as solders, and in the production of transparent conductive coatings of indium tin oxide (ITO) on glass."
     },
     {
-        "atomicNumber": "50", 
+        "atomicNumber": 50, 
         "name": "Tin", 
         "atomicMass": "118.710", 
         "symbol": "Sn", 
@@ -800,7 +800,7 @@
         "description": "Tin is a silvery metal that characteristically has a faint yellow hue. Tin, like indium, is soft enough to be cut without much force. When a bar of tin is bent, the so-called “tin cry” can be heard as a result of twinning in tin crystals; this trait is shared by indium, cadmium, zinc, and frozen mercury. Pure tin after solidifying keeps a mirror-like appearance similar to most metals. However, in most tin alloys, the metal solidifies with a dull gray color."
     },
     {
-        "atomicNumber": "51", 
+        "atomicNumber": 51, 
         "name": "Antimony", 
         "atomicMass": "121.760", 
         "symbol": "Sb", 
@@ -816,7 +816,7 @@
         "description": "is found in nature mainly as the sulfide mineral stibnite (Sb<sub>2</sub>S<sub>3</sub>). Antimony compounds have been known since ancient times and were powdered for use as medicine and cosmetics, often known by the Arabic name kohl."
     },
     {
-        "atomicNumber": "52", 
+        "atomicNumber": 52, 
         "name": "Tellerium", 
         "atomicMass": "127.60", 
         "symbol": "Te", 
@@ -832,7 +832,7 @@
         "description": "Tellerium is a brittle, mildly toxic, rare, silver-white metalloid. Tellurium is chemically related to selenium and sulfur, all three of which are chalcogens. It is occasionally found in native form as elemental crystals. Tellurium is far more common in the Universe as a whole than on Earth."
     },
     {
-        "atomicNumber": "53", 
+        "atomicNumber": 53, 
         "name": "Iodine", 
         "atomicMass": "126.904", 
         "symbol": "I", 
@@ -848,7 +848,7 @@
         "description": "Iodine is the heaviest of the stable halogens, it exists as a lustrous, purplish-black non-metallic solid at standard conditions that melts to form a deep violet liquid at 114 degrees Celsius, and boils to a violet gas at 184 degrees Celsius. "
     },
     {
-        "atomicNumber": "54", 
+        "atomicNumber": 54, 
         "name": "Xenon", 
         "atomicMass": "131.293", 
         "symbol": "Xe", 
@@ -864,7 +864,7 @@
         "description": "Xenon is a colorless, dense, odorless noble gas found in Earth's atmosphere in trace amounts. It is used in flash lamps and arc lamps, and as a general anesthetic."
     },
     {
-        "atomicNumber": "55", 
+        "atomicNumber": 55, 
         "name": "Caesium", 
         "atomicMass": "132.905", 
         "symbol": "Cs", 
@@ -880,7 +880,7 @@
         "description": " Caesium is a soft, silvery-golden alkali metal with a melting point of 28.5  (83.3 °F), which makes it one of only five elemental metals that are liquid at or near room temperature. Caesium has physical and chemical properties similar to those of rubidium and potassium."
     },
     {
-        "atomicNumber": "56", 
+        "atomicNumber": 56, 
         "name": "Barium", 
         "atomicMass": "137.327", 
         "symbol": "Ba", 
@@ -896,7 +896,7 @@
         "description": "Barium is never found in nature as a free element. The most common minerals of barium are baryte (barium sulfate, BaSO<sub>4</sub>) and witherite (barium carbonate, BaCO<sub>3</sub>), both insoluble in water."
     },
     {
-        "atomicNumber": "57", 
+        "atomicNumber": 57, 
         "name": "Lanthanum", 
         "atomicMass": "138.905", 
         "symbol": "La", 
@@ -912,7 +912,7 @@
         "description": "Lanthanum is traditionally counted among the rare earth elements. The usual oxidation state is +3. Lanthanum has no biological role in humans but is essential to some bacteria. It is not particularly toxic to humans but does show some antimicrobial activity."
     },
     {
-        "atomicNumber": "58", 
+        "atomicNumber": 58, 
         "name": "Cerium", 
         "atomicMass": "140.116", 
         "symbol": "Ce", 
@@ -928,7 +928,7 @@
         "description": "Cerium is metal that tarnishes when exposed to air, and it is soft enough to be cut with a steel kitchen knife. Despite always occurring in combination with the other rare-earth elements in minerals, cerium is easy to extract from its ores, as it can be distinguished among the other lanthanides by its unique ability to be oxidized."
     },
     {
-        "atomicNumber": "59", 
+        "atomicNumber": 59, 
         "name": "Praseodymium",
         "atomicMass": "140.907", 
         "symbol": "Pr", 
@@ -944,7 +944,7 @@
         "description": "Praseodymium is a soft, malleable and ductile metal, valued for its magnetic, electrical, chemical, and optical properties. It is too reactive to be found in native form, and pure praseodymium metal slowly develops a green oxide coating when exposed to air. Praseodymium always occurs naturally together with the other rare-earth metals. It is the fourth most common rare-earth element, making up 9.1 parts per million of the Earth's crust."
     },
     {
-        "atomicNumber": "60", 
+        "atomicNumber": 60, 
         "name": "Neodymium", 
         "atomicMass": "144.242", 
         "symbol": "Nd", 
@@ -960,7 +960,7 @@
         "description": "Neodymium is a hard, slightly malleable silvery metal that quickly tarnishes in air and moisture. When oxidized, neodymium reacts quickly to produce pink, purple/blue and yellow compounds in the +2, +3 and +4 oxidation states. Although neodymium is classed as a rare-earth element, it is fairly common, no rarer than cobalt, nickel, or copper, and is widely distributed in the Earth's crust."
     },
     {
-        "atomicNumber": "61", 
+        "atomicNumber": 61, 
         "name": "Promethium", 
         "atomicMass": "145", 
         "symbol": "Pm", 
@@ -976,7 +976,7 @@
         "description": "All of promethium's isotopes are radioactive; it is extremely rare, with only about 500–600 grams naturally occurring in Earth's crust at any given time. Because natural promethium is exceedingly scarce, it is typically synthesized by bombarding uranium-235 (enriched uranium) with thermal neutrons to produce promethium-147 as a fission product."
     },
     {
-        "atomicNumber": "62", 
+        "atomicNumber": 62, 
         "name": "Samarium", 
         "atomicMass": "150.36", 
         "symbol": "Sm", 
@@ -992,7 +992,7 @@
         "description": "Samarium is a moderately hard silvery metal that slowly oxidizes in air. The major commercial application of samarium is in samarium–cobalt magnets, which have permanent magnetization second only to neodymium magnets. The radioactive isotope samarium-153 is the active component of the drug samarium lexidronam, which kills cancer cells in the treatment of lung cancer, prostate cancer, breast cancer and osteosarcoma."
     },
     {
-        "atomicNumber": "63", 
+        "atomicNumber": 63, 
         "name": "Europium", 
         "atomicMass": "151.964", 
         "symbol": "Eu", 
@@ -1008,7 +1008,7 @@
         "description": "Europium is the most reactive lanthanide by far, having to be stored under an inert fluid to protect it from atmospheric oxygen or moisture. Europium is also the softest lanthanide, as it can be dented with a fingernail and easily cut with a knife. When oxidation is removed a shiny-white metal is visible."
     },
     {
-        "atomicNumber": "64", 
+        "atomicNumber": 64, 
         "name": "Gadolinium", 
         "atomicMass": "157.25", 
         "symbol": "Gd", 
@@ -1024,7 +1024,7 @@
         "description": "Gadolinium is a silvery-white metal when oxidation is removed. It is only slightly malleable and is a ductile rare-earth element. It reacts with atmospheric oxygen or moisture slowly to form a black coating. When separated, it usually has impurities of the other rare-earths because of their similar chemical properties."
     },
     {
-        "atomicNumber": "65", 
+        "atomicNumber": 65, 
         "name": "Terbium", 
         "atomicMass": "158.925", 
         "symbol": "Tb", 
@@ -1040,7 +1040,7 @@
         "description": "The ninth member of the lanthanide series, terbium is a fairly electropositive metal that reacts with water, evolving hydrogen gas. Terbium is never found in nature as a free element, but it is contained in many minerals, including cerite, gadolinite, etc. Most of the world's terbium supply is used in green phosphors. Terbium oxide is in fluorescent lamps and television and monitor cathode ray tubes (CRTs)."
     },
     {
-        "atomicNumber": "66", 
+        "atomicNumber": 66, 
         "name": "Dysprosium",
         "atomicMass": "162.500", 
         "symbol": "Dy", 
@@ -1056,7 +1056,7 @@
         "description": "Dysprosium is a rare-earth element with a metallic silver luster. It is never found in nature as a free element, though it is found in various minerals. Naturally occurring dysprosium is composed of seven isotopes. It is used for its high thermal neutron absorption cross-section in making control rods in nuclear reactors, for its high magnetic susceptibility in data-storage applications."
     },
     {
-        "atomicNumber": "67", 
+        "atomicNumber": 67, 
         "name": "Holmium", 
         "atomicMass": "164.930", 
         "symbol": "Ho", 
@@ -1072,7 +1072,7 @@
         "description": "Elemental holmium is a relatively soft and malleable silvery-white metal. It is too reactive to be found uncombined in nature, but when isolated, is relatively stable in dry air at room temperature. However, it reacts with water and corrodes readily and also burns in air when heated."
     },
     {
-        "atomicNumber": "68", 
+        "atomicNumber": 68, 
         "name": "Erbium", 
         "atomicMass": "167.259", 
         "symbol": "Er", 
@@ -1088,7 +1088,7 @@
         "description": "Erbium is a silvery-white solid metal when artificially isolated, natural erbium is always found in chemical combination with other elements. It is a lanthanide, a rare earth element, originally found in the gadolinite mine in Ytterby in Sweden, from which it got its name."
     },
     {
-        "atomicNumber": "69", 
+        "atomicNumber": 69, 
         "name": "Thulium", 
         "atomicMass": "168.934", 
         "symbol": "Tm", 
@@ -1104,7 +1104,7 @@
         "description": "Thulium is the second-least abundant of the lanthanides, after radioactively unstable promethium which is only found in trace quantities on Earth. It is fairly soft and slowly tarnishes in air. Despite its high price and rarity, thulium is used as the radiation source in portable X-ray devices, and in some solid-state lasers."
     },
     {
-        "atomicNumber": "70", 
+        "atomicNumber": 70, 
         "name": "Ytterbium", 
         "atomicMass": "173.045", 
         "symbol": "Yb", 
@@ -1120,7 +1120,7 @@
         "description": "Ytterbium is a soft, malleable and ductile chemical element that displays a bright silvery luster when pure. It is a rare-earth element, and it is readily dissolved by the strong mineral acids. It reacts slowly with cold water and it oxidizes slowly in air."
     },
     {
-        "atomicNumber": "71", 
+        "atomicNumber": 71, 
         "name": "Lutetium", 
         "atomicMass": "174.9668", 
         "symbol": "Lu", 
@@ -1136,7 +1136,7 @@
         "description": "Lutetium is not a particularly abundant element, although it is significantly more common than silver in the earth's crust. It is a silvery white metal, which resists corrosion in dry air, but not in moist air. Lutetium usually occurs in association with the element yttrium and is sometimes used in metal alloys and as a catalyst in various chemical reactions. "
     },
     {
-        "atomicNumber": "72", 
+        "atomicNumber": 72, 
         "name": "Hafnium", 
         "atomicMass": "178.486", 
         "symbol": "Hf", 
@@ -1152,7 +1152,7 @@
         "description": "Hafnium's large neutron capture cross section makes it a good material for neutron absorption in control rods in nuclear power plants. Some superalloys used for special applications contain hafnium in combination with niobium, titanium, or tungsten."
     },
     {
-        "atomicNumber": "73", 
+        "atomicNumber": 73, 
         "name": "Tantalum", 
         "atomicMass": "180.947", 
         "symbol": "Ta", 
@@ -1168,7 +1168,7 @@
         "description": "Tantalum is a rare, hard, blue-gray, lustrous transition metal that is highly corrosion-resistant. It is part of the refractory metals group, which are widely used as minor components in alloys. The chemical inertness of tantalum makes it a valuable substance for laboratory equipment, and as a substitute for platinum."
     },
     {
-        "atomicNumber": "74", 
+        "atomicNumber": 74, 
         "name": "Tungsten", 
         "atomicMass": "183.84", 
         "symbol": "W", 
@@ -1184,7 +1184,7 @@
         "description": "Tungsten is remarkable for its robustness, especially the fact that it has the highest melting point of all the elements discovered. Tungsten occurs in many alloys, which have numerous applications, including incandescent light bulb filaments, X-ray tubes, etc. Its hardness and high density make it suitable for military applications in penetrating projectiles."
     },
     {
-        "atomicNumber": "75", 
+        "atomicNumber": 75, 
         "name": "Rhenium", 
         "atomicMass": "186.207", 
         "symbol": "Re", 
@@ -1200,7 +1200,7 @@
         "description": "Rhenium is one of the rarest elements in the Earth's crust. It has the third-highest melting point and second-highest boiling point of any stable element. Rhenium is an excellent catalyst for hydrogenation and isomerization, and is used for example in catalytic reforming of naphtha for use in gasoline."
     },
     {
-        "atomicNumber": "76", 
+        "atomicNumber": 76, 
         "name": "Osmium", 
         "atomicMass": "190.23", 
         "symbol": "Os", 
@@ -1216,7 +1216,7 @@
         "description": "Osmium is found as a trace element in alloys, mostly in platinum ores. Manufacturers use its alloys with platinum, iridium, and other platinum-group metals to make fountain pen nib tipping, electrical contacts, and in other applications that require extreme durability and hardness. It is estimated to be about 0.6 parts per billion in the universe and is therefore the rarest precious metal."
     },
     {
-        "atomicNumber": "77", 
+        "atomicNumber": 77, 
         "name": "Iridium", 
         "atomicMass": "192.217", 
         "symbol": "Ir", 
@@ -1232,7 +1232,7 @@
         "description": "Iridium is considered to be the second-densest metal as defined by experimental X-ray crystallography. It is the most corrosion-resistant metal, even at temperatures as high as 2000 °C. Although only certain molten salts and halogens are corrosive to solid iridium, finely divided iridium dust is much more reactive and can be flammable."
     },
     {
-        "atomicNumber": "78", 
+        "atomicNumber": 78, 
         "name": "Platinum", 
         "atomicMass": "195.084", 
         "symbol": "Pt", 
@@ -1248,7 +1248,7 @@
         "description": "Platinum is one of the rarer elements in Earth's crust, with an average abundance of approximately 5 μg/kg. It occurs in some nickel and copper ores along with some native deposits. Because of its scarcity in Earth's crust, only a few hundred tonnes are produced annually, and given its important uses, it is highly valuable and is a major precious metal commodity."
     },
     {
-        "atomicNumber": "79", 
+        "atomicNumber": 79, 
         "name": "Gold", 
         "atomicMass": "196.966", 
         "symbol": "Au", 
@@ -1264,7 +1264,7 @@
         "description": "Gold often occurs in free elemental (native) form, as nuggets or grains, in rocks, in veins, and in alluvial deposits. Gold is resistant to most acids, though it does dissolve in aqua regia (a mixture of nitric acid and hydrochloric acid), which forms a soluble tetrachloroaurate anion."
     },
     {
-        "atomicNumber": "80", 
+        "atomicNumber": 80, 
         "name": "Mercury", 
         "atomicMass": "200.592", 
         "symbol": "Hg", 
@@ -1280,7 +1280,7 @@
         "description": "Mercury is used in thermometers, barometers, manometers, sphygmomanometers, etc, though concerns about the element's toxicity have led to mercury thermometers and sphygmomanometers being largely phased out in clinical environments in favor of other alternatives. Mercury remains in use in scientific research applications in some locales. It is also used in fluorescent lighting and other devices. "
     },
     {
-        "atomicNumber": "81", 
+        "atomicNumber": 81, 
         "name": "Thallium", 
         "atomicMass": "204.382", 
         "symbol": "Tl", 
@@ -1296,7 +1296,7 @@
         "description": "Thallium is a gray post-transition metal that is not found free in nature. When isolated, thallium resembles tin, but discolors when exposed to air. Commercially, thallium is produced not from potassium ores, but as a byproduct from refining of heavy-metal sulfide ores. Approximately 60–70% of thallium production is used in the electronics industry, and the remainder is used in the pharmaceutical industry and in glass manufacturing. It is also used in infrared detectors."
     },
     {
-        "atomicNumber": "82", 
+        "atomicNumber": 82, 
         "name": "Lead", 
         "atomicMass": "206.14", 
         "symbol": "Pb", 
@@ -1312,7 +1312,7 @@
         "description": "Lead is a heavy metal that is denser than most common materials. Lead is soft and malleable, and also has a relatively low melting point. When freshly cut, lead is silvery with a hint of blue; it tarnishes to a dull gray color when exposed to air. Lead has the highest atomic number of any stable element. Lead is a neurotoxin that accumulates in soft tissues and bones; it damages the nervous system and interferes with the function of biological enzymes, causing neurological disorders, such as brain damage and behavioral problems."
     },
     {
-        "atomicNumber": "83", 
+        "atomicNumber": 83, 
         "name": "Bismuth", 
         "atomicMass": "208.980", 
         "symbol": "Bi", 
@@ -1328,7 +1328,7 @@
         "description": "Elemental bismuth may occur naturally, although its sulfide and oxide form important commercial ores. The free element is 86% as dense as lead. It is a brittle metal with a silvery-white color when freshly produced, but surface oxidation can give it an iridescent tinge in numerous colours. Bismuth is the most naturally diamagnetic element and has one of the lowest values of thermal conductivity among metals."
     },
     {
-        "atomicNumber": "84", 
+        "atomicNumber": 84, 
         "name": "Polonium", 
         "atomicMass": "208.9824", 
         "symbol": "Po", 
@@ -1344,7 +1344,7 @@
         "description": "Polonium is a rare and highly radioactive metal with no stable isotopes, polonium is chemically similar to selenium and tellurium, though its metallic character resembles that of its horizontal neighbors in the periodic table: thallium, lead, and bismuth. Polonium was named after Marie Curie's homeland of Poland"
     },
     {
-        "atomicNumber": "85", 
+        "atomicNumber": 85, 
         "name": "Astatine", 
         "atomicMass": "210", 
         "symbol": "At", 
@@ -1360,7 +1360,7 @@
         "description": "Astatine is the rarest naturally occurring element in the Earth's crust, occurring only as the decay product of various heavier elements. All of astatine's isotopes are short-lived.  A sample of the pure element has never been assembled, because any macroscopic specimen would be immediately vaporized by the heat of its own radioactivity."
     },
     {
-        "atomicNumber": "86", 
+        "atomicNumber": 86, 
         "name": "Radon", 
         "atomicMass": "222.0176", 
         "symbol": "Rn", 
@@ -1376,7 +1376,7 @@
         "description": "Radon is a radioactive, colorless, odorless, tasteless noble gas. It occurs naturally in minute quantities as an intermediate step in the normal radioactive decay chains. Its most stable isotope, <sup>222</sup>Rn, has a half-life of only 3.8 days, making it one of the rarest elements."
     },
     {
-        "atomicNumber": "87", 
+        "atomicNumber": 87, 
         "name": "Francium", 
         "atomicMass": "223.0197", 
         "symbol": "Fr", 
@@ -1392,7 +1392,7 @@
         "description": "Francium is the second-most electropositive element, behind only caesium, and is the second rarest naturally occurring element (after astatine). The isotopes of francium decay quickly into astatine, radium, and radon. The largest amount of Francium produced in the laboratory was a cluster of more than 300,000 atoms."
     },
     {
-        "atomicNumber": "88", 
+        "atomicNumber": 88, 
         "name": "Radium", 
         "atomicMass": "226", 
         "symbol": "Ra", 
@@ -1408,7 +1408,7 @@
         "description": "Pure radium is silvery-white, but it readily reacts with nitrogen (rather than oxygen) on exposure to air, forming a black surface layer of radium nitride (Ra<sub>3</sub>N<sub>2</sub>). All isotopes of radium are highly radioactive, with the most stable isotope being radium-226, which has a half-life of 1600 years and decays into radon gas. In nature, radium is found in uranium and (to a lesser extent) thorium ores in trace amounts"
     },
     {
-        "atomicNumber": "89", 
+        "atomicNumber": 89, 
         "name": "Actinium", 
         "atomicMass": "227", 
         "symbol": "Ac", 
@@ -1424,7 +1424,7 @@
         "description": "Actinium is a soft, silvery-white radioactive metal, actinium reacts rapidly with oxygen and moisture in air forming a white coating of actinium oxide that prevents further oxidation. As with most lanthanides and many actinides, actinium assumes oxidation state +3 in nearly all its chemical compounds."
     },
     {
-        "atomicNumber": "90", 
+        "atomicNumber": 90, 
         "name": "Thorium", 
         "atomicMass": "232.0377", 
         "symbol": "Th", 
@@ -1440,7 +1440,7 @@
         "description": "Thorium is silvery and tarnishes black when it is exposed to air, forming thorium dioxide; it is moderately soft, malleable, and has a high melting point. Thorium is an electropositive actinide whose chemistry is dominated by the +4 oxidation state; it is quite reactive and can ignite in air when finely divided. On Earth, thorium and uranium are the only significantly radioactive elements that still occur naturally in large quantities as primordial elements."
     },
     {
-        "atomicNumber": "91", 
+        "atomicNumber": 91, 
         "name": "Protactinium", 
         "atomicMass": "231.035", 
         "symbol": "Pa", 
@@ -1456,7 +1456,7 @@
         "description": "Protactinium is a dense, silvery-gray actinide metal which readily reacts with oxygen, water vapor and inorganic acids. Concentrations of protactinium in the Earth's crust are typically a few parts per trillion, but may reach up to a few parts per million in some uraninite ore deposits. Because of its scarcity, high radioactivity and high toxicity, there are currently no uses for protactinium outside scientific research."
     },
     {
-        "atomicNumber": "92", 
+        "atomicNumber": 92, 
         "name": "Uranium", 
         "atomicMass": "238.028", 
         "symbol": "U", 
@@ -1472,7 +1472,7 @@
         "description": "Uranium is weakly radioactive because all isotopes of uranium are unstable. Uranium has the highest atomic weight of the primordially occurring elements. Its density is about 70% higher than that of lead, and slightly lower than that of gold or tungsten. It occurs naturally in low concentrations of a few parts per million in soil, rock and water, and is commercially extracted from uranium-bearing minerals such as uraninite."
     },
     {
-        "atomicNumber": "93", 
+        "atomicNumber": 93, 
         "name": "Neptunium", 
         "atomicMass": "237", 
         "symbol": "Np", 
@@ -1488,7 +1488,7 @@
         "description": "Neptunium metal is silvery and tarnishes when exposed to air. The element occurs in three allotropic forms and it normally exhibits five oxidation states. It is radioactive, poisonous, pyrophoric, and capable of accumulating in bones, which makes the handling of neptunium dangerous. The longest-lived isotope of neptunium, neptunium-237, is a by-product of nuclear reactors and plutonium production."
     },
     {
-        "atomicNumber": "94", 
+        "atomicNumber": 94, 
         "name": "Plutonium", 
         "atomicMass": "244", 
         "symbol": "Pu", 
@@ -1504,7 +1504,7 @@
         "description": "Plutonium is an actinide metal of silvery-gray appearance that tarnishes when exposed to air, and forms a dull coating when oxidized. The element normally exhibits six allotropes and four oxidation states. When exposed to moist air, it forms oxides and hydrides that can expand the sample up to 70% in volume, which in turn flake off as a powder that is pyrophoric. It is radioactive and can accumulate in bones, which makes the handling of plutonium dangerous."
     },
     {
-        "atomicNumber": "95", 
+        "atomicNumber": 95, 
         "name": "Americium", 
         "atomicMass": "243", 
         "symbol": "Am", 
@@ -1520,7 +1520,7 @@
         "description": "Most americium is produced by uranium or plutonium being bombarded with neutrons in nuclear reactors – one tonne of spent nuclear fuel contains about 100 grams of americium. It is widely used in commercial ionization chamber smoke detectors, as well as in neutron sources and industrial gauges. Several unusual applications, such as nuclear batteries or fuel for space ships with nuclear propulsion, have been proposed for the isotope <sup>242</sup>Am."
     },
     {
-        "atomicNumber": "96", 
+        "atomicNumber": 96, 
         "name": "Curium", 
         "atomicMass": "247", 
         "symbol": "Cm", 
@@ -1536,7 +1536,7 @@
         "description": "This element of the actinide series was named after Marie and Pierre Curie, both known for their research on radioactivity. All known isotopes of curium are radioactive and have a small critical mass for a sustained nuclear chain reaction. They predominantly emit α-particles, and the heat released in this process can serve as a heat source in radioisotope thermoelectric generators."
     },
     {
-        "atomicNumber": "97", 
+        "atomicNumber": 97, 
         "name": "Berkelium", 
         "atomicMass": "247", 
         "symbol": "Bk", 
@@ -1552,7 +1552,7 @@
         "description": "Just over one gram of berkelium has been produced in the United States since 1967. There is no practical application of berkelium outside scientific research. Berkelium is a soft, silvery-white, radioactive metal. The berkelium-249 isotope emits low-energy electrons and thus is relatively safe to handle."
     },
     {
-        "atomicNumber": "98", 
+        "atomicNumber": 98, 
         "name": "Californium", 
         "atomicMass": "251", 
         "symbol": "Cf", 
@@ -1568,7 +1568,7 @@
         "description": "Californium is one of the few transuranium elements that have practical applications. Most of these applications exploit the property of certain isotopes of californium to emit neutrons. For example, californium can be used to help start up nuclear reactors, and it is employed as a source of neutrons when studying materials using neutron diffraction and neutron spectroscopy."
     },
     {
-        "atomicNumber": "99", 
+        "atomicNumber": 99, 
         "name": "Einsteinium", 
         "atomicMass": "252", 
         "symbol": "Es", 
@@ -1584,7 +1584,7 @@
         "description": "Einsteinium was discovered as a component of the debris of the first hydrogen bomb explosion in 1952. Its most common isotope einsteinium-253 (half-life 20.47 days) is produced artificially from decay of californium-253 in a few dedicated high-power nuclear reactors with a total yield on the order of one milligram per year."
     },
     {
-        "atomicNumber": "100", 
+        "atomicNumber": 100, 
         "name": "Fermium", 
         "atomicMass": "257", 
         "symbol": "Fm", 
@@ -1600,7 +1600,7 @@
         "description": "Fermium is the heaviest element that can be formed by neutron bombardment of lighter elements, and hence the last element that can be prepared in macroscopic quantities, although pure fermium metal has not yet been prepared. A total of 19 isotopes are known, with <sup>257</sup>Fm being the longest-lived with a half-life of 100.5 days."
     },
     {
-        "atomicNumber": "101", 
+        "atomicNumber": 101, 
         "name": "Mendelevium", 
         "atomicMass": "258", 
         "symbol": "Md", 
@@ -1616,7 +1616,7 @@
         "description": "Mendelevium was discovered by bombarding einsteinium with alpha particles in 1955, the same method still used to produce it today. It was named after Dmitri Mendeleev, father of the periodic table of the chemical elements. Using available microgram quantities of the isotope einsteinium-253, over a million mendelevium atoms may be produced each hour."
     },
     {
-        "atomicNumber": "102", 
+        "atomicNumber": 102, 
         "name": "Nobelium", 
         "atomicMass": "259", 
         "symbol": "No", 
@@ -1632,7 +1632,7 @@
         "description": "Nobelium is named in honor of Alfred Nobel, the inventor of dynamite and benefactor of science. Like all elements with atomic number over 100, nobelium can only be produced in particle accelerators by bombarding lighter elements with charged particles. A total of twelve nobelium isotopes are known to exist. The chemical properties of nobelium are not completely known: they are mostly only known in aqueous solution."
     },
     {
-        "atomicNumber": "103", 
+        "atomicNumber": 103, 
         "name": "Lawrencium", 
         "atomicMass": "266", 
         "symbol": "Lr", 
@@ -1648,7 +1648,7 @@
         "description": "Like all elements with atomic number over 100, lawrencium can only be produced in particle accelerators by bombarding lighter elements with charged particles. Fourteen isotopes of lawrencium are currently known; the most stable is <sup>266</sup>Lr with a half-life of 11 hours. Lawrencium is named in honor of Ernest Lawrence, inventor of the cyclotron, a device that was used to discover many artificial radioactive elements."
     },
     {
-        "atomicNumber": "104", 
+        "atomicNumber": 104, 
         "name": "Rutherfordium", 
         "atomicMass": "261.108", 
         "symbol": "Rf", 
@@ -1664,7 +1664,7 @@
         "description": "Rutherfordium is a synthetic chemical element that can only be created in a laboratory. Rutherfordium has no stable or naturally occurring isotopes. Several radioactive isotopes have been synthesized in the laboratory, either by fusing two atoms or by observing the decay of heavier elements."
     },
     {
-        "atomicNumber": "105", 
+        "atomicNumber": 105, 
         "name": "Dubnium", 
         "atomicMass": "262.1138", 
         "symbol": "Db", 
@@ -1680,7 +1680,7 @@
         "description": "Dubnium does not occur naturally on Earth and is produced artificially. Chemistry experiments have revealed that dubnium often behaves more like niobium rather than tantalum, breaking periodic trends."
     },
     {
-        "atomicNumber": "106", 
+        "atomicNumber": 106, 
         "name": "Seaborgium", 
         "atomicMass": "263.118", 
         "symbol": "Sg", 
@@ -1696,7 +1696,7 @@
         "description": "As a synthetic element, it can be created in a laboratory but is not found in nature. It is also radioactive; the most stable known isotope, 269Sg, has a half-life of approximately 14 minutes. The chemical properties of seaborgium are characterized only partly, but they compare well with the chemistry of the other group 6 elements."
     },
     {
-        "atomicNumber": "107", 
+        "atomicNumber": 107, 
         "name": "Bohrium", 
         "atomicMass": "270", 
         "symbol": "Bh", 
@@ -1712,7 +1712,7 @@
         "description": "Bohrium is named after Danish physicist Niels Bohr. As a synthetic element, it can be created in a laboratory but is not found in nature. All known isotopes of bohrium are extremely radioactive."
     },
     {
-        "atomicNumber": "108", 
+        "atomicNumber": 108, 
         "name": "Hassium", 
         "atomicMass": "269", 
         "symbol": "Hs", 
@@ -1728,7 +1728,7 @@
         "description": "Hassium is highly radioactive; its most stable known isotopes have half-lives of approximately ten seconds. Hassium is a superheavy element; it has been produced in a laboratory only in very small quantities by fusing heavy nuclei with lighter ones. Natural occurrences of the element have been hypothesised but never found."
     },
     {
-        "atomicNumber": "109", 
+        "atomicNumber": 109, 
         "name": "Meitnerium", 
         "atomicMass": "278", 
         "symbol": "Mt", 
@@ -1744,7 +1744,7 @@
         "description": "Meitnerium is an extremely radioactive synthetic element (an element not found in nature, but can be created in a laboratory). The most stable known isotope, meitnerium-278, has a half-life of 4.5 seconds, although the unconfirmed meitnerium-282 may have a longer half-life of 67 seconds."
     },
     {
-        "atomicNumber": "110", 
+        "atomicNumber": 110, 
         "name": "Darmstadtium", 
         "atomicMass": "281", 
         "symbol": "Ds", 
@@ -1760,7 +1760,7 @@
         "description": "Darmstadtium is an extremely radioactive synthetic element. The most stable known isotope, darmstadtium-281, has a half-life of approximately 12.7 seconds. Darmstadtium is calculated to have similar properties to its lighter homologues, nickel, palladium, and platinum."
     },
     {
-        "atomicNumber": "111", 
+        "atomicNumber": 111, 
         "name": "Roentgenium", 
         "atomicMass": "282", 
         "symbol": "Rg", 
@@ -1776,7 +1776,7 @@
         "description": "Roentgenium is an extremely radioactive synthetic element that can be created in a laboratory but is not found in nature. Only a few roentgenium atoms have ever been synthesized, and they contain no current practical application beyond that of scientific study."
     },
     {
-        "atomicNumber": "112", 
+        "atomicNumber": 112, 
         "name": "Copernicium", 
         "atomicMass": "285", 
         "symbol": "Cn", 
@@ -1792,7 +1792,7 @@
         "description": "During reactions with gold, it has been shown to be an extremely volatile substance, so much so that it is possibly a gas or a volatile liquid at standard temperature and pressure. Predictions vary on whether solid copernicium would be a metal, semiconductor, or insulator."
     },
     {
-        "atomicNumber": "113", 
+        "atomicNumber": 113, 
         "name": "Nihonium", 
         "atomicMass": "286", 
         "symbol": "Nh", 
@@ -1808,7 +1808,7 @@
         "description": "Nihonium is extremely radioactive; its most stable known isotope, nihonium-286, has a half-life of about 10 seconds. Very little is known about nihonium, as it has only been made in very small amounts that decay within seconds. The anomalously long lives of some superheavy nuclides, including some nihonium isotopes, are explained by the \"island of stability\" theory. Experiments support the theory, with the half-lives of the confirmed nihonium isotopes increasing from milliseconds to seconds as neutrons are added and the island is approached."
     },
     {
-        "atomicNumber": "114", 
+        "atomicNumber": 114, 
         "name": "Flerovium", 
         "atomicMass": "289", 
         "symbol": "Fl", 
@@ -1824,7 +1824,7 @@
         "description": "About 90 atoms of flerovium have been observed: 58 were synthesized directly, and the rest were made from the radioactive decay of heavier elements. All of these flerovium atoms have been shown to have mass numbers from 284 to 290. The most stable known flerovium isotope, flerovium-289, has a half-life of around 1.9 seconds, but it is possible that the unconfirmed flerovium-290 may have a longer half-life of 19 seconds; this would be one of the longest half-lives of any isotope of any element at these farthest reaches of the periodic table."
     },
     {
-        "atomicNumber": "115", 
+        "atomicNumber": 115, 
         "name": "Moscovium", 
         "atomicMass": "290", 
         "symbol": "Mc", 
@@ -1840,7 +1840,7 @@
         "description": "Moscovium is an extremely radioactive element: its most stable known isotope, moscovium-290, has a half-life of only 0.65 seconds. Moscovium is calculated to have some properties similar to its lighter homologues, nitrogen, phosphorus, arsenic, antimony, and bismuth, and to be a post-transition metal, although it should also show several major differences from them. About 100 atoms of moscovium have been observed to date, all of which have been shown to have mass numbers from 287 to 290."
     },
     {
-        "atomicNumber": "116", 
+        "atomicNumber": 116, 
         "name": "Livermorium", 
         "atomicMass": "293", 
         "symbol": "Lv", 
@@ -1856,7 +1856,7 @@
         "description": "Livermorium is an extremely radioactive element that has only been created in the laboratory and has not been observed in nature. The element is named after the Lawrence Livermore National Laboratory in the United States, which collaborated with the Joint Institute for Nuclear Research (JINR) in Dubna, Russia. Livermorium is calculated to have some similar properties to its lighter homologues (oxygen, sulfur, selenium, tellurium, and polonium), and be a post-transition metal, although it should also show several major differences from them."
     },
     {
-        "atomicNumber": "117", 
+        "atomicNumber": 117, 
         "name": "Tennessine", 
         "atomicMass": "294.214", 
         "symbol": "Ts", 
@@ -1872,7 +1872,7 @@
         "description": "The discovery of tennessine was officially announced in Dubna, Russia, by a Russian–American collaboration in April 2010, which makes it the most recently discovered element as of 2021. Tennessine may be located in the \"island of stability\", a concept that explains why some superheavy elements are more stable compared to an overall trend of decreasing stability for elements beyond bismuth on the periodic table."
     },
     {
-        "atomicNumber": "118", 
+        "atomicNumber": 118, 
         "name": "Oganesson", 
         "atomicMass": "294.2139", 
         "symbol": "Og", 

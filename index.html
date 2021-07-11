@@ -20,8 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap"
       rel="stylesheet"
     />
-    <script src="./canvas.js" defer></script>
-    <script src="./main.js" defer></script>
+    <script src="./node_modules/chart.js/dist/chart.js"></script>
+    <script src="./js/comparison.js" defer></script>
+    <script src="./js/canvas.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <canvas id="background"></canvas>
@@ -29,9 +31,10 @@
     <ul>
       <li id="tab1" data-targets="#periodic-Table">Table</li>
       <li id="tab2" data-targets=".description">Details</li>
+      <li id="tab2" data-targets=".charts">Charts</li>
     </ul>
     <small>click an element and view its properties in the Details tab</small>
-
+    
     <div class="periodic-Table" id="periodic-Table" data-tab-content>
       <button>Toggle canvas</button>
       <!-- <canvas id="structure"></canvas> -->
@@ -51,6 +54,7 @@
       </div>
       <!-- To be flled with javascript -->
     </div>
+    
     <div class="description" data-tab-content>
       <div class="card name">Click an element to view its details here !</div>
       <div class="card particles"></div>
@@ -61,6 +65,11 @@
       <div class="card structure-3d"></div>
       <div class="card structure-2d"></div>
       <div class="source"></div>
+    </div>
+
+    <div class="charts" data-tab-content>
+      <canvas id="state"></canvas>
+      <canvas id="atomicMass"></canvas>
     </div>
 
     <div class="footer">

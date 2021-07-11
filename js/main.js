@@ -6,24 +6,23 @@ function toKelvin(num) {
     return (num + 273.15).toPrecision(6)
 }
 
-/*<canvas id="structure2"></canvas>*/
 
-window.addEventListener('DOMContentLoaded', () => {
     const periodicTable = document.getElementById('periodic-Table');
     const remove = document.querySelector('button');
     const bgCanvas = document.querySelector('canvas#background')
 
-    let name = document.querySelector('.name');
-    let pProperties = document.querySelector('.p-properties');
-    let cProperties = document.querySelector('.c-properties');
-    let particles = document.querySelector('.particles');
-    let structure = document.querySelector('.structure-3d');
-    let structure2 = document.querySelector('.structure-2d');
-    let discovery = document.querySelector('.discovery');
-    let summary = document.querySelector('.summary');
-    let source = document.querySelector('.source');
+    const name = document.querySelector('.name');
+    const pProperties = document.querySelector('.p-properties');
+    const cProperties = document.querySelector('.c-properties');
+    const particles = document.querySelector('.particles');
+    const structure = document.querySelector('.structure-3d');
+    const structure2 = document.querySelector('.structure-2d');
+    const discovery = document.querySelector('.discovery');
+    const summary = document.querySelector('.summary');
+    const source = document.querySelector('.source');
 
     //Acessing the dom ↑ ↑ ↑
+    
     let mark = document.createElement('span')
     mark.innerHTML = '&#33;';
     mark.className = 'icon';
@@ -42,13 +41,8 @@ window.addEventListener('DOMContentLoaded', () => {
             })
             tab.classList.add('open')
             target.removeAttribute('data-tab-content');
-            console.log(target)
         })
     })
-
-    // window.setTimeout(() => {
-    //     alert('Use a Laptop or desktop for best user experience')
-    // }, 2000)
 
     remove.addEventListener('click', () => {
         bgCanvas.classList.toggle('none')
@@ -82,6 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 discovery.classList = 'card ' + 'discovery ' + element.category;
                 summary.classList = 'card ' + 'summary ' + element.category;
                 source.classList = 'card ' + 'source ' + element.category;
+
                 if(id == element.atomicNumber) {
 
                     structure.innerHTML = `<tag>3-D Structure</tag> <br/> <br/>
@@ -149,6 +144,8 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         })
 
+
+
     function drawStructure(canvas, array, text) {
         let c = canvas.getContext('2d');
         canvas.width = 400;
@@ -177,44 +174,51 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
-        
+
         class Electron {
-            constructor() {
+            constructor(x,y, radius, color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
                 this.radi = (canvas.height/2.2) / array.length;
-                this.radius = 4;
-                this.color = 'black';
-                
+
                 this.draw = function () {
                     array.forEach((arr, i) => {
                         i += 1
+                        let radians = Math.PI * 2 / arr;
                         for (let electrons = 0; electrons < arr; electrons++) {
-                            let radians = Math.PI * 2 / arr;
-                            let x = canvas.width / 2 + Math.sin(radians * electrons) * i * this.radi;
-                            let y = canvas.height / 2 + Math.cos(radians * electrons) * i * this.radi;
+                            let x = this.x + Math.sin(radians * electrons) * i * this.radi;
+                            let y = this.y + Math.cos(radians * electrons) * i * this.radi;
                             
                             c.beginPath();
                             c.arc(x, y, this.radius, 0, Math.PI * 2, false);
                             c.fillStyle = this.color;
                             c.fill();
+                            c.closePath();
                         }
                     })
-                    
                 }
             }
         }
-        let electrons = new Electron()
-        electrons.draw()
+
+        let electrons = new Electron(canvas.width/2, canvas.height/2, 4, 'black');
 
         function rings() {
-            let x = canvas.width / 2;
-            let y = canvas.height / 2;
+            let x = canvas.width/2;
+            let y = canvas.height/2;
             let radi = (canvas.height/2.2) / array.length;
     
             let atom = new Atom(x, y, radi, 'black');
             atom.drawRings()
         }
-        rings()   
+
+        rings()
+        
+        electrons.draw()
+
     }
+
 
     function drawAtom(canvas, electronCount, text) {
         let c = canvas.getContext('2d');
@@ -280,4 +284,3 @@ window.addEventListener('DOMContentLoaded', () => {
         init();
         animate();
     }
-})
