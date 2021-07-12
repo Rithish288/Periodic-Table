@@ -1,4 +1,4 @@
-fetch('../PeriodicTable.json').then(response => {
+fetch('PeriodicTable.json').then(response => {
     return response.json();
 }).then(elements => {
     const weights = elements.map(function(el) {
