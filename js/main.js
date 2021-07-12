@@ -48,7 +48,7 @@ function toKelvin(num) {
         bgCanvas.classList.toggle('none')
     })
     
-    let jsonData =  fetch('PeriodicTable.json')//Fetching data
+    let jsonData =  fetch('../PeriodicTable.json')//Fetching data
     jsonData.then(response => {
         return response.json()
     })
