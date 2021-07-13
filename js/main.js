@@ -29,12 +29,14 @@ function toKelvin(num) {
     const sunPath = 'M12.0489 0.927052C12.3483 0.00574109 13.6517 0.00573986 13.9511 0.92705L16.1432 7.67376C16.2771 8.08578 16.661 8.36475 17.0943 8.36475H24.1882C25.1569 8.36475 25.5597 9.60436 24.776 10.1738L19.0369 14.3435C18.6864 14.5981 18.5397 15.0495 18.6736 15.4615L20.8657 22.2082C21.1651 23.1295 20.1106 23.8956 19.3269 23.3262L13.5878 19.1565C13.2373 18.9019 12.7627 18.9019 12.4122 19.1565L6.67312 23.3262C5.88941 23.8956 4.83493 23.1295 5.13428 22.2082L7.32642 15.4615C7.46029 15.0495 7.31363 14.5981 6.96315 14.3435L1.22405 10.1738C0.440337 9.60436 0.843112 8.36475 1.81184 8.36475H8.90575C9.33897 8.36475 9.72293 8.08578 9.8568 7.67376L12.0489 0.927052Z'
     const moonPath = 'M25.6288 23.6435C19.6476 29.3755 10.1523 29.1734 4.42036 23.1923C-1.31157 17.2111 -1.10953 7.71579 4.87162 1.98386C10.8528 -3.74806 4.73747 5.35647 13.5 14.5C22.2625 23.6435 31.6099 17.9116 25.6288 23.6435Z'
     let path = document.querySelector('.path');
+    let gitPath = document.querySelector('.gitHub')
 
     toggleBtn.addEventListener('click', () => {
         if(!toggle) {
             toggle = true
             path.setAttribute('d', sunPath);
             path.setAttribute('fill', 'yellow');
+            gitPath.setAttribute('fill', 'white ');
             document.body.classList.remove('lightMode');
             document.body.classList.add('darkMode');
             
@@ -42,6 +44,7 @@ function toKelvin(num) {
             toggle = false;
             path.setAttribute('d', moonPath);
             path.setAttribute('fill', 'black');
+            gitPath.setAttribute('fill', 'black');
             document.body.classList.remove('darkMode')
             document.body.classList.add('lightMode')
         }
