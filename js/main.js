@@ -8,9 +8,6 @@ function toKelvin(num) {
 
 
     const periodicTable = document.getElementById('periodic-Table');
-    const remove = document.querySelector('button');
-    const bgCanvas = document.querySelector('canvas#background')
-
     const name = document.querySelector('.name');
     const pProperties = document.querySelector('.p-properties');
     const cProperties = document.querySelector('.c-properties');
@@ -26,6 +23,29 @@ function toKelvin(num) {
     let mark = document.createElement('span')
     mark.innerHTML = '&#33;';
     mark.className = 'icon';
+
+    let toggle = false;
+    const toggleBtn = document.querySelector('#mode');
+    const sunPath = 'M12.0489 0.927052C12.3483 0.00574109 13.6517 0.00573986 13.9511 0.92705L16.1432 7.67376C16.2771 8.08578 16.661 8.36475 17.0943 8.36475H24.1882C25.1569 8.36475 25.5597 9.60436 24.776 10.1738L19.0369 14.3435C18.6864 14.5981 18.5397 15.0495 18.6736 15.4615L20.8657 22.2082C21.1651 23.1295 20.1106 23.8956 19.3269 23.3262L13.5878 19.1565C13.2373 18.9019 12.7627 18.9019 12.4122 19.1565L6.67312 23.3262C5.88941 23.8956 4.83493 23.1295 5.13428 22.2082L7.32642 15.4615C7.46029 15.0495 7.31363 14.5981 6.96315 14.3435L1.22405 10.1738C0.440337 9.60436 0.843112 8.36475 1.81184 8.36475H8.90575C9.33897 8.36475 9.72293 8.08578 9.8568 7.67376L12.0489 0.927052Z'
+    const moonPath = 'M25.6288 23.6435C19.6476 29.3755 10.1523 29.1734 4.42036 23.1923C-1.31157 17.2111 -1.10953 7.71579 4.87162 1.98386C10.8528 -3.74806 4.73747 5.35647 13.5 14.5C22.2625 23.6435 31.6099 17.9116 25.6288 23.6435Z'
+    let path = document.querySelector('.path');
+
+    toggleBtn.addEventListener('click', () => {
+        if(!toggle) {
+            toggle = true
+            path.setAttribute('d', sunPath);
+            path.setAttribute('fill', 'yellow');
+            document.body.classList.remove('lightMode');
+            document.body.classList.add('darkMode');
+            
+        } else {
+            toggle = false;
+            path.setAttribute('d', moonPath);
+            path.setAttribute('fill', 'black');
+            document.body.classList.remove('darkMode')
+            document.body.classList.add('lightMode')
+        }
+    })
 
     const tabs = document.querySelectorAll('[data-targets]');
     const tabContent = document.querySelectorAll('[data-tab-content]');
@@ -44,10 +64,6 @@ function toKelvin(num) {
         })
     })
 
-    remove.addEventListener('click', () => {
-        bgCanvas.classList.toggle('none')
-    })
-    
     let jsonData =  fetch('PeriodicTable.json')//Fetching data
     jsonData.then(response => {
         return response.json()
@@ -141,8 +157,8 @@ function toKelvin(num) {
                     })
                 }
             })
-            });
-        })
+        });
+    })
 
 
 
@@ -165,12 +181,15 @@ function toKelvin(num) {
                         c.strokeStyle = this.color;
                         c.stroke();
 
-                        c.font = '15px Verdana';
-                        c.textAlign = 'center';
-                        c.textBaseline = 'middle';
-                        c.fillStyle = 'black';
-                        c.fillText(text, canvas.width / 2, canvas.height / 2);
                     }
+                    c.beginPath();
+                    c.arc(canvas.width/2, canvas.height/2, 15, 0, Math.PI*2, false);
+                    c.fill()
+                    c.font = '15px Verdana';
+                    c.textAlign = 'center';
+                    c.textBaseline = 'middle';
+                    c.fillStyle = 'white';
+                    c.fillText(text, canvas.width / 2, canvas.height / 2);
                 }
             }
         }
@@ -202,14 +221,15 @@ function toKelvin(num) {
             }
         }
 
-        let electrons = new Electron(canvas.width/2, canvas.height/2, 4, 'black');
+
+        let electrons = new Electron(canvas.width/2, canvas.height/2, 4, 'rgb(125, 125, 125)');
 
         function rings() {
             let x = canvas.width/2;
             let y = canvas.height/2;
             let radi = (canvas.height/2.2) / array.length;
     
-            let atom = new Atom(x, y, radi, 'black');
+            let atom = new Atom(x, y, radi, 'rgb(125, 125, 125)');
             atom.drawRings()
         }
 
@@ -271,7 +291,7 @@ function toKelvin(num) {
             var radius = 2;
             atoms.push(new Atom(x, y, 15, 'black'))
             for (var i = 0; i < electronCount; i++) {
-                atoms.push(new Atom(x, y, radius, "black"))
+                atoms.push(new Atom(x, y, radius, "rgb(140, 140, 140)"))
             }
         }
         function animate() {

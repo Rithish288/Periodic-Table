@@ -16,6 +16,7 @@ fetch('PeriodicTable.json').then(response => {
     const state = elements.map(function(el) {
         return el.state
     })
+    
 
     function findPercent(num, total) {
         return ((num / total) * 100)
