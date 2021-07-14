@@ -165,7 +165,8 @@ jsonData
                     drawStructure(
                         document.querySelector("#structure2"),
                         element.shells,
-                        element.symbol
+                        element.symbol,
+                        4, '15px'
                     );
 
                     const units = document.querySelectorAll("select");
@@ -185,12 +186,26 @@ jsonData
                     });
                 }
             });
+            elem.addEventListener('mouseenter', () => {
+                let canvas2 = document.getElementById('hover-structure')
+                if(id == element.atomicNumber) {
+                    drawStructure(canvas2,
+                    element.shells,
+                    element.symbol,
+                     3.8, '15px')
+                    canvas2.style.visibility = 'visible';
+                }
+            })
+            elem.addEventListener('mouseleave', () => {
+                let canvas2 = document.getElementById('hover-structure')
+                canvas2.style.visibility = 'hidden'
+            })
         });
     });
 
 
 
-function drawStructure(canvas, array, text) {
+function drawStructure(canvas, array, text, electronSize, textSize) {
     let c = canvas.getContext("2d");
     canvas.width = 400;
     canvas.height = 300;
@@ -211,10 +226,10 @@ function drawStructure(canvas, array, text) {
                     c.stroke();
                 }
                 c.beginPath();
-                c.arc(canvas.width / 2, canvas.height / 2, 15, 0, Math.PI * 2, false);
+                c.arc(canvas.width / 2, canvas.height / 2, electronSize * 4, 0, Math.PI * 2, false);
                 c.fillStyle = 'black'
                 c.fill();
-                c.font = "15px Verdana";
+                c.font = `${textSize} Verdana`;
                 c.textAlign = "center";
                 c.textBaseline = "middle";
                 c.fillStyle = "white";
@@ -250,7 +265,7 @@ function drawStructure(canvas, array, text) {
         }
     }
 
-    let electrons = new Electron( canvas.width/2, canvas.height/2, 4, "rgb(125, 125, 125)");
+    let electrons = new Electron( canvas.width/2, canvas.height/2, electronSize, "rgb(125, 125, 125)");
 
     let ringx = canvas.width/2;
     let ringy = canvas.height/2;

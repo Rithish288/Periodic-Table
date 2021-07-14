@@ -77,6 +77,16 @@ tag {
 .structure-3d, .structure-2d {width: 40%}
 .structure-3d canvas, .structure-2d canvas{width: 100%;}
 
+canvas#hover-structure {
+    background-color: transparent;
+    border: 2px solid black;
+    visibility: hidden;
+    pointer-events: none;
+    grid-column: 3;
+    grid-row: 1; display:block;
+    width: 17vw;
+}
+
 .footer {
     background-color: var(--footer);
     display: flex; padding: 2em;
@@ -220,6 +230,7 @@ li {
     .description .card {width: 90%; max-width: 90%;}
     .element p{margin: auto; font-size: 1.1em; margin-bottom: 0; display: inline}
     .element h1 {font-size: 2.3em; margin-top:0}
+    canvas#hover-structure{width: 230px;}
     div.periodic-Table {
         --side: 7em;
         grid-template-columns: repeat(18, var(--side));
