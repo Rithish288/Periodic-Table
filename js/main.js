@@ -195,7 +195,6 @@ function drawStructure(canvas, array, text) {
     canvas.width = 400;
     canvas.height = 300;
 
-    c.translate(canvas.width / 2, canvas.height / 2);
     class Atom {
         constructor(x, y, radius, color) {
             this.x = x;
@@ -212,14 +211,14 @@ function drawStructure(canvas, array, text) {
                     c.stroke();
                 }
                 c.beginPath();
-                c.arc(0, 0, 15, 0, Math.PI * 2, false);
+                c.arc(canvas.width / 2, canvas.height / 2, 15, 0, Math.PI * 2, false);
                 c.fillStyle = 'black'
                 c.fill();
                 c.font = "15px Verdana";
                 c.textAlign = "center";
                 c.textBaseline = "middle";
                 c.fillStyle = "white";
-                c.fillText(text, 0, 0);
+                c.fillText(text, canvas.width/2, canvas.height/2);
             };
         }
     }
@@ -251,23 +250,16 @@ function drawStructure(canvas, array, text) {
         }
     }
 
-    let electrons = new Electron( 0, 0, 4, "rgb(125, 125, 125)");
+    let electrons = new Electron( canvas.width/2, canvas.height/2, 4, "rgb(125, 125, 125)");
 
-    let ringx = 0;
-    let ringy = 0;
+    let ringx = canvas.width/2;
+    let ringy = canvas.height/2;
     let ringRadi = canvas.height / 2.2 / array.length;
     let atom = new Atom(ringx, ringy, ringRadi, "rgb(125, 125, 125)");
 
+    electrons.draw();
+    atom.drawRings();
     
-    let rotation = 0.03;
-    function animate() {
-        requestAnimationFrame(animate);
-        c.clearRect(-canvas.width, -canvas.height, canvas.width * 2, canvas.height * 2);
-        electrons.draw();
-        atom.drawRings();
-        c.rotate(rotation);
-    }
-    animate();
 }
 
 function drawAtom(canvas, electronCount, text) {
