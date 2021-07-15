@@ -27,15 +27,13 @@
   <body class="lightMode">
     <ul>
       <li id="tab1" data-targets="#periodic-Table">Table</li>
-      <li id="tab2" data-targets=".description">Details</li>
       <li id="tab2" data-targets=".charts">Charts</li>
     </ul>
     <button id="mode">  
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">          
+      <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">          
         <path class="path" d="M25.6288 23.6435C19.6476 29.3755 10.1523 29.1734 4.42036 23.1923C-1.31157 17.2111 -1.10953 7.71579 4.87162 1.98386C10.8528 -3.74806 4.73747 5.35647 13.5 14.5C22.2625 23.6435 31.6099 17.9116 25.6288 23.6435Z" fill="black"/>
       </svg>
     </button>
-    <small>click an element and view its properties in the Details tab</small>
 
     <div class="periodic-Table" id="periodic-Table" data-tab-content>
       <canvas id="hover-structure"></canvas>
@@ -55,19 +53,6 @@
       </div>
       <!-- To be flled with javascript -->
     </div>
-
-    <div class="description" data-tab-content>
-      <div class="card name">Click an element to view its details here !</div>
-      <div class="card particles"></div>
-      <div class="card discovery"></div>
-      <div class="card p-properties"></div>
-      <div class="card c-properties"></div>
-      <div class="card summary"></div>
-      <div class="card structure-3d"></div>
-      <div class="card structure-2d"></div>
-      <div class="source"></div>
-    </div>
-
     <div class="charts" data-tab-content>
       <canvas id="state"></canvas>
       <canvas id="atomicMass"></canvas>

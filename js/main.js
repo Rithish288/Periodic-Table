@@ -1,32 +1,16 @@
 "use strict";
-function toFarenheit(num) {
-    return (num * (9 / 5) + 32).toPrecision(6);
-}
-function toKelvin(num) {
-    return (num + 273.15).toPrecision(6);
-}
+
+
+
 
 const periodicTable = document.getElementById("periodic-Table");
-const name = document.querySelector(".name");
-const pProperties = document.querySelector(".p-properties");
-const cProperties = document.querySelector(".c-properties");
-const particles = document.querySelector(".particles");
-const structure = document.querySelector(".structure-3d");
-const structure2 = document.querySelector(".structure-2d");
-const discovery = document.querySelector(".discovery");
-const summary = document.querySelector(".summary");
-const source = document.querySelector(".source");
 
 //Acessing the dom ↑ ↑ ↑
-
-let mark = document.createElement("span");
-mark.innerHTML = "&#33;";
-mark.className = "icon";
 
 let toggle = false;
 const toggleBtn = document.querySelector("#mode");
 const sunPath =
-    "M12.0489 0.927052C12.3483 0.00574109 13.6517 0.00573986 13.9511 0.92705L16.1432 7.67376C16.2771 8.08578 16.661 8.36475 17.0943 8.36475H24.1882C25.1569 8.36475 25.5597 9.60436 24.776 10.1738L19.0369 14.3435C18.6864 14.5981 18.5397 15.0495 18.6736 15.4615L20.8657 22.2082C21.1651 23.1295 20.1106 23.8956 19.3269 23.3262L13.5878 19.1565C13.2373 18.9019 12.7627 18.9019 12.4122 19.1565L6.67312 23.3262C5.88941 23.8956 4.83493 23.1295 5.13428 22.2082L7.32642 15.4615C7.46029 15.0495 7.31363 14.5981 6.96315 14.3435L1.22405 10.1738C0.440337 9.60436 0.843112 8.36475 1.81184 8.36475H8.90575C9.33897 8.36475 9.72293 8.08578 9.8568 7.67376L12.0489 0.927052Z";
+    "M15.1899 6.6962C15.1899 7.24849 15.6376 7.6962 16.1899 7.6962C16.7422 7.6962 17.1899 7.24849 17.1899 6.6962H15.1899ZM17.1899 1C17.1899 0.447715 16.7422 0 16.1899 0C15.6376 0 15.1899 0.447715 15.1899 1H17.1899ZM15.1899 31C15.1899 31.5523 15.6376 32 16.1899 32C16.7422 32 17.1899 31.5523 17.1899 31H15.1899ZM17.1899 25.3038C17.1899 24.7515 16.7422 24.3038 16.1899 24.3038C15.6376 24.3038 15.1899 24.7515 15.1899 25.3038H17.1899ZM21.5587 8.87768C21.1682 9.2682 21.1682 9.90137 21.5587 10.2919C21.9492 10.6824 22.5824 10.6824 22.9729 10.2919L21.5587 8.87768ZM27.0008 6.26407C27.3913 5.87354 27.3913 5.24038 27.0008 4.84986C26.6102 4.45933 25.9771 4.45933 25.5865 4.84986L27.0008 6.26407ZM4.09037 25.5865C3.69985 25.9771 3.69985 26.6102 4.09037 27.0008C4.4809 27.3913 5.11406 27.3913 5.50459 27.0008L4.09037 25.5865ZM9.53241 22.9729C9.92293 22.5824 9.92293 21.9492 9.53241 21.5587C9.14188 21.1682 8.50872 21.1682 8.1182 21.5587L9.53241 22.9729ZM26.346 27.0008C26.7366 27.3913 27.3697 27.3913 27.7602 27.0008C28.1508 26.6102 28.1508 25.9771 27.7602 25.5865L26.346 27.0008ZM23.7324 21.5587C23.3419 21.1682 22.7087 21.1682 22.3182 21.5587C21.9277 21.9492 21.9277 22.5824 22.3182 22.9729L23.7324 21.5587ZM8.87768 9.5324C9.2682 9.92292 9.90137 9.92292 10.2919 9.5324C10.6824 9.14187 10.6824 8.50871 10.2919 8.11818L8.87768 9.5324ZM6.26407 4.09036C5.87354 3.69984 5.24038 3.69984 4.84986 4.09036C4.45933 4.48089 4.45933 5.11405 4.84986 5.50458L6.26407 4.09036ZM25.3038 15.1899C24.7515 15.1899 24.3038 15.6376 24.3038 16.1899C24.3038 16.7422 24.7515 17.1899 25.3038 17.1899V15.1899ZM31 17.1899C31.5523 17.1899 32 16.7422 32 16.1899C32 15.6376 31.5523 15.1899 31 15.1899V17.1899ZM1 15.1899C0.447715 15.1899 0 15.6376 0 16.1899C0 16.7422 0.447715 17.1899 1 17.1899V15.1899ZM6.6962 17.1899C7.24849 17.1899 7.6962 16.7422 7.6962 16.1899C7.6962 15.6376 7.24849 15.1899 6.6962 15.1899V17.1899ZM24.3038 15.8101C24.3038 20.5011 20.5011 24.3038 15.8101 24.3038V26.3038C21.6056 26.3038 26.3038 21.6056 26.3038 15.8101H24.3038ZM15.8101 24.3038C11.1192 24.3038 7.31646 20.5011 7.31646 15.8101H5.31646C5.31646 21.6056 10.0146 26.3038 15.8101 26.3038V24.3038ZM7.31646 15.8101C7.31646 11.1192 11.1192 7.31646 15.8101 7.31646V5.31646C10.0146 5.31646 5.31646 10.0146 5.31646 15.8101H7.31646ZM15.8101 7.31646C20.5011 7.31646 24.3038 11.1192 24.3038 15.8101H26.3038C26.3038 10.0146 21.6056 5.31646 15.8101 5.31646V7.31646ZM17.1899 6.6962V1H15.1899V6.6962H17.1899ZM17.1899 31V25.3038H15.1899V31H17.1899ZM22.9729 10.2919L27.0008 6.26407L25.5865 4.84986L21.5587 8.87768L22.9729 10.2919ZM5.50459 27.0008L9.53241 22.9729L8.1182 21.5587L4.09037 25.5865L5.50459 27.0008ZM27.7602 25.5865L23.7324 21.5587L22.3182 22.9729L26.346 27.0008L27.7602 25.5865ZM10.2919 8.11818L6.26407 4.09036L4.84986 5.50458L8.87768 9.5324L10.2919 8.11818ZM25.3038 17.1899H31V15.1899H25.3038V17.1899ZM1 17.1899H6.6962V15.1899H1V17.1899Z M25.3038 15.8101C25.3038 21.0533 21.0533 25.3038 15.8101 25.3038C10.5669 25.3038 6.31646 21.0533 6.31646 15.8101C6.31646 10.5669 10.5669 6.31646 15.8101 6.31646C21.0533 6.31646 25.3038 10.5669 25.3038 15.8101Z";
 const moonPath =
     "M25.6288 23.6435C19.6476 29.3755 10.1523 29.1734 4.42036 23.1923C-1.31157 17.2111 -1.10953 7.71579 4.87162 1.98386C10.8528 -3.74806 4.73747 5.35647 13.5 14.5C22.2625 23.6435 31.6099 17.9116 25.6288 23.6435Z";
 let path = document.querySelector(".path");
@@ -36,7 +20,7 @@ toggleBtn.addEventListener("click", () => {
     if (!toggle) {
         toggle = true;
         path.setAttribute("d", sunPath);
-        path.setAttribute("fill", "yellow");
+        path.setAttribute("fill", "#FCDB67");
         gitPath.setAttribute("fill", "white ");
         document.body.classList.remove("lightMode");
         document.body.classList.add("darkMode");
@@ -89,101 +73,33 @@ jsonData
                 "<p>" +
                 element.name +
                 "</p>";
-            periodicTable.appendChild(elem);
+                periodicTable.appendChild(elem);
 
             //Event listeners
             elem.addEventListener("click", () => {
-                document.querySelector("#tab2").appendChild(mark);
-                setTimeout(() => {
-                    document.querySelector("#tab2").removeChild(mark);
-                }, 5000);
-                name.classList = "card " + "name " + element.category;
-                pProperties.classList = "card " + "p-properties " + element.category;
-                cProperties.classList = "card " + "c-properties " + element.category;
-                particles.classList = "card " + "particles " + element.category;
-                structure.classList = "card " + "structure-3d " + element.category;
-                structure2.classList = "card " + "structure-2d " + element.category;
-                discovery.classList = "card " + "discovery " + element.category;
-                summary.classList = "card " + "summary " + element.category;
-                source.classList = "card " + "source " + element.category;
-
+                window.open('details.html', '_self')
                 if (id == element.atomicNumber) {
-                    structure.innerHTML = `<tag>3-D Structure</tag> <br/> <br/>
-                    <canvas id="structure1"></canvas> `;
+                    let pairs = {
+                        atomicNumber: element.atomicNumber, 
+                        name: element.name, 
+                        atomicMass: element.atomicMass, 
+                        symbol: element.symbol, 
+                        discovered: element.discovered, 
+                        appearance: element.appearance,
+                        boilingPoint: element.boilingPoint,
+                        meltingPoint: element.meltingPoint,
+                        discoveredBy: element.discoveredBy,
+                        density: element.density,
+                        category: element.category,
+                        state: element.state,
+                        shells: element.shells,
+                        description: element.description
+                    };
 
-                    structure2.innerHTML = `<tag>Bohr Model</tag> <br/> <br/>
-                    <canvas id="structure2"></canvas> <br/>
-                    <p>Electron shells: [${element.shells}]</p>`;
-
-                    name.innerHTML = ` <h3>${element.atomicNumber}</h3> <br><br/>
-                                    <h1>${element.symbol}</h1><br><br/>
-                                    <h2>${element.name}</h2> `;
-                    pProperties.innerHTML = `<tag>Physical properties</tag> <br/><br/>
-                                            <strong>Appearance : </strong> ${element.appearance} <br/><br/>
-                                            <strong>State (STP) : </strong> ${element.state}`;
-
-                    cProperties.innerHTML = `<tag>Chemical properties</tag> <br/><br/>
-                                            <strong>Boiling-point : </strong> ${element.boilingPoint} 
-                                            <select>
-                                                <option value="°C" selected>°C</option>
-                                                <option value="°F">°F</option>
-                                                <option value="K">K</option>
-                                            </select>
-                                            <br/><br/>
-                                            <strong>Melting-point : </strong> ${element.meltingPoint} 
-                                            <select>
-                                                <option value="°C" selected>°C</option>
-                                                <option value="°F">°F</option>
-                                                <option value="K">K</option>
-                                            </select>
-                                            <br/><br/>
-                                            <strong>Density : </strong> ${element.density} <br/><br/>
-                                            <strong>Atomic mass : </strong> ${element.atomicMass} g/mol`;
-
-                    particles.innerHTML = `<tag>Particle data</tag> <br/><br/>
-                                        <strong>Electrons : </strong> ${element.atomicNumber
-                        } <br/><br/>
-                                        <strong>Protons : </strong> ${element.atomicNumber
-                        } <br/><br/>
-                                        <strong>Neutrons : </strong> ${Math.round(element.atomicMass) -
-                        element.atomicNumber
-                        }`;
-
-                    discovery.innerHTML = ` <tag>Discovery</tag> <br/><br/>
-                                            <strong>Discovered by : </strong>${element.discoveredBy} <br/><br/>
-                                            <strong>Discovered on : </strong>${element.discovered}`;
-
-                    summary.innerHTML = element.description;
-
-                    source.innerHTML = `<a href="https://en.wikipedia.org/wiki/${element.name}" target="_blank">Wikipedia</a>`;
-
-                    drawAtom(
-                        document.querySelector("#structure1"),
-                        element.atomicNumber,
-                        element.symbol
-                    );
-                    drawStructure(
-                        document.querySelector("#structure2"),
-                        element.shells,
-                        element.symbol,
-                        4, '15px'
-                    );
-
-                    const units = document.querySelectorAll("select");
-                    units.forEach((unit) => {
-                        let point = unit.previousSibling.textContent;
-                        unit.addEventListener("change", (e) => {
-                            if (e.target.value == "°F") {
-                                unit.previousSibling.textContent = toFarenheit(
-                                    parseFloat(point)
-                                );
-                            } else if (e.target.value == "°C") {
-                                unit.previousSibling.textContent = point;
-                            } else if (e.target.value == "K") {
-                                unit.previousSibling.textContent = toKelvin(parseFloat(point));
-                            }
-                        });
-                    });
+                    for (let key in pairs) {
+                        sessionStorage.setItem(key, pairs[key]);
+                        console.log(pairs[key])
+                    }
                 }
             });
             elem.addEventListener('mouseenter', () => {
