@@ -183,7 +183,7 @@ h1 {margin: -3px auto; font-size: 2.3em}
 p{margin: auto; font-size: 1.1em; margin-bottom: 0} 
 p.number {margin: 0; display: inline}
 
-ul {
+ul.tabs {
     display: flex;
     width: 50vw;
     justify-content:space-around;
@@ -194,16 +194,34 @@ ul {
     font-size: 2em
 }
 
+ul.tabs li {
+    width: 30%; cursor: pointer;
+    text-align: center;
+}
 .open{border-bottom: 2px solid var(--borderColor)}
 
 div[data-tab-content] {display: none;}
 
 span.icon {color: var(--span)}
 
-li {
-    width: 30%; cursor: pointer;
-    text-align: center;
+ul.categories {
+    display: flex;
+    flex-direction: row;
+    max-width: 75vw;
+    font-family: 'Quicksand';
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 3em 0 5em;
+    list-style-type: none;
+    font-size: 1em;
+    gap: 1em 1em;
 }
+
+ul.categories li {
+    background-color:var(--element);
+    padding: 0.2em 1em;
+}
+
 @media only screen and (max-width: 1024px) {
     h1 {font-size: 2em;}
     select {font-size:1em}
