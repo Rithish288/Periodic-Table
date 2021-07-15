@@ -75,7 +75,7 @@ tag {
 .summary {max-width: 70%;}
 .discovery {max-width: 400px;}
 .structure-3d, .structure-2d {width: 40%}
-.structure-3d canvas, .structure-2d canvas{width: 100%;}
+.structure-3d canvas, .structure-2d canvas{width: 100%; height: auto;}
 
 canvas#hover-structure {
     background-color: transparent;

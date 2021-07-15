@@ -47,7 +47,9 @@ const structure2 = document.querySelector(".structure-2d");
 const discovery = document.querySelector(".discovery");
 const summary = document.querySelector(".summary");
 const source = document.querySelector(".source");
+const title = document.querySelector("title")
 
+title.innerHTML = sessionStorage.name + ' (' + sessionStorage.symbol + ')'
 name.classList = "card " + "name " + sessionStorage.category;
 pProperties.classList = "card " + "p-properties " + sessionStorage.category;
 cProperties.classList = "card " + "c-properties " + sessionStorage.category;
@@ -230,7 +232,7 @@ function drawStructure(canvas, array, text, electronSize, textSize) {
 function drawAtom(canvas, electronCount, text) {
   let c = canvas.getContext("2d");
   canvas.width = 400;
-  canvas.height = 300;
+  canvas.height = 400;
   // Utility Functions
   function randomIntFromRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
