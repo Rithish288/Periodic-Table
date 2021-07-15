@@ -1,5 +1,8 @@
 
 sessionStorage.getItem("element");
+if(sessionStorage == null || sessionStorage == undefined || sessionStorage.length <= 1) {
+    window.alert('Oops! Seems like you haven\'t selected an element', open('index.html', '_self')) 
+}
 
 let toggle = false;
 const toggleBtn = document.querySelector("#mode");
@@ -121,7 +124,6 @@ drawStructure(
 );
 
 const units = document.querySelectorAll("select");
-console.log(units);
 units.forEach((unit) => {
   let point = unit.previousSibling.textContent;
   unit.addEventListener("change", (e) => {
