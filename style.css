@@ -252,12 +252,14 @@ button#back:hover {
 @media only screen and (max-width: 726px) {
     ul.tabs{width: 75vw; font-size: 1.5em;}
     .structure {width: 100%}
+    .resources {font-size: 0.9em}
     .description {font-size: 0.9em}
     h1 {margin-bottom: 3px; font-size: 1.5em;}
 }
 @media only screen and (max-width: 650px) {
-    ul.tabs{width: 90vw; font-size: 100%;}
+    ul.tabs{width: 90vw; font-size: 120%;}
     .uses img {width: 45%;margin:0 1em 0em 0; float: left;}
+    .resources {font-size: 0.75em; line-height: 20px}
     .description {flex-direction: column; font-size: 0.7em;}
     .description .card {width: 95%; max-width: 100%;}
     .element p{margin: auto; font-size: 1.1em; margin-bottom: 0; display: inline}
