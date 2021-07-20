@@ -18,9 +18,7 @@
     --metalloids: #ff5f5f;
     --other: #39f2ff;
     --border-width: 3px;
-}
 
-.lightMode {
     --background-color: white;
     --textColor: black;
     --borderColor: black;
@@ -29,6 +27,7 @@
     --span: rgba(0, 0, 0, 0.459);
     --footer: rgb(231, 231, 231);
     --element: rgba(0, 0, 0, 0.03);
+    --tagColor: rgb(73, 73, 73);
 }
 
 .darkMode {
@@ -40,6 +39,7 @@
     --span: rgba(255, 255, 255, 0.459);
     --footer: rgb(56, 56, 56);
     --element: rgba(49, 49, 49, 0.493);
+    --tagColor: rgb(228, 228, 228);
 }
 
 small {font-family: 'Encode Sans Semi Condensed', sans-serif;}
@@ -56,26 +56,35 @@ small {font-family: 'Encode Sans Semi Condensed', sans-serif;}
 .description .card { 
     min-width: 200px;min-height:10px;
     height: auto; font-size:1em;
-    color: var(--textColor);
-    padding: 1em 2em; text-align: justify;
+    color: var(--textColor); 
+    padding: 1em 2em; text-align: left;
     background-color:var(--card);
     box-shadow: 0 8px 20px -3px var(--shadowColor);
-    border-width: 5px;
-    margin: 1em;
+    border-width: 5px; display: block;
+    margin: 1em; text-justify: inter-ideograph;
 }
 
 tag {
-    background-color:grey;
-    color: white;
+    background-color:var(--tagColor);
+    letter-spacing: 1px;
+    color: var(--card);
+    font-weight: 800;
     padding: 0.5em 1em;
     opacity: 0.7; display: inline;
     border-radius: 100vw;  
     white-space: nowrap;  
 }
-.summary {max-width: 70%;}
-.discovery {max-width: 400px;}
+.summary {max-width: 80%; text-align: justify} .summary img {width: 40%;margin:0 2em 0em 0; float: left}
+.discovery {max-width: 300px} .p-properties {max-width: 300px}
 .structure-3d, .structure-2d {width: 40%}
 .structure-3d canvas, .structure-2d canvas{width: 100%; height: auto;}
+.uses, .history {max-width: 50%; width: 40%;} 
+
+div.uses ul li::marker{
+    color: var(--textColor); 
+    content: '★ ';
+    font-weight: 900;
+}
 
 canvas#hover-structure {
     background-color: transparent;
@@ -136,6 +145,10 @@ body {
     color: var(--textColor);
 }
 
+a:link, a:visited, a:active{
+    color: var(--textColor);
+    text-decoration: none;
+}
 
 div.periodic-Table {
     display: grid;
@@ -156,9 +169,9 @@ div.periodic-Table {
     text-overflow: ellipsis;
     justify-content: space-around;
     border-top: none; border-left: none;border-right: none;
-    padding: 0.3em 0.5em;
+    padding: 0.3em 0.5em; white-space: nowrap;
     background-color: var(--element);
-    transition: background 0.1s ease;
+    transition: background 0.2s ease;
     cursor: pointer;
 }
 
@@ -204,22 +217,18 @@ div[data-tab-content] {display: none;}
 
 span.icon {color: var(--span)}
 
-ul.categories {
-    display: flex;
-    flex-direction: row;
-    max-width: 75vw;
-    font-family: 'Quicksand';
-    justify-content:center;
-    flex-wrap: wrap;
-    margin: 3em 0 5em;
-    list-style-type: none;
-    font-size: 1em;
-    gap: 1em 1em;
+button#back {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    margin: 1.5em 0 0 1.5em;
+    margin-right: auto; border: 2px solid var(--borderColor);
+    color: var(--textColor);
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    outline: 2px solid var(--borderColor); outline-offset: -1px;
 }
 
-ul.categories li {
-    background-color:var(--element);
-    padding: 0.2em 1em;
+button#back:hover {
+    outline-offset: 2px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -234,18 +243,23 @@ ul.categories li {
     .element p {display: none};
 }
 @media only screen and (max-width: 876px) {
-    ul {width: 60vw}
+    ul.tabs {width: 60vw}
+    .p-properties {width: 40%}
+    .uses, .history {width: 90%; max-width: 90%;}
+    .uses img {width: 100%;margin:0; float: none; aspect-ratio: 2 / 1.4;}
     h1 {margin-bottom: 3px; font-size: 1.8em;}
 }
 @media only screen and (max-width: 726px) {
-    ul{width: 75vw; font-size: 1.5em;}
+    ul.tabs{width: 75vw; font-size: 1.5em;}
     .structure {width: 100%}
+    .description {font-size: 0.9em}
     h1 {margin-bottom: 3px; font-size: 1.5em;}
 }
 @media only screen and (max-width: 650px) {
-    ul{width: 90vw; font-size: 100%;}
-    .description {flex-direction: column;}
-    .description .card {width: 90%; max-width: 90%;}
+    ul.tabs{width: 90vw; font-size: 100%;}
+    .uses img {width: 45%;margin:0 1em 0em 0; float: left;}
+    .description {flex-direction: column; font-size: 0.7em;}
+    .description .card {width: 95%; max-width: 100%;}
     .element p{margin: auto; font-size: 1.1em; margin-bottom: 0; display: inline}
     .element h1 {font-size: 2.3em; margin-top:0}
     canvas#hover-structure{width: 230px;}

@@ -32,8 +32,9 @@ jsonData
 .then((elements) => {
     elements.forEach((element, i) => {
         //Creating a div for each object
-        const elem = document.createElement("div");
+        const elem = document.createElement("a");
         let id = (i += 1);
+        elem.href = 'details.html'
         elem.className = "element" + " n" + id + " " + element.category;
         elem.innerHTML =
         '<p class="number">' +
@@ -49,13 +50,14 @@ jsonData
         
         //Event listeners
         elem.addEventListener("click", () => {
-            window.open('details.html', '_self')
             if (id == element.atomicNumber) {
                 let pairs = {
                     atomicNumber: element.atomicNumber, 
                     name: element.name, 
+                    block: element.block,
                     atomicMass: element.atomicMass, 
                     symbol: element.symbol, 
+                    group: element.group,
                     discovered: element.discovered, 
                     appearance: element.appearance,
                     boilingPoint: element.boilingPoint,
@@ -65,13 +67,14 @@ jsonData
                     category: element.category,
                     state: element.state,
                     shells: element.shells,
+                    uses: element.uses,
                     description: element.description
                 };
                 
                 for (let key in pairs) {
                     sessionStorage.setItem(key, pairs[key]);
-                    console.log(pairs[key])
                 }
+                localStorage.clear()
             }
         });
         elem.addEventListener('mouseenter', () => {
