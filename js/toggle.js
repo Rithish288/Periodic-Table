@@ -30,10 +30,8 @@ toggleBtn.forEach(btn => {
         darkMode = localStorage.getItem('darkMode')
         if (darkMode !== 'enabled') {
             enableDarkMode()
-            console.log(darkMode)
         } else {
             disableDarkMode();
-            console.log(darkMode)
         }
     });
 })

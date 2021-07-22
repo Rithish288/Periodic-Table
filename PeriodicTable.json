@@ -218,7 +218,7 @@
     {
         "atomicNumber": 10, 
         "name": "Neon",
-        "block": "s-block", 
+        "block": "p-block", 
         "atomicMass": "20.1797", 
         "symbol": "Ne",
         "group": 18, 
@@ -409,7 +409,7 @@
     {
         "atomicNumber": 18, 
         "name": "Argon",
-        "block": "s-block", 
+        "block": "p-block", 
         "atomicMass": "39.948", 
         "symbol": "Ar",
         "group": 18, 
@@ -843,7 +843,7 @@
     {
         "atomicNumber": 36, 
         "name": "Krypton",
-        "block": "s-block", 
+        "block": "p-block", 
         "atomicMass": "83.798", 
         "symbol": "Kr",
         "group": 18, 
@@ -1275,7 +1275,7 @@
     {
         "atomicNumber": 54, 
         "name": "Xenon",
-        "block": "s-block", 
+        "block": "p-block", 
         "atomicMass": "131.293", 
         "symbol": "Xe",
         "group": 18, 
@@ -2036,7 +2036,7 @@
     {
         "atomicNumber": 86, 
         "name": "Radon",
-        "block": "s-block", 
+        "block": "p-block", 
         "atomicMass": "222.0176", 
         "symbol": "Rn",
         "group": 18, 
@@ -2736,7 +2736,7 @@
     {
         "atomicNumber": 118, 
         "name": "Oganesson",
-        "block": "s-block", 
+        "block": "p-block", 
         "atomicMass": "294.2139", 
         "symbol": "Og",
         "group": 18, 
