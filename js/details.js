@@ -59,7 +59,7 @@ summary.classList = "card " + "summary " + sessionStorage.category;
 source.classList = "card " + "source " + sessionStorage.category;
 
 history.innerHTML = `<tag>History</tag><br/> <br/>
-        <h1>Prototype</h1> <br/> <br/> <br/> <br/> Release in 23th July`
+        <h1>Prototype</h1> <br/> <br/> <br/> <br/> Release in 30th July`
 
 structure.innerHTML = `<tag>3-D Structure</tag> <br/> <br/>
     <canvas id="structure1"></canvas> `;
