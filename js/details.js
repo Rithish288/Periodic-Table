@@ -4,6 +4,7 @@ if(sessionStorage == null || sessionStorage == undefined || sessionStorage.lengt
   window.alert('Oops! Seems like you haven\'t selected an element', open('index.html', '_self')) 
 }
 
+
 let elementUses = sessionStorage.uses.split('.,');
 
 let sliced = sessionStorage.shells.split(",");
@@ -66,7 +67,8 @@ structure.innerHTML = `<tag>3-D Structure</tag> <br/> <br/>
 
 structure2.innerHTML = `<tag>Bohr Model</tag> <br/> <br/>
     <canvas id="structure2"></canvas> <br/>
-    Electron shells: [${sessionStorage.shells}]`;
+    Electron shells: [${sessionStorage.shells}] <br/> <br/>
+    Electron-Configuration : ${sessionStorage.electronConfig}`;
 
 placement.innerHTML = `<tag>Position</tag> <br/> <br/>
     <strong>Group</strong> : ${sessionStorage.group} <br/> <br/>
