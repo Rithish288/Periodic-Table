@@ -61,7 +61,7 @@ jsonData
         if(id == 42) {elem.setAttribute('configuration', '[Kr] 5s1 4d5');}
         if(id == 44) {elem.setAttribute('configuration', '[Kr] 5s1 4d7');}
         if(id == 45) {elem.setAttribute('configuration', '[Kr] 5s1 4d8');}
-        if(id == 46) {elem.setAttribute('configuration', '[Kr] 4d10'); elem.setAttribute('data-rings', 5)}
+        if(id == 46) {elem.setAttribute('configuration', '[Kr] 4d10');}
         if(id == 47) {elem.setAttribute('configuration', '[Kr] 5s1 4d10');}
         if(id == 57) {elem.setAttribute('configuration', '[Xe] 6s2 5d1');}
         if(id == 58) {elem.setAttribute('configuration', '[Xe] 6s2 4f1 5d1');}
