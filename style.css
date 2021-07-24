@@ -242,10 +242,12 @@ button#back:hover {
     h1 {margin-bottom: 3px;}
     .element p {display: none};
 }
-@media only screen and (max-width: 876px) {
+@media only screen and (max-width: 850px) {
     ul.tabs {width: 60vw}
     .p-properties {width: 40%}
-    .uses, .history {width: 90%; max-width: 90%;}
+    .card {width: 43%;}
+    .uses, .history, .summary {width: 90%; max-width: 90%; min-width: 90%;}
+    /* .summary, .history, .uses {width: 90%} */
     .uses img {width: 100%;margin:0; float: none; aspect-ratio: 2 / 1.4;}
     h1 {margin-bottom: 3px; font-size: 1.8em;}
 }
