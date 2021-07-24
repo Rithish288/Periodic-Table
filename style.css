@@ -27,7 +27,7 @@
     --span: rgba(0, 0, 0, 0.459);
     --footer: rgb(231, 231, 231);
     --element: rgba(0, 0, 0, 0.03);
-    --tagColor: rgb(73, 73, 73);
+    --tagColor: rgb(66, 66, 66);
 }
 
 .darkMode {
@@ -39,7 +39,7 @@
     --span: rgba(255, 255, 255, 0.459);
     --footer: rgb(56, 56, 56);
     --element: rgba(49, 49, 49, 0.493);
-    --tagColor: rgb(228, 228, 228);
+    --tagColor: rgb(255, 255, 255);
 }
 
 small {font-family: 'Encode Sans Semi Condensed', sans-serif;}

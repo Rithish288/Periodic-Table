@@ -200,14 +200,16 @@ function drawStructure(canvas, array, text, electronSize, textSize) {
       this.radius = radius;
       this.color = color;
       this.radi = canvas.height / 2.2 / array.length;
+      this.counter = 0;
 
       this.draw = function () {
         array.forEach((arr, i) => {
           i += 1;
+          this.counter += Math.sin(0.005 / arr)
           let radians = (Math.PI * 2) / arr;
           for (let electrons = 0; electrons < arr; electrons++) {
-            let x = this.x + Math.sin(radians * electrons) * i * this.radi;
-            let y = this.y + Math.cos(radians * electrons) * i * this.radi;
+            let x = this.x + Math.sin(radians * electrons + this.counter) * i * this.radi;
+            let y = this.y + Math.cos(radians * electrons + this.counter) * i * this.radi;
 
             c.beginPath();
             c.arc(x, y, this.radius, 0, Math.PI * 2, false);
@@ -232,8 +234,14 @@ function drawStructure(canvas, array, text, electronSize, textSize) {
   let ringRadi = canvas.height / 2.2 / array.length;
   let atom = new Atom(ringx, ringy, ringRadi, "rgb(125, 125, 125)");
 
-  electrons.draw();
-  atom.drawRings();
+  
+  function animate() {
+    requestAnimationFrame(animate);
+    c.clearRect(0, 0, canvas.width, canvas.height);
+    electrons.draw();
+    atom.drawRings();
+  }
+  animate()
 }
 
 function drawAtom(canvas, electronCount, text) {
