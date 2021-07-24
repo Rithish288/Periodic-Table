@@ -205,11 +205,14 @@ function drawStructure(canvas, array, text, electronSize, textSize) {
       this.draw = function () {
         array.forEach((arr, i) => {
           i += 1;
-          this.counter += Math.sin(0.005 / arr)
+          this.counter += Math.sin(0.005 / i)
+          if(arr == 0) {
+            return null
+          }
           let radians = (Math.PI * 2) / arr;
           for (let electrons = 0; electrons < arr; electrons++) {
-            let x = this.x + Math.sin(radians * electrons + this.counter) * i * this.radi;
-            let y = this.y + Math.cos(radians * electrons + this.counter) * i * this.radi;
+            let x = this.x + Math.cos(radians * electrons + this.counter) * i * this.radi;
+            let y = this.y + Math.sin(radians * electrons + this.counter) * i * this.radi;
 
             c.beginPath();
             c.arc(x, y, this.radius, 0, Math.PI * 2, false);
