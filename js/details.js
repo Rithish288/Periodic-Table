@@ -4,6 +4,15 @@ if(sessionStorage == null || sessionStorage == undefined || sessionStorage.lengt
   window.alert('Oops! Seems like you haven\'t selected an element', open('index.html', '_self')) 
 }
 
+const loader = document.querySelector("canvas.loader");
+const loaderScript = document.querySelector("#loaderScript");
+
+document.addEventListener("readystatechange", () => {
+  if(document.readyState === "complete") {
+      document.head.removeChild(loaderScript)
+      document.body.removeChild(loader);
+  }
+})
 
 let elementUses = sessionStorage.uses.split('.,');
 
@@ -34,16 +43,6 @@ const summary = document.querySelector(".summary");
 const source = document.querySelector(".source");
 const title = document.querySelector("title");
 
-const ul = document.createElement("ul");
-
-elementUses.forEach(el => {
-  let li = document.createElement('li');
-  li.innerHTML = el + '.' + '<br/> <br/>';
-  ul.appendChild(li);
-})
-
-uses.innerHTML = '<tag>Uses</tag> <br/><br/>';
-uses.appendChild(ul);
 
 title.innerHTML = sessionStorage.name + ' (' + sessionStorage.symbol + ')'
 name.classList = "card " + "name " + sessionStorage.category;
@@ -59,8 +58,10 @@ discovery.classList = "card " + "discovery " + sessionStorage.category;
 summary.classList = "card " + "summary " + sessionStorage.category;
 source.classList = "card " + "source " + sessionStorage.category;
 
-history.innerHTML = `<tag>History</tag><br/> <br/>
-        <h1>Prototype</h1> <br/> <br/> <br/> <br/> Release in 30th July`
+uses.innerHTML = `<tag>Uses</tag> <br/><br/> 
+    <ul>${sessionStorage.uses.split("</li>,").join("</li> <br/>")} </ul>`;
+
+history.innerHTML = `<tag>History</tag><br/> <br/> <ul>${sessionStorage.history.split("</li>,").join("</li> <br/>")}</ul>`
 
 structure.innerHTML = `<tag>3-D Structure</tag> <br/> <br/>
     <canvas id="structure1"></canvas> `;
@@ -106,8 +107,7 @@ particles.innerHTML = `<tag>Particle data</tag> <br/><br/>
     <strong>Electrons : </strong> ${sessionStorage.atomicNumber} <br/><br/>
     <strong>Protons : </strong> ${sessionStorage.atomicNumber} <br/><br/>
     <strong>Neutrons : </strong> ${
-      Math.round(sessionStorage.atomicMass) - sessionStorage.atomicNumber
-    }`;
+      Math.round(sessionStorage.atomicMass) - sessionStorage.atomicNumber}`;
 
 discovery.innerHTML = ` <tag>Discovery</tag> <br/><br/>
     <strong>Discovered by : </strong>${sessionStorage.discoveredBy} <br/><br/>
@@ -205,14 +205,14 @@ function drawStructure(canvas, array, text, electronSize, textSize) {
       this.draw = function () {
         array.forEach((arr, i) => {
           i += 1;
-          this.counter += Math.sin(0.005 / i)
+          this.counter += Math.sin(0.007)
           if(arr == 0) {
             return null
           }
           let radians = (Math.PI * 2) / arr;
           for (let electrons = 0; electrons < arr; electrons++) {
-            let x = this.x + Math.cos(radians * electrons + this.counter) * i * this.radi;
-            let y = this.y + Math.sin(radians * electrons + this.counter) * i * this.radi;
+            let x = this.x + Math.cos(radians * electrons + this.counter / i) * i * this.radi;
+            let y = this.y + Math.sin(radians * electrons + this.counter / i) * i * this.radi;
 
             c.beginPath();
             c.arc(x, y, this.radius, 0, Math.PI * 2, false);
