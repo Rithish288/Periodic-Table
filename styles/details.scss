@@ -1,0 +1,81 @@
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 80vw; margin-top: 5em;
+    font-family: 'Quicksand';
+
+    .card { 
+        min-width: 200px;min-height:10px;
+        height: auto; font-size:1em;
+        color: var(--textColor); 
+        padding: 1em 2em; text-align: left;
+        background-color:var(--card);
+        box-shadow: 0 8px 20px -3px var(--shadowColor);
+        border-width: 5px; display: block;
+        margin: 1em; text-justify: inter-ideograph;
+
+        tag {
+            background-color:var(--tagColor);
+            letter-spacing: 1px;
+            color: var(--card);
+            font-weight: 800;
+            padding: 0.5em 1em;
+            opacity: 0.7; display: inline;
+            border-radius: 100vw;  
+            white-space: nowrap;  
+        }
+    }
+   .summary {
+        max-width: 80%; 
+        text-align: justify;
+
+        img {width: 40%;margin:0 2em 0em 0; float: left}
+    } 
+    .discovery {max-width: 300px} 
+    .p-properties {max-width: 300px}
+    .structure-3d, .structure-2d {
+        width: 40%;
+        canvas {
+            width: 100%; height: auto;
+        }
+    }
+    .uses {
+        max-width: 50%; width: 40%;
+
+        ul {
+            li::marker{
+                color: var(--textColor); 
+                content: '★ ';
+                font-weight: 900;
+            }
+        }
+    } 
+    .history {
+        max-width: 50%; width: 40%;
+        ul {
+            li {
+                text-align: justify;
+                &::marker {
+                    content: "";
+                }
+            }
+        }
+    } 
+}
+
+
+button#back {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    margin: 1.5em 0 0 1.5em;
+    margin-right: auto; border: 2px solid var(--borderColor);
+    color: var(--textColor);
+    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    outline: 2px solid var(--borderColor); outline-offset: -1px;
+
+    &:hover {
+        outline-offset: 2px;
+    }
+}

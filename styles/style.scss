@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --size: 4.1vw;
+    --font-size: 50% ;
+    --alkali: #ffc56f;
+    --alkali-earth: #ffc0cb;
+    --halogens: #fff175;
+    --transitionMetals: #12fd7c;
+    --lanthanides: #798dff;
+    --actinides: #4c4d8d;
+    --noble-gases: #e474fa;
+    --post-transition: #00978a;
+    --metalloids: #ff5f5f;
+    --other: #39f2ff;
+    --border-width: 3px;
+}
+
+.lightMode {
+    --background-color: white;
+    --textColor: black;
+    --borderColor: black;
+    --shadowColor: grey;
+    --card: white;
+    --span: rgba(0, 0, 0, 0.459);
+    --footer: rgb(231, 231, 231);
+    --element: rgba(0, 0, 0, 0.03);
+    --tagColor: rgb(66, 66, 66);
+}
+
+.darkMode {
+    --background-color: rgb(34, 34, 34);
+    --textColor: white;
+    --borderColor: white;
+    --shadowColor: black;
+    --card: rgb(39, 39, 39);
+    --span: rgba(255, 255, 255, 0.459);
+    --footer: rgb(56, 56, 56);
+    --element: rgba(49, 49, 49, 0.493);
+    --tagColor: rgb(255, 255, 255);
+}
+
+small {font-family: 'Encode Sans Semi Condensed', sans-serif;}
+
+@import "index.scss";
+@import "details.scss";
+.footer {
+    background-color: var(--footer);
+    display: flex; padding: 2em;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; margin-top: auto;
+    
+    a {
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+button#mode {
+    position: fixed;
+    border-radius: 50%;
+    top: 3%; right: 2%;
+    cursor: pointer;
+    border: none;
+    background-color: var(--backgroundColor);
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--background-color);
+    color: var(--textColor);
+}
+
+a:link, a:visited, a:active{
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+.Noble-gases {border-bottom: var(--border-width) solid var(--noble-gases); }
+.Other-non-metals {border-bottom: var(--border-width) solid var(--other); }
+.Alkali-Metals {border-bottom: var(--border-width) solid var(--alkali); }
+.Metalloids {border-bottom: var(--border-width) solid var(--metalloids); }
+.Halogens {border-bottom: var(--border-width) solid var(--halogens); ; }
+.Alkaline-Earth-Metals {border-bottom: var(--border-width) solid var(--alkali-earth); }
+.Transition-metals{border-bottom: var(--border-width) solid var(--transitionMetals); }
+.Post-Transition-Metals{border-bottom: var(--border-width) solid var(--post-transition); }
+.Lanthanides{border-bottom: var(--border-width) solid var(--lanthanides); }
+.Actinides {border-bottom: var(--border-width) solid var(--actinides)}
+
+
+@media only screen and (max-width: 1024px) {
+    h1 {font-size: 2em;}
+    select {font-size:1em}
+    p{margin: auto; font-size: 0.7em; margin-bottom: 0}
+}
+@media only screen and (max-width: 978px) {
+    .element p.number {display: inline; margin: 0; font-size: 0.5em;}
+    select {height:15px; font-size:0.8em}
+    h1 {margin-bottom: 3px;}
+    .element p {display: none};
+}
+@media only screen and (max-width: 850px) {
+    ul.tabs {width: 60vw}
+    .p-properties {width: 40%}
+    .card {width: 43%;}
+    .uses, .history, .summary {width: 90%; max-width: 90%; min-width: 90%;}
+    /* .summary, .history, .uses {width: 90%} */
+    .uses img {width: 100%;margin:0; float: none; aspect-ratio: 2 / 1.4;}
+    h1 {margin-bottom: 3px; font-size: 1.8em;}
+}
+@media only screen and (max-width: 726px) {
+    ul.tabs{width: 75vw; font-size: 1.5em;}
+    .structure {width: 100%}
+    .resources {font-size: 0.9em}
+    .description {font-size: 0.9em}
+    h1 {margin-bottom: 3px; font-size: 1.5em;}
+}
+@media only screen and (max-width: 650px) {
+    ul.tabs{width: 90vw; font-size: 120%;}
+    .uses img {width: 45%;margin:0 1em 0em 0; float: left;}
+    .resources {font-size: 0.75em; line-height: 20px}
+    .description {flex-direction: column; font-size: 0.7em;}
+    .description .card {width: 95%; max-width: 100%;}
+    .element p{margin: auto; font-size: 1.1em; margin-bottom: 0; display: inline}
+    .element h1 {font-size: 2.3em; margin-top:0}
+    canvas#hover-structure{width: 230px;}
+    div.periodic-Table {
+        --side: 7em;
+        grid-template-columns: repeat(18, var(--side));
+        grid-template-rows: repeat(10, var(--side));
+    }
+}
+
+canvas.loader {
+    position: fixed;
+    z-index: 10;
+}

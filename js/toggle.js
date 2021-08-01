@@ -5,10 +5,11 @@ let path = document.querySelector(".path");
 let gitPath = document.querySelector(".gitHub");
 let darkMode = localStorage.getItem("darkMode");
 
-
+document.body.classList.add('lightMode');
 function enableDarkMode() {
     localStorage.setItem('darkMode', 'enabled');
     document.body.classList.add('darkMode');
+    document.body.classList.remove('lightMode');
     path.setAttribute("d", sunPath);
     path.setAttribute("fill", "#FCDB67");
     gitPath.setAttribute("fill", "white ");
@@ -17,6 +18,7 @@ function enableDarkMode() {
 function disableDarkMode() {
     localStorage.setItem('darkMode', null)
     document.body.classList.remove('darkMode');
+    document.body.classList.add('lightMode');
     path.setAttribute("d", moonPath);
     path.setAttribute("fill", "black");
     gitPath.setAttribute("fill", "black");

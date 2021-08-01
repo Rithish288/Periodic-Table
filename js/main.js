@@ -1,6 +1,8 @@
 const periodicTable = document.getElementById("periodic-Table");
 const tabs = document.querySelectorAll("[data-targets]");
 const tabContent = document.querySelectorAll("[data-tab-content]");
+const loader = document.querySelector("canvas.loader");
+const loaderScript = document.querySelector("#loaderScript");
 //Acessing the dom ↑ ↑ ↑
 
 periodicTable.removeAttribute("data-tab-content");
@@ -18,7 +20,12 @@ tabs.forEach((tab) => {
     });
 });
 
-
+document.addEventListener("readystatechange", () => {
+    if(document.readyState === "complete") {
+        document.head.removeChild(loaderScript)
+        document.body.removeChild(loader);
+    }
+})
 
 let jsonData = fetch("PeriodicTable.json"); //Fetching data
 jsonData
@@ -48,33 +55,31 @@ jsonData
         "</p>";
         periodicTable.appendChild(elem);
 
-        if(id == 57) {
-            elem.setAttribute('data-block', 'd-block')
-        } 
-        if(id == 89) {
-            elem.setAttribute('data-block', 'd-block')
+        switch(id) {
+            case 57: elem.setAttribute('data-block', 'd-block');break;
+            case 89: elem.setAttribute('data-block', 'd-block');break;
+            case 24: elem.setAttribute('configuration', '[Ar] 4s1 3d5');break;
+            case 29: elem.setAttribute('configuration', '[Ar] 4s1 3d10');break;
+            case 41: elem.setAttribute('configuration', '[Kr] 5s1 4d4');break;
+            case 42: elem.setAttribute('configuration', '[Kr] 5s1 4d5');break;
+            case 44: elem.setAttribute('configuration', '[Kr] 5s1 4d7');break;
+            case 45: elem.setAttribute('configuration', '[Kr] 5s1 4d8');break;
+            case 46: elem.setAttribute('configuration', '[Kr] 4d10');break;
+            case 47: elem.setAttribute('configuration', '[Kr] 5s1 4d10');break;
+            case 57: elem.setAttribute('configuration', '[Xe] 6s2 5d1');break;
+            case 58: elem.setAttribute('configuration', '[Xe] 6s2 4f1 5d1');break;
+            case 64: elem.setAttribute('configuration', '[Xe] 6s2 4f7 5d1');break;
+            case 78: elem.setAttribute('configuration', '[Xe] 6s1 4f14 5d9');break;
+            case 79: elem.setAttribute('configuration', '[Xe] 6s1 4f14 5d10');break;
+            case 89: elem.setAttribute('configuration', '[Rn] 7s2 6d1');break;
+            case 90: elem.setAttribute('configuration', '[Rn] 7s2 6d2');break;
+            case 91: elem.setAttribute('configuration', '[Rn] 7s2 5f2 6d1');break;
+            case 92: elem.setAttribute('configuration', '[Rn] 7s2 5f3 6d1');break;
+            case 93: elem.setAttribute('configuration', '[Rn] 7s2 5f4 6d1');break;
+            case 96: elem.setAttribute('configuration', '[Rn] 7s2 5f7 6d1');break;
+            case 103: elem.setAttribute('configuration', '[Rn] 7s2 5f14 7p1');break;
         }
 
-        if(id == 24) {elem.setAttribute('configuration', '[Ar] 4s1 3d5');}
-        if(id == 29) {elem.setAttribute('configuration', '[Ar] 4s1 3d10');}
-        if(id == 41) {elem.setAttribute('configuration', '[Kr] 5s1 4d4');}
-        if(id == 42) {elem.setAttribute('configuration', '[Kr] 5s1 4d5');}
-        if(id == 44) {elem.setAttribute('configuration', '[Kr] 5s1 4d7');}
-        if(id == 45) {elem.setAttribute('configuration', '[Kr] 5s1 4d8');}
-        if(id == 46) {elem.setAttribute('configuration', '[Kr] 4d10');}
-        if(id == 47) {elem.setAttribute('configuration', '[Kr] 5s1 4d10');}
-        if(id == 57) {elem.setAttribute('configuration', '[Xe] 6s2 5d1');}
-        if(id == 58) {elem.setAttribute('configuration', '[Xe] 6s2 4f1 5d1');}
-        if(id == 64) {elem.setAttribute('configuration', '[Xe] 6s2 4f7 5d1');}
-        if(id == 78) {elem.setAttribute('configuration', '[Xe] 6s1 4f14 5d9');}
-        if(id == 79) {elem.setAttribute('configuration', '[Xe] 6s1 4f14 5d10');}
-        if(id == 89) {elem.setAttribute('configuration', '[Rn] 7s2 6d1');}
-        if(id == 90) {elem.setAttribute('configuration', '[Rn] 7s2 6d2');}
-        if(id == 91) {elem.setAttribute('configuration', '[Rn] 7s2 5f2 6d1');}
-        if(id == 92) {elem.setAttribute('configuration', '[Rn] 7s2 5f3 6d1');}
-        if(id == 93) {elem.setAttribute('configuration', '[Rn] 7s2 5f4 6d1');}
-        if(id == 96) {elem.setAttribute('configuration', '[Rn] 7s2 5f7 6d1');}
-        if(id == 103) {elem.setAttribute('configuration', '[Rn] 7s2 5f14 7p1');}
 
         //Event listeners
         elem.addEventListener("click", () => {
@@ -86,10 +91,22 @@ jsonData
                         return findPoint(document.querySelector('.n' + element.atomicNumber))
                     }
                 }
+                let usesArray = [];
+                element.uses.forEach(use => {
+                    let updatedList = "<li>" + use + "</li>";
+                    usesArray.push(updatedList)
+                });
+
+                let historyArray = [];
+                element.history.forEach(past => {
+                    let updatedList = "<li>" + past + "</li>";
+                    historyArray.push(updatedList)
+                });
                 let pairs = {
                     atomicNumber: element.atomicNumber, 
                     name: element.name, 
                     block: element.block,
+                    founder: element.history,
                     atomicMass: element.atomicMass, 
                     symbol: element.symbol, 
                     group: element.group,
@@ -102,8 +119,9 @@ jsonData
                     density: element.density,
                     category: element.category,
                     state: element.state,
+                    history: historyArray,
                     shells: element.shells,
-                    uses: element.uses,
+                    uses: usesArray,
                     description: element.description
                 };
                 
@@ -282,71 +300,4 @@ jsonData
 
     electrons.draw();
     atom.drawRings();
-    
-}
-
-function drawAtom(canvas, electronCount, text) {
-    let c = canvas.getContext("2d");
-    canvas.width = 400;
-    canvas.height = 300;
-    // Utility Functions
-    function randomIntFromRange(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-    class Atom {
-        constructor(x, y, radius, color) {
-            this.x = x;
-            this.y = y;
-            this.radius = radius;
-            this.color = color;
-            this.radians = Math.random() * 360
-            this.velocity = 0.03
-            this.dfc = {
-                x: randomIntFromRange(15, canvas.width / 2 - 20),
-                y: randomIntFromRange(15, canvas.height / 2 - 20),
-            };
-
-            this.update = function () {
-                if (this.radius <= 5) {
-                    this.radians += this.velocity
-                    this.x = x + Math.cos(this.radians) * this.dfc.x;
-                    this.y = y + Math.sin(this.radians) * this.dfc.y;
-                }
-                this.draw();
-            };
-
-            this.draw = function () {
-                c.beginPath();
-                c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-                c.fillStyle = this.color;
-                c.fill();
-                c.font = "15px Verdana";
-                c.textAlign = "center";
-                c.textBaseline = "middle";
-                c.fillStyle = "white";
-                c.fillText(text, canvas.width / 2, canvas.height / 2);
-            };
-        }
-    }
-
-    let atoms;
-    function init() {
-        atoms = [];
-        var x = canvas.width / 2;
-        var y = canvas.height / 2;
-        var radius = 2;
-        atoms.push(new Atom(x, y, 15, "black"));
-        for (var i = 0; i < electronCount; i++) {
-            atoms.push(new Atom(x, y, radius, "rgb(140, 140, 140)"));
-        }
-    }
-    function animate() {
-        requestAnimationFrame(animate);
-        c.clearRect(0, 0, innerWidth, innerHeight);
-        atoms.forEach((atom) => {
-            atom.update();
-        });
-    }
-    init();
-    animate();
 }
