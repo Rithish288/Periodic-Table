@@ -33,8 +33,8 @@
 }
 
 .darkMode {
-    --background-color: rgb(34, 34, 34);
-    --textColor: white;
+    --background-color: rgb(25, 25, 25);
+    --textColor: rgba(255, 255, 255, 0.76);
     --borderColor: white;
     --shadowColor: black;
     --card: rgb(39, 39, 39);
@@ -142,9 +142,4 @@ a:link, a:visited, a:active{
         grid-template-columns: repeat(18, var(--side));
         grid-template-rows: repeat(10, var(--side));
     }
-}
-
-canvas.loader {
-    position: fixed;
-    z-index: 10;
 }

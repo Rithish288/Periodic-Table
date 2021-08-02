@@ -1,8 +1,6 @@
 const periodicTable = document.getElementById("periodic-Table");
 const tabs = document.querySelectorAll("[data-targets]");
 const tabContent = document.querySelectorAll("[data-tab-content]");
-const loader = document.querySelector("canvas.loader");
-const loaderScript = document.querySelector("#loaderScript");
 //Acessing the dom ↑ ↑ ↑
 
 periodicTable.removeAttribute("data-tab-content");
@@ -19,13 +17,6 @@ tabs.forEach((tab) => {
         target.removeAttribute("data-tab-content");
     });
 });
-
-document.addEventListener("readystatechange", () => {
-    if(document.readyState === "complete") {
-        document.head.removeChild(loaderScript)
-        document.body.removeChild(loader);
-    }
-})
 
 let jsonData = fetch("PeriodicTable.json"); //Fetching data
 jsonData

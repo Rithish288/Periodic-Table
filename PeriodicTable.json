@@ -131,7 +131,12 @@
         "density": "2.08 g/cm<sup>3</sup>",
         "category": "Metalloids",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The word boron was coined from borax, the mineral from which it was isolated, by analogy with carbon, which boron resembles chemically.",
+            "Boron compounds were relatively rarely used until the late 1800s when Francis Marion Smith's Pacific Coast Borax Company first popularized and produced them in volume at low cost.",
+            "Boron was not recognized as an element until it was isolated by Sir Humphry Davy and by Joseph Louis Gay-Lussac and Louis Jacques Thénard.",
+            "Jöns Jacob Berzelius identified boron as an element in 1824. Pure boron was arguably first produced by the American chemist Ezekiel Weintraub in 1909."
+        ],
         "shells": [2, 3],
         "uses": [
             "Boron conducts electricity like a metal at high temperatures and is almost an insulator at low temperatures.",
@@ -156,7 +161,12 @@
         "density": "2.26g/cm<sup>3</sup>",
         "category": "Other-non-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Carbon was discovered in prehistory and was known in the forms of soot and charcoal to the earliest human civilizations.",
+            "In 1772, Antoine Lavoisier showed that diamonds are a form of carbon",
+            " Carl Wilhelm Scheele showed that graphite was instead identical with charcoal but with a small admixture of iron, and that it gave \"aerial acid\"(CO2) when oxidized with nitric acid.",
+            "A new allotrope of carbon, fullerene, that was discovered in 1985 includes nanostructured forms such as buckyballs and nanotubes."
+        ],
         "shells": [2, 4],
         "uses": [
             "Amorphous carbon is used to make inks and paints. It is also used in batteries.",
@@ -181,7 +191,12 @@
         "density": "1.2506 g/L",
         "category": "Other-non-metals",
         "state": "gas",
-        "history": [],
+        "history": [
+            "The mixture of nitric and hydrochloric acids was known as aqua regia (royal water), celebrated for its ability to dissolve gold, the king of metals.",
+            "The discovery of nitrogen is attributed to the Scottish physician Daniel Rutherford in 1772, who called it noxious air.",
+            "French chemist Antoine Lavoisier referred to nitrogen gas as \"mephitic air\" or azote, meaning \"no life\" in greek, due to it being mostly inert.",
+            "The earliest military, industrial, and agricultural applications of nitrogen compounds used saltpeter (sodium nitrate or potassium nitrate), most notably in gunpowder, and later as fertiliser."
+        ],
         "shells": [2, 5],
         "uses": [
             "Nitrogen has shown to be very influential in chemical reactions and compounds and has been used, and still is being used, extensively in the pharmaceutical industry.",
@@ -206,7 +221,11 @@
         "density": "1.429 g/L",
         "category": "Other-non-metals",        
         "state": "gas",
-        "history": [],
+        "history": [
+            "Carl Wilhelm Scheele called the gas \"fire air\" because it was then the only known agent to support combustion.",
+            "In the meantime, on August 1, 1774, an experiment conducted by the British clergyman Joseph Priestley focused sunlight on mercuric oxide contained in a glass tube, which liberated a gas he named \"dephlogisticated air\".",
+            "Oxygen was liquefied in a stable state for the first time on March 29, 1883 by Polish scientists from Jagiellonian University, Zygmunt Wróblewski and Karol Olszewski."
+        ],
         "shells": [2, 6],
         "uses": [
             "Compressed oxygen tanks are used by mountaineers at high elevations to counteract the decreased O2 pressure.",

@@ -35,8 +35,8 @@
 }
 
 .darkMode {
-  --background-color: rgb(34, 34, 34);
-  --textColor: white;
+  --background-color: rgb(25, 25, 25);
+  --textColor: rgba(255, 255, 255, 0.76);
   --borderColor: white;
   --shadowColor: black;
   --card: rgb(39, 39, 39);
@@ -197,9 +197,13 @@ div[data-tab-content] {
 .n89 {
   -ms-grid-row: 10;
   grid-row: 10;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 .n90 {
+  -ms-grid-column: 2;
+  grid-column: 2;
   -ms-grid-row: 10;
   grid-row: 10;
 }
@@ -635,10 +639,5 @@ a:link, a:visited, a:active {
     -ms-grid-rows: (var(--side))[10];
         grid-template-rows: repeat(10, var(--side));
   }
-}
-
-canvas.loader {
-  position: fixed;
-  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,16 +4,6 @@ if(sessionStorage == null || sessionStorage == undefined || sessionStorage.lengt
   window.alert('Oops! Seems like you haven\'t selected an element', open('index.html', '_self')) 
 }
 
-const loader = document.querySelector("canvas.loader");
-const loaderScript = document.querySelector("#loaderScript");
-
-document.addEventListener("readystatechange", () => {
-  if(document.readyState === "complete") {
-      document.head.removeChild(loaderScript)
-      document.body.removeChild(loader);
-  }
-})
-
 let elementUses = sessionStorage.uses.split('.,');
 
 let sliced = sessionStorage.shells.split(",");
