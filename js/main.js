@@ -221,8 +221,8 @@ jsonData
     
     
     
-    function drawStructure(canvas, array, text, electronSize, textSize) {
-        let c = canvas.getContext("2d");
+function drawStructure(canvas, array, text, electronSize, textSize) {
+    let c = canvas.getContext("2d");
     canvas.width = 400;
     canvas.height = 300;
 

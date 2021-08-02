@@ -13,7 +13,7 @@ div.periodic-Table {
   overflow-x: auto;
 }
 
-div.periodic-Table .element {
+div.periodic-Table a.element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,22 +36,22 @@ div.periodic-Table .element {
   cursor: pointer;
 }
 
-div.periodic-Table .element:hover {
+div.periodic-Table a.element:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-div.periodic-Table .element h1 {
+div.periodic-Table a.element h1 {
   margin: -3px auto;
   font-size: 2.3em;
 }
 
-div.periodic-Table .element p {
+div.periodic-Table a.element p {
   margin: auto;
   font-size: 1.1em;
   margin-bottom: 0;
 }
 
-div.periodic-Table .element p.number {
+div.periodic-Table a.element p.number {
   margin: 0;
   display: inline;
 }

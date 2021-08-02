@@ -19,6 +19,7 @@ function toKelvin(num) {
   return (num + 273.15).toPrecision(6);
 }
 
+const cards = document.getElementsByClassName("card");
 const name = document.querySelector(".name");
 const pProperties = document.querySelector(".p-properties");
 const cProperties = document.querySelector(".c-properties");
@@ -34,19 +35,12 @@ const source = document.querySelector(".source");
 const title = document.querySelector("title");
 
 
-title.innerHTML = sessionStorage.name + ' (' + sessionStorage.symbol + ')'
-name.classList = "card " + "name " + sessionStorage.category;
-pProperties.classList = "card " + "p-properties " + sessionStorage.category;
-cProperties.classList = "card " + "c-properties " + sessionStorage.category;
-placement.classList = "card " + "placement " + sessionStorage.category;
-history.classList = "card " + "history " + sessionStorage.category;
-uses.classList = "card " + "uses " + sessionStorage.category;
-particles.classList = "card " + "particles " + sessionStorage.category;
-structure.classList = "card " + "structure-3d " + sessionStorage.category;
-structure2.classList = "card " + "structure-2d " + sessionStorage.category;
-discovery.classList = "card " + "discovery " + sessionStorage.category;
-summary.classList = "card " + "summary " + sessionStorage.category;
-source.classList = "card " + "source " + sessionStorage.category;
+title.innerHTML = sessionStorage.name + ' (' + sessionStorage.symbol + ')';
+
+console.log(cards)
+for(const card of cards) {
+  card.classList.add(sessionStorage.category)
+}
 
 uses.innerHTML = `<tag>Uses</tag> <br/><br/> 
     <ul>${sessionStorage.uses.split("</li>,").join("</li> <br/>")} </ul>`;

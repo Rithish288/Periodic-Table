@@ -56,16 +56,16 @@ div.periodic-Table {
   max-width: inherit;
   font-family: 'Encode Sans Semi Condensed', sans-serif;
   font-size: var(--font-size);
-  -ms-grid-columns: (calc(var(--size) + 5px))[18];
+  -ms-grid-columns: (calc(var(--size) + 5px));
       grid-template-columns: repeat(18, calc(var(--size) + 5px));
-  -ms-grid-rows: (var(--size))[10];
+  -ms-grid-rows: (var(--size));
       grid-template-rows: repeat(10, var(--size));
   grid-gap: 0.5em;
   margin: 2em auto;
   overflow-x: auto;
 }
 
-div.periodic-Table .element {
+div.periodic-Table a.element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,22 +88,22 @@ div.periodic-Table .element {
   cursor: pointer;
 }
 
-div.periodic-Table .element:hover {
+div.periodic-Table a.element:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-div.periodic-Table .element h1 {
+div.periodic-Table a.element h1 {
   margin: -3px auto;
   font-size: 2.3em;
 }
 
-div.periodic-Table .element p {
+div.periodic-Table a.element p {
   margin: auto;
   font-size: 1.1em;
   margin-bottom: 0;
 }
 
-div.periodic-Table .element p.number {
+div.periodic-Table a.element p.number {
   margin: 0;
   display: inline;
 }
@@ -529,7 +529,7 @@ a:link, a:visited, a:active {
 }
 
 @media only screen and (max-width: 978px) {
-  .element p.number {
+  a.element p.number {
     display: inline;
     margin: 0;
     font-size: 0.5em;
@@ -541,7 +541,7 @@ a:link, a:visited, a:active {
   h1 {
     margin-bottom: 3px;
   }
-  .element p {
+  a.element p {
     display: none;
   }
 }
@@ -561,7 +561,6 @@ a:link, a:visited, a:active {
     max-width: 90%;
     min-width: 90%;
   }
-  /* .summary, .history, .uses {width: 90%} */
   .uses img {
     width: 100%;
     margin: 0;
@@ -570,11 +569,14 @@ a:link, a:visited, a:active {
   }
   h1 {
     margin-bottom: 3px;
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 }
 
 @media only screen and (max-width: 726px) {
+  a.element p {
+    display: none;
+  }
   ul.tabs {
     width: 75vw;
     font-size: 1.5em;
@@ -589,15 +591,15 @@ a:link, a:visited, a:active {
     font-size: 0.9em;
   }
   h1 {
-    margin-bottom: 3px;
-    font-size: 1.5em;
+    margin-bottom: 2px;
+    font-size: 0.7em;
   }
 }
 
 @media only screen and (max-width: 650px) {
   ul.tabs {
     width: 90vw;
-    font-size: 120%;
+    font-size: 130%;
   }
   .uses img {
     width: 45%;
@@ -619,7 +621,7 @@ a:link, a:visited, a:active {
     width: 95%;
     max-width: 100%;
   }
-  .element p {
+  a.element p {
     margin: auto;
     font-size: 1.1em;
     margin-bottom: 0;
@@ -634,9 +636,9 @@ a:link, a:visited, a:active {
   }
   div.periodic-Table {
     --side: 7em;
-    -ms-grid-columns: (var(--side))[18];
+    -ms-grid-columns: (var(--side));
         grid-template-columns: repeat(18, var(--side));
-    -ms-grid-rows: (var(--side))[10];
+    -ms-grid-rows: (var(--side));
         grid-template-rows: repeat(10, var(--side));
   }
 }
