@@ -119,7 +119,6 @@ jsonData
                 for (let key in pairs) {
                     sessionStorage.setItem(key, pairs[key]);
                 }
-                localStorage.clear()
             }
         });
         elem.addEventListener('mouseenter', () => {
