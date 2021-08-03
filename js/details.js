@@ -37,7 +37,6 @@ const title = document.querySelector("title");
 
 title.innerHTML = sessionStorage.name + ' (' + sessionStorage.symbol + ')';
 
-console.log(cards)
 for(const card of cards) {
   card.classList.add(sessionStorage.category)
 }

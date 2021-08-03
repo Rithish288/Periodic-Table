@@ -23,7 +23,7 @@
   height: auto;
   font-size: 1em;
   color: var(--textColor);
-  padding: 1em 2em;
+  padding: 1em 1.5em;
   text-align: left;
   background-color: var(--card);
   -webkit-box-shadow: 0 8px 20px -3px var(--shadowColor);

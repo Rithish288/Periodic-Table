@@ -250,7 +250,11 @@
         "density": "1.696 g/L",
         "category": "Halogens",
         "state": "gas",
-        "history": [],
+        "history": [
+            "In 1529, Georgius Agricola described fluorite as an additive used to lower the melting point of metals during smelting",
+            "Initial studies on fluorine were so dangerous that several 19th-century experimenters were deemed \"fluorine martyrs\" after misfortunes with hydrofluoric acid.",
+            "In 1886, after 74 years of effort by many chemists, Moissan isolated elemental fluorine."
+        ],
         "shells": [2, 7],
         "uses": [
             "Fluorine and its compounds are used in processing nuclear fuel.",
@@ -274,7 +278,11 @@
         "density": "0.9002 g/L",
         "category": "Noble-gases",
         "state": "gas",
-        "history": [],
+        "history": [
+            "Neon was discovered when Ramsay chilled a sample of air until it became a liquid, then warmed the liquid and captured the gases as they boiled off.",
+            "Neon's scarcity precluded its prompt application for lighting along the lines of Moore tubes, which used nitrogen and which were commercialized in the early 1900s.",
+            "In December 1910 Georges Claude demonstrated modern neon lighting based on a sealed tube of neon. In 1912, Claude's associate began selling neon discharge tubes as eye-catching advertising signs and was instantly more successful."
+        ],
         "shells": [2, 8],
         "uses": [
             "Neon bulbs are used in greenhouses and botanical gardens to stimulate plant growth.",
@@ -299,7 +307,11 @@
         "density": "0.968 g/cm<sup>3</sup>",
         "category": "Alkali-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The name sodium is thought to originate from the Arabic suda, meaning headache, as the headache-alleviating properties of sodium carbonate or soda were well known in early times.",
+            "Sodium had long been recognized in compounds, however, it was not isolated until 1807 by Sir Humphry Davy through the electrolysis of sodium hydroxide.",
+            "The chemical abbreviation for sodium was first published in 1814 by Jöns Jakob Berzelius in his system of atomic symbols, and is an abbreviation of the element's New Latin name natrium."
+        ],
         "shells": [2, 8, 1],
         "uses": [
             "Sodium in its metallic form is very important in making esters and in the manufacture of organic compounds.",
@@ -324,7 +336,11 @@
         "density": "1.738 g/cm<sup>3</sup>",
         "category": "Alkaline-Earth-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The name magnesium originates from the Greek word for locations related to the tribe of the Magnetes or Magnesia ad Sipylum, now in Turkey.",
+            "In 1618, a farmer at Epsom in England attempted to give his cows water from a well there. The cows refused to drink because of the water's bitter taste, but the farmer noticed that the water seemed to heal scratches and rashes. The substance is now known as magnesium sulfate.",
+            "The metal itself was first isolated by Sir Humphry Davy in England in 1808. He used electrolysis on a mixture of magnesia and mercuric oxide."
+        ],
         "shells": [2, 8, 2],
         "uses": [
             "Magnesium plays many crucial roles in the body, such as supporting muscle and nerve function and energy production.",
@@ -348,7 +364,11 @@
         "density": "2.70 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The ancients are known to have used alum as a dyeing mordant and for city defense. After the Crusades, alum, an indispensable good in the European fabric industry, was a subject of international commerce.",
+            "In 1754, German chemist Andreas Sigismund Marggraf synthesized alumina by boiling clay in sulfuric acid and subsequently adding potash.",
+            "Hans Christian Ørsted reacted anhydrous aluminium chloride with potassium amalgam, yielding a lump of metal looking similar to tin. He presented his results and demonstrated a sample of the new metal in 1825."
+        ],
         "shells": [2, 8, 3],
         "uses": [
             "Aluminium is ideal for wiring power grids, including overhead power transmission lines and local power distribution lines.",
@@ -373,7 +393,11 @@
         "density": "2.3290 g/cm<sup>3</sup>",
         "category": "Metalloids",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Silicon rock crystals were familiar to various ancient civilizations, such as the predynastic Egyptians who used it for beads and small vases, as well as the ancient Chinese.",
+            "Gay-Lussac and Thénard are thought to have prepared impure amorphous silicon in 1811, through the heating of recently isolated potassium metal with silicon tetrafluoride, but they did not purify and characterize the product, nor identify it as a new element.",
+            "In 1823, Jöns Jacob Berzelius prepared amorphous silicon using approximately the same method as Gay-Lussac (reducing potassium fluorosilicate with molten potassium metal), but purifying the product to a brown powder by repeatedly washing it."
+        ],
         "shells": [2, 8, 4],
         "uses": [
             "Silicon is majorly used in the semiconductor industry to produce electronic components like transistors and diodes.",
@@ -398,7 +422,11 @@
         "density": "2.36 g/cm<sup>3</sup>",
         "category": "Other-non-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The name Phosphorus in Ancient Greece was the name for the planet Venus and is derived from Greek, which roughly translates as light-bringer or light carrier.",
+            "Henning Brand attempted to create the fabled philosopher's stone through the distillation of some salts by evaporating urine, and in the process produced a white material that glowed in the dark and burned brilliantly. It was named 'phosphorus mirabilis'.",
+            "White phosphorus was first made commercially in the 19th century for the match industry. The bone-ash process became obsolete when the submerged-arc furnace for phosphorus production was introduced to reduce phosphate rock."
+        ],
         "shells": [2, 8, 5],
         "uses": [
             "Phosphorus is used in the manufacture of safety matches (red phosphorus), and incendiary shells.",
@@ -412,7 +440,6 @@
         "atomicNumber": 16, 
         "name": "Sulfur",
         "block": "p-block",
- 
         "atomicMass": "32.065", 
         "symbol": "S",
         "group": 16, 
