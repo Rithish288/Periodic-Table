@@ -451,7 +451,9 @@
         "density": "1.96 g/cm<sup>3</sup>",
         "category": "Other-non-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            ""
+        ],
         "shells": [2, 8, 6],
         "uses": [
             "Elemental sulfur is used in black gunpowder, matches, and fireworks.",

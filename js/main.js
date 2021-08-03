@@ -3,6 +3,9 @@ const tabs = document.querySelectorAll("[data-targets]");
 const tabContent = document.querySelectorAll("[data-tab-content]");
 //Acessing the dom ↑ ↑ ↑
 
+import { drawStructure } from './exports.js';
+
+
 periodicTable.removeAttribute("data-tab-content");
 tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
@@ -70,10 +73,10 @@ jsonData
             case 96: elem.setAttribute('configuration', '[Rn] 7s2 5f7 6d1');break;
             case 103: elem.setAttribute('configuration', '[Rn] 7s2 5f14 7p1');break;
         }
-
-
+        
+        
         //Event listeners
-        elem.addEventListener("click", () => {
+        elem.addEventListener("click", (e) => {
             if (id == element.atomicNumber) {
                 function findAttribute() {
                     if(elem.hasAttribute('configuration')) {
@@ -82,38 +85,12 @@ jsonData
                         return findPoint(document.querySelector('.n' + element.atomicNumber))
                     }
                 }
-                let usesArray = [];
-                element.uses.forEach(use => {
-                    let updatedList = "<li>" + use + "</li>";
-                    usesArray.push(updatedList)
-                });
 
-                let historyArray = [];
-                element.history.forEach(past => {
-                    let updatedList = "<li>" + past + "</li>";
-                    historyArray.push(updatedList)
-                });
+                
+                
                 let pairs = {
                     atomicNumber: element.atomicNumber, 
-                    name: element.name, 
-                    block: element.block,
-                    founder: element.history,
-                    atomicMass: element.atomicMass, 
-                    symbol: element.symbol, 
-                    group: element.group,
                     electronConfig: findAttribute(),
-                    discovered: element.discovered, 
-                    appearance: element.appearance,
-                    boilingPoint: element.boilingPoint,
-                    meltingPoint: element.meltingPoint,
-                    discoveredBy: element.discoveredBy,
-                    density: element.density,
-                    category: element.category,
-                    state: element.state,
-                    history: historyArray,
-                    shells: element.shells,
-                    uses: usesArray,
-                    description: element.description
                 };
                 
                 for (let key in pairs) {
@@ -127,7 +104,7 @@ jsonData
                 drawStructure(canvas2,
                     element.shells,
                     element.symbol,
-                    3.8, '15px')
+                    3.8, '15px', false)
                     canvas2.style.visibility = 'visible';
                 }
             })
@@ -214,80 +191,9 @@ jsonData
             if(finalAns < 1) {
                 return 1 + 's' + element;
             }
-            prevNoblegas = new String(document.querySelector('.n' + finalAns).dataset.symbol).valueOf()
+            let prevNoblegas = new String(document.querySelector('.n' + finalAns).dataset.symbol).valueOf()
             return '[' + prevNoblegas + ']' + ' ' + str;
         }
     }); 
     
     
-    
-function drawStructure(canvas, array, text, electronSize, textSize) {
-    let c = canvas.getContext("2d");
-    canvas.width = 400;
-    canvas.height = 300;
-
-    class Atom {
-        constructor(x, y, radius, color) {
-            this.x = x;
-            this.y = y;
-            this.color = color;
-            this.ringRadius = radius;
-            this.radi = canvas.height / 2.2 / array.length;
-            
-            this.drawRings = function () {
-                for (let shells = 0; shells <= array.length; shells++) {
-                    c.beginPath();
-                    c.arc(this.x,this.y,this.ringRadius * shells,0,Math.PI * 2,false);
-                    c.strokeStyle = this.color;
-                    c.stroke();
-                }
-                c.beginPath();
-                c.arc(canvas.width / 2, canvas.height / 2, electronSize * 4, 0, Math.PI * 2, false);
-                c.fillStyle = 'black'
-                c.fill();
-                c.font = `${textSize} Verdana`;
-                c.textAlign = "center";
-                c.textBaseline = "middle";
-                c.fillStyle = "white";
-                c.fillText(text, canvas.width/2, canvas.height/2);
-            };
-        }
-    }
-
-    class Electron {
-        constructor(x, y, radius, color) {
-            this.x = x;
-            this.y = y;
-            this.radius = radius;
-            this.color = color;
-            this.radi = canvas.height / 2.2 / array.length;
-
-            this.draw = function () {
-                array.forEach((arr, i) => {
-                    i += 1;
-                    let radians = (Math.PI * 2) / arr;
-                    for (let electrons = 0; electrons < arr; electrons++) {
-                        let x = this.x + Math.sin(radians * electrons) * i * this.radi;
-                        let y = this.y + Math.cos(radians * electrons) * i * this.radi;
-
-                        c.beginPath();
-                        c.arc(x, y, this.radius, 0, Math.PI * 2, false);
-                        c.fillStyle = this.color;
-                        c.fill();
-                        c.closePath();
-                    }
-                });
-            };
-        }
-    }
-
-    let electrons = new Electron( canvas.width/2, canvas.height/2, electronSize, "rgb(125, 125, 125)");
-
-    let ringx = canvas.width/2;
-    let ringy = canvas.height/2;
-    let ringRadi = canvas.height / 2.2 / array.length;
-    let atom = new Atom(ringx, ringy, ringRadi, "rgb(125, 125, 125)");
-
-    electrons.draw();
-    atom.drawRings();
-}

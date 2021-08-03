@@ -1,24 +1,22 @@
-
 sessionStorage.getItem("element");
 if(sessionStorage == null || sessionStorage == undefined || sessionStorage.length <= 1) {
   window.alert('Oops! Seems like you haven\'t selected an element', open('index.html', '_self')) 
 }
 
-let elementUses = sessionStorage.uses.split('.,');
+import {toFarenheit} from "./exports.js";
+import {toKelvin} from "./exports.js";
+import {drawStructure} from "./exports.js";
+import {drawAtom} from "./exports.js";
 
-let sliced = sessionStorage.shells.split(",");
+let atomData = {};
 
-let shellArray = sliced.map((x) => {
-  return parseInt(x);
-});
-
-function toFarenheit(num) {
-  return (num * (9 / 5) + 32).toPrecision(6);
-}
-function toKelvin(num) {
-  return (num + 273.15).toPrecision(6);
-}
-
+await fetch("PeriodicTable.json").then((res) => res.json()).then((data) => {
+    const mainData = data[sessionStorage.atomicNumber - 1];
+    for (const key in mainData) {
+      Object.defineProperty(atomData, key,  {value: mainData[key]})
+    }
+  })
+  
 const cards = document.getElementsByClassName("card");
 const name = document.querySelector(".name");
 const pProperties = document.querySelector(".p-properties");
@@ -34,85 +32,94 @@ const summary = document.querySelector(".summary");
 const source = document.querySelector(".source");
 const title = document.querySelector("title");
 
+let updatedUses = [];
+atomData.uses.forEach(use => {
+  updatedUses.push("<li>" + use + "</li>");
+});
+let updatedHistory = [];
+atomData.history.forEach(use => {
+  updatedHistory.push("<li>" + use + "</li>");
+});
 
-title.innerHTML = sessionStorage.name + ' (' + sessionStorage.symbol + ')';
+title.innerHTML = atomData.name + ' (' + atomData.symbol + ')';
 
 for(const card of cards) {
-  card.classList.add(sessionStorage.category)
+  card.classList.add(atomData.category)
 }
 
 uses.innerHTML = `<tag>Uses</tag> <br/><br/> 
-    <ul>${sessionStorage.uses.split("</li>,").join("</li> <br/>")} </ul>`;
+    <ul>${updatedUses.join("<br/>")} </ul>`;
 
-history.innerHTML = `<tag>History</tag><br/> <br/> <ul>${sessionStorage.history.split("</li>,").join("</li> <br/>")}</ul>`
+history.innerHTML = `<tag>History</tag><br/> <br/> <ul>${updatedHistory.join("<br/>")}</ul>`
 
 structure.innerHTML = `<tag>3-D Structure</tag> <br/> <br/>
     <canvas id="structure1"></canvas> `;
 
 structure2.innerHTML = `<tag>Bohr Model</tag> <br/> <br/>
     <canvas id="structure2"></canvas> <br/>
-    Electron shells: [${sessionStorage.shells}] <br/> <br/>
+    Electron shells: [${atomData.shells}] <br/> <br/>
     Electron-Configuration : ${sessionStorage.electronConfig}`;
 
 placement.innerHTML = `<tag>Position</tag> <br/> <br/>
-    <strong>Group</strong> : ${sessionStorage.group} <br/> <br/>
-    <strong>Period</strong> : ${shellArray.length} <br/> <br/>
-    <strong>Block</strong> : ${sessionStorage.block} 
+    <strong>Group</strong> : ${atomData.group} <br/> <br/>
+    <strong>Period</strong> : ${atomData.shells.length} <br/> <br/>
+    <strong>Block</strong> : ${atomData.block} 
     `
 
-name.innerHTML = ` <h3>${sessionStorage.atomicNumber}</h3> <br><br/>
-    <h1>${sessionStorage.symbol}</h1><br><br/>
-    <h2>${sessionStorage.name}</h2> `;
+name.innerHTML = ` <h3>${atomData.atomicNumber}</h3> <br><br/>
+    <h1>${atomData.symbol}</h1><br><br/>
+    <h2>${atomData.name}</h2> `;
 pProperties.innerHTML = `<tag>Physical properties</tag> <br/><br/>
-    <strong>Appearance : </strong> ${sessionStorage.appearance} <br/><br/>
-    <strong>State (STP) : </strong> ${sessionStorage.state} <br/><br/>
-    <strong>Category :</strong> ${sessionStorage.category}`;
+    <strong>Appearance : </strong> ${atomData.appearance} <br/><br/>
+    <strong>State (STP) : </strong> ${atomData.state} <br/><br/>
+    <strong>Category :</strong> ${atomData.category}`;
 
 cProperties.innerHTML = `<tag>Chemical properties</tag> <br/><br/>
-    <strong>Boiling-point : </strong> ${sessionStorage.boilingPoint}
+    <strong>Boiling-point : </strong> ${atomData.boilingPoint}
     <select>
     <option value="°C" selected>°C</option>
     <option value="°F">°F</option>
     <option value="K">K</option>
     </select>
     <br/><br/>
-    <strong>Melting-point : </strong> ${sessionStorage.meltingPoint}
+    <strong>Melting-point : </strong> ${atomData.meltingPoint}
     <select>
     <option value="°C" selected>°C</option>
     <option value="°F">°F</option>
     <option value="K">K</option>
     </select>
     <br/><br/>
-    <strong>Density : </strong> ${sessionStorage.density} <br/><br/>
-    <strong>Atomic mass : </strong> ${sessionStorage.atomicMass} g/mol`;
+    <strong>Density : </strong> ${atomData.density} <br/><br/>
+    <strong>Atomic mass : </strong> ${atomData.atomicMass} g/mol`;
 
 particles.innerHTML = `<tag>Particle data</tag> <br/><br/>
-    <strong>Electrons : </strong> ${sessionStorage.atomicNumber} <br/><br/>
-    <strong>Protons : </strong> ${sessionStorage.atomicNumber} <br/><br/>
+    <strong>Electrons : </strong> ${atomData.atomicNumber} <br/><br/>
+    <strong>Protons : </strong> ${atomData.atomicNumber} <br/><br/>
     <strong>Neutrons : </strong> ${
-      Math.round(sessionStorage.atomicMass) - sessionStorage.atomicNumber}`;
+      Math.round(atomData.atomicMass) - atomData.atomicNumber}`;
 
 discovery.innerHTML = ` <tag>Discovery</tag> <br/><br/>
-    <strong>Discovered by : </strong>${sessionStorage.discoveredBy} <br/><br/>
-    <strong>Discovered on : </strong>${sessionStorage.discovered}`;
+    <strong>Discovered by : </strong>${atomData.discoveredBy} <br/><br/>
+    <strong>Discovered on : </strong>${atomData.discovered}`;
 
-summary.innerHTML =`<img src="images/${sessionStorage.name}.jpg" alt="${sessionStorage.name.toLowerCase()}">
-        ${sessionStorage.description}<br/> <br/>  
-        <small><a href="https://images-of-elements.com/${sessionStorage.name.toLowerCase()}.php#a" target="_blank">Source</a> of image.</small>`;
+summary.innerHTML =`<img src="images/${atomData.name}.jpg" alt="${atomData.name.toLowerCase()}">
+        ${atomData.description}<br/> <br/>  
+        <small><a href="https://images-of-elements.com/${atomData.name.toLowerCase()}.php#a" target="_blank">Source</a> of image.</small>`;
 
-source.innerHTML = `<a href="https://en.wikipedia.org/wiki/${sessionStorage.name}" target="_blank">Wikipedia</a>`;
+source.innerHTML = `<a href="https://en.wikipedia.org/wiki/${atomData.name}" target="_blank">Wikipedia</a>`;
 
 drawAtom(
   document.querySelector("#structure1"),
-  sessionStorage.atomicNumber,
-  sessionStorage.symbol
+  atomData.atomicNumber,
+  atomData.symbol
 );
 drawStructure(
   document.querySelector("#structure2"),
-  shellArray,
-  sessionStorage.symbol,
+  atomData.shells,
+  atomData.symbol,
   4,
-  "15px"
+  "15px",
+  true
 );
 
 const units = document.querySelectorAll("select");
@@ -128,170 +135,3 @@ units.forEach((unit) => {
     }
   });
 });
-
-function drawStructure(canvas, array, text, electronSize, textSize) {
-  let c = canvas.getContext("2d");
-  canvas.width = 450;
-  canvas.height = 350;
-
-  class Atom {
-    constructor(x, y, radius, color) {
-      this.x = x;
-      this.y = y;
-      this.color = color;
-      this.ringRadius = radius;
-      this.radi = canvas.height / 2.2 / array.length;
-
-      this.drawRings = function () {
-        for (let shells = 0; shells <= array.length; shells++) {
-          c.beginPath();
-          c.arc(
-            this.x,
-            this.y,
-            this.ringRadius * shells,
-            0,
-            Math.PI * 2,
-            false
-          );
-          c.strokeStyle = this.color;
-          c.stroke();
-        }
-        c.beginPath();
-        c.arc(
-          canvas.width / 2,
-          canvas.height / 2,
-          electronSize * 4,
-          0,
-          Math.PI * 2,
-          false
-        );
-        c.fillStyle = "black";
-        c.fill();
-        c.font = `${textSize} Verdana`;
-        c.textAlign = "center";
-        c.textBaseline = "middle";
-        c.fillStyle = "white";
-        c.fillText(text, canvas.width / 2, canvas.height / 2);
-      };
-    }
-  }
-
-  class Electron {
-    constructor(x, y, radius, color) {
-      this.x = x;
-      this.y = y;
-      this.radius = radius;
-      this.color = color;
-      this.radi = canvas.height / 2.2 / array.length;
-      this.counter = 0;
-
-      this.draw = function () {
-        array.forEach((arr, i) => {
-          i += 1;
-          this.counter += Math.sin(0.007)
-          if(arr == 0) {
-            return null
-          }
-          let radians = (Math.PI * 2) / arr;
-          for (let electrons = 0; electrons < arr; electrons++) {
-            let x = this.x + Math.cos(radians * electrons + this.counter / i) * i * this.radi;
-            let y = this.y + Math.sin(radians * electrons + this.counter / i) * i * this.radi;
-
-            c.beginPath();
-            c.arc(x, y, this.radius, 0, Math.PI * 2, false);
-            c.fillStyle = this.color;
-            c.fill();
-            c.closePath();
-          }
-        });
-      };
-    }
-  }
-
-  let electrons = new Electron(
-    canvas.width / 2,
-    canvas.height / 2,
-    electronSize,
-    "rgb(125, 125, 125)"
-  );
-
-  let ringx = canvas.width / 2;
-  let ringy = canvas.height / 2;
-  let ringRadi = canvas.height / 2.2 / array.length;
-  let atom = new Atom(ringx, ringy, ringRadi, "rgb(125, 125, 125)");
-
-  
-  function animate() {
-    requestAnimationFrame(animate);
-    c.clearRect(0, 0, canvas.width, canvas.height);
-    electrons.draw();
-    atom.drawRings();
-  }
-  animate()
-}
-
-function drawAtom(canvas, electronCount, text) {
-  let c = canvas.getContext("2d");
-  canvas.width = 400;
-  canvas.height = 400;
-  // Utility Functions
-  function randomIntFromRange(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-  class Atom {
-    constructor(x, y, radius, color) {
-      this.x = x;
-      this.y = y;
-      this.radius = radius;
-      this.color = color;
-      this.radians = Math.random() * 360;
-      this.velocity = 0.03;
-      this.dfc = {
-        x: randomIntFromRange(20, canvas.width / 2 - 20),
-        y: randomIntFromRange(20, canvas.height / 2 - 50),
-      };
-      
-      this.update = function () {
-        if (this.radius <= 5) {
-          this.radians += this.velocity;
-          this.x = x + Math.cos(this.radians) * this.dfc.x;
-          this.y = y + Math.sin(this.radians) * this.dfc.y;
-        }
-        this.draw();
-      };
-      
-      this.draw = function () {
-        c.beginPath();
-        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        c.fillStyle = this.color;
-        c.fill();
-        c.font = "15px Verdana";
-        c.textAlign = "center";
-        c.textBaseline = "middle";
-        c.fillStyle = "white";
-        c.fillText(text, canvas.width / 2, canvas.height / 2);
-      };
-    }
-  }
-
-  let atoms;
-  function init() {
-    atoms = [];
-    var x = canvas.width / 2;
-    var y = canvas.height / 2;
-    var radius = 2;
-    atoms.push(new Atom(x, y, 15, "black"));
-    for (var i = 0; i < electronCount; i++) {
-      atoms.push(new Atom(x, y, radius, "rgb(140, 140, 140)"));
-    }
-  }
-  function animate() {
-    requestAnimationFrame(animate);
-    c.clearRect(0, 0, innerWidth, innerHeight);
-    atoms.forEach((atom) => {
-      atom.update();
-    });
-  }
-  init();
-  animate();
-}
