@@ -83,6 +83,7 @@ body {
     align-items: center;
     background-color:var(--background-color);
     color: var(--textColor);
+    transition: all 0.15s ease-in-out;
 }
 
 a:link, a:visited, a:active{

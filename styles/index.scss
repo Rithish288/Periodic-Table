@@ -8,6 +8,7 @@ div.periodic-Table {
     grid-gap: 0.5em;
     margin: 2em auto;
     overflow-x: auto;
+    transition: all 0.15s ease-in-out;
 
     a.element {
         display: flex;

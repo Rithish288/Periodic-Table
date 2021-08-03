@@ -11,6 +11,8 @@ div.periodic-Table {
   grid-gap: 0.5em;
   margin: 2em auto;
   overflow-x: auto;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 div.periodic-Table a.element {

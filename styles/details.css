@@ -15,6 +15,8 @@
   width: 80vw;
   margin-top: 5em;
   font-family: 'Quicksand';
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .description .card {
