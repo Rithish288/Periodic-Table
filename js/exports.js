@@ -180,7 +180,7 @@ export function drawAtom(canvas, electronCount, text) {
   }
   function animate() {
     requestAnimationFrame(animate);
-    c.clearRect(0, 0, innerWidth, innerHeight);
+    c.clearRect(0, 0, canvas.width, canvas.height);
     atoms.forEach((atom) => {
       atom.update();
     });

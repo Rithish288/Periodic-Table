@@ -2255,7 +2255,11 @@
         "density": "21.45 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Archaeologists have discovered traces of platinum in the gold used in ancient Egyptian burials as early as 1200 BC.",
+            "The first European reference to platinum appears in 1557 in the writings of the Italian humanist Julius Caesar Scaliger as a description of an unknown noble metal.",
+            "In 1735, Antonio de Ulloa and Jorge Juan y Santacilia saw Native Americans mining platinum and found mines with the whitish metal nuggets and took them to Spain to study about them."
+        ],
         "shells": [2, 8, 18, 32, 17, 1],
         "uses": [
             "In certain chemical forms, platinum has the ability to slow or stop the division of living cells. Platinum-based drugs have been developed to treat a wide range of cancers.",
@@ -2280,7 +2284,11 @@
         "density": "19.30 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The oldest known map of a gold mine was drawn in the 19th Dynasty of Ancient Egypt (1320–1200 BC), whereas the first written reference to gold was recorded in the 12th Dynasty around 1900 BC.",
+            "Since the 1880s, South Africa has been the source of a large proportion of the world's gold supply, and about 22% of the gold presently accounted is from South Africa.",
+            "During the 19th century, gold rushes occurred whenever large gold deposits were discovered. The first documented discovery of gold in the United States was at the Reed Gold Mine near Georgeville, North Carolina in 1803."
+        ],
         "shells": [2, 8, 18, 32, 18, 1],
         "uses": [
             "Purchased by governments, central banks, financial institutions and private investors, gold is used as a physical store of wealth.",

@@ -2255,7 +2255,9 @@
         "density": "21.45 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            ""
+        ],
         "shells": [2, 8, 18, 32, 17, 1],
         "uses": [
             "In certain chemical forms, platinum has the ability to slow or stop the division of living cells. Platinum-based drugs have been developed to treat a wide range of cancers.",
