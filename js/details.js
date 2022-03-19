@@ -3,10 +3,7 @@ if(sessionStorage == null || sessionStorage == undefined || sessionStorage.lengt
   window.alert('Oops! Seems like you haven\'t selected an element', open('index.html', '_self')) 
 }
 
-import {toFarenheit} from "./exports.js";
-import {toKelvin} from "./exports.js";
-import {drawStructure} from "./exports.js";
-import {drawAtom} from "./exports.js";
+import {toFarenheit, toKelvin, drawAtom, drawStructure} from "./exports.js";
 
 let atomData = {};
 

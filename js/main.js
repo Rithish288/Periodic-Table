@@ -126,6 +126,7 @@ jsonData
         function findPoint(item) {
             const config = breakPoints.map(el => parseInt(el.classList[1].split('n')[1]))
             let element = parseInt(item.classList[1].split('n')[1]);
+            console.log(element)
             let breakPointArray = [0];
             let obj = {};
             let blockArray = [];
@@ -192,7 +193,7 @@ jsonData
                 return 1 + 's' + element;
             }
             let prevNoblegas = new String(document.querySelector('.n' + finalAns).dataset.symbol).valueOf()
-            return '[' + prevNoblegas + ']' + ' ' + str;
+            return '[' + cprevNoblegas + ']' + ' ' + str;
         }
     }); 
     

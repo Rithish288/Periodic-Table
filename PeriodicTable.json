@@ -2313,7 +2313,12 @@
         "density": "13.534 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "liquid",
-        "history": [],
+        "history": [
+            "In China and Tibet, mercury use was thought to prolong life, heal fractures, and maintain generally good health, although it is now known that exposure to mercury vapor leads to serious adverse health effects.",
+            "During the ancient times, mercury was used in oinments, cosmetics, amalgams, etc.",
+            "In November 2014 large quantities of mercury were discovered in a chamber 60 feet below the 1800-year-old pyramid known as the 'Temple of the Feathered Serpent'.",
+            "Mercury was found in Egyptian tombs that date from 1500 BC."
+        ],
         "shells": [2, 8, 18, 32, 18, 2],
         "uses": [
             "Elemental mercury is used in thermometers, blood pressure devices, and thermostats because its ability to expand and contract uniformly makes it useful for measuring changes in temperature.",
@@ -2338,7 +2343,11 @@
         "density": "11.85 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Thallium was discovered by William Crookes and Claude Auguste Lamy, working independently, both using flame spectroscopy (Crookes was first to publish his findings, on March 30, 1861). The name comes from thallium's bright green spectral emission lines.",
+            "The dominant use of thallium was the use as poison for rodents.",
+            "After several accidents the use as poison was banned in the United States by Presidential Executive Order 11643 in February 1972. In subsequent years several other countries also banned its use."
+        ],
         "shells": [2, 8, 18, 32, 18, 3],
         "uses": [
             "Thallium is used in photoresistors, infrared optical equipment, low melting glasses and several other applications.",
@@ -2363,7 +2372,12 @@
         "density": "11.34 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Metallic lead beads dating back to 7000–6500 BCE have been found in Asia Minor and may represent the first example of metal smelting.",
+            "The Ancient Egyptians were the first to use lead minerals in cosmetics, an application that spread to Ancient Greece and beyond.",
+            "Further evidence of the threat that lead posed to humans was discovered in the late 19th and early 20th centuries.",
+            "The last major human exposure to lead was the addition of tetraethyllead to gasoline as an antiknock agent."
+        ],
         "shells": [2, 8, 18, 32, 18, 4],
         "uses": [
             "The principal consumption of Lead is for the Lead-Acid storage battery in which grid or plate is made of Lead or Lead with other metal more commonly with antimony.",
@@ -2388,7 +2402,11 @@
         "density": "9.78 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Bismuth metal has been known since ancient times; it was one of the first 10 metals to have been discovered. The name bismuth dates from around the 1660s.",
+            "Because bismuth has been known since ancient times, no one person is credited with its discovery.",
+            "Beginning with Johann Heinrich Pott in 1738, Carl Wilhelm Scheele, and Torbern Olof Bergman, the distinctness of lead and bismuth became clear, and Claude François Geoffroy demonstrated in 1753 that this metal is distinct from lead and tin."
+        ],
         "shells": [2, 8, 18, 32, 18, 5],
         "uses": [
             "Bismuth compounds are used as catalysts in the manufacturing process of synthetic fiber and rubber.",
@@ -2413,7 +2431,11 @@
         "density": "9.196 g/cm<sup>3</sup>",
         "category": "Metalloids",
         "state": "Solid",
-        "history": [],
+        "history": [
+            "Tentatively called 'radium F', polonium was discovered by Marie and Pierre Curie in July 1898, and was named after Marie Curie's native land of Poland.",
+            "German scientist Willy Marckwald successfully isolated 3 milligrams of polonium in 1902, though at the time he believed it was a new element, which he dubbed \"radio-tellurium\"",
+            "In the United States, polonium was produced as part of the Manhattan Project's Dayton Project during World War II."
+        ],
         "shells": [2, 8, 18, 32, 18, 6],
         "uses": [
             "The alpha rays emitted by polonium can be used to eliminate static electricity produced during processes such as rolling paper, wire, and sheet metal.",
@@ -2437,7 +2459,9 @@
         "density": "unavailable",
         "category": "Halogens",
         "state": "solid",
-        "history": [],
+        "history": [
+            "In 1940, Dale R. Corson, Kenneth Ross MacKenzie, and Emilio Segrè isolated the element at the University of California, Berkeley. Instead of searching for the element in nature, the scientists created it by bombarding bismuth-209 with alpha particles in a cyclotron."
+        ],
         "shells": [2, 8, 18, 32, 18, 7],
         "uses": [
             "By far, elemental astatine has never been viewed by the naked eye. Only about 30 grams of As is present in the earth's crust. Due to it's extreme rarity, not much research has been made made on Astatine."
@@ -2459,7 +2483,11 @@
         "density": "9.73 g/L",
         "category": "Noble-gases",
         "state": "gas",
-        "history": [],
+        "history": [
+            "Radon was the fifth radioactive element to be discovered, in 1899 by Ernest Rutherford and Robert B. Owens at McGill University in Montreal, after uranium, thorium, radium, and polonium.",
+            "In 1909, Ramsay and Robert Whytlaw-Gray isolated radon and determined its melting temperature and approximate density.",
+            "In 1910, they determined that it was the heaviest known gas."
+        ],
         "shells": [2, 8, 18, 32, 18, 8],
         "uses": [
             "Radioactive decomposition of radon is useful for obtaining polonium.",
@@ -2484,7 +2512,12 @@
         "density": "2.48 g/cm<sup>3</sup>",
         "category": "Alkali-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Eka-caesium(provisional name of Francium) was discovered on 7 January 1939 by Marguerite Perey of the Curie Institute in Paris, when she purified a sample of actinium-227 which had been reported to have a decay energy of 220 keV.",
+            "Soviet chemist Dmitry Dobroserdov was the first scientist to claim to have found eka-caesium, or francium.",
+            "In 1930, Fred Allison of the Alabama Polytechnic Institute claimed to have discovered element 87 when analyzing pollucite and lepidolite.",
+            "On 7 January 1939, When Marguerite Perey was purifying a sample of actinium-227 at the Curie Institute in Paris, she discovered Eks-caesium."
+        ],
         "shells": [2, 8, 18, 32, 18, 8, 1],
         "uses": [
             "Currently, francium has no uses outside of research purposes. Due to its extreme rarity, even researching is difficult."
@@ -2506,7 +2539,11 @@
         "density": "5.5 g/cm<sup>3</sup>",
         "category": "Alkaline-Earth-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Radium was discovered by Marie Skłodowska-Curie and her husband Pierre Curie on 21 December 1898, in a uraninite sample from Jáchymov.",
+            "In September 1910, Marie Curie and André-Louis Debierne announced that they had isolated radium as a pure metal through the electrolysis of pure radium chloride solution using a mercury cathode.",
+            "Radium metal was first industrially produced at the beginning of the 20th century by Biraco, a subsidiary company of Union Minière du Haut Katanga in its Olen plant in Belgium."
+        ],
         "shells": [2, 8, 18, 32, 18, 8, 2],
         "uses": [
             "Radium had been used to make self-luminous paints for watches, aircraft instrument dials and other instrumentation.",
@@ -2530,7 +2567,11 @@
         "density": "10 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "André-Louis Debierne, a French chemist, announced the discovery of a new element in 1899. He separated it from pitchblende residues left after the discovery of Radium.",
+            "Friedrich Oskar Giesel found in 1902 a substance similar to lanthanum and called it \"emanium\" in 1904.",
+            "Debierne, is now considered by the vast majority of historians as the discoverer. Giesel, on the other hand, can rightfully be credited with the first preparation of radiochemically pure actinium and with the identification of its atomic number 89."
+        ],
         "shells": [2, 8, 18, 32, 18, 9, 2],
         "uses": [
             "It is about 150 times as radioactive as radium, making it valuable as a neutron source.",
@@ -2555,7 +2596,11 @@
         "density": "11.7 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "In 1828, Morten Thrane Esmark found a black mineral on Løvøya island, Norway. The elder Esmark determined that it was not a known mineral and sent a sample to Berzelius for examination.",
+            "Berzelius determined that it contained a new element. He published his findings in 1829, having isolated an impure sample by reducing KThF<sub>5</sub>.",
+            "Berzelius determined that thorium was a very electropositive metal, ahead of cerium and behind zirconium in electropositivity."
+        ],
         "shells": [2, 8, 18, 32, 18, 10, 2],
         "uses": [
             "Thorium and its compounds found some important retail uses, the best known of which was in gas mantles, and in toothpaste.",
@@ -2580,7 +2625,12 @@
         "density": "15.37 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "In 1871, Dmitri Mendeleev predicted the existence of an element between thorium and uranium. For a long time chemists searched for an element with similar chemical properties to tantalum, making a discovery of protactinium nearly impossible.",
+            "In 1900, William Crookes isolated protactinium as an intensely radioactive material from uranium. However, he couldn't characterize it as a new chemical element.",
+            "Protactinium was first identified in 1913, when Kasimir Fajans and Oswald Helmuth Göhring encountered the isotope <sup>234</sup>Pa during their studies of the decay chains of uranium-238.",
+            "In 1961, the United Kingdom Atomic Energy Authority produced 127 grams of 99.9% pure protactinium-231 by processing 60 tonnes of waste material in a 12-stage process."
+        ],
         "shells": [2, 8, 18, 32, 20, 9, 2],
         "uses": [
             "Because of its scarcity, high radioactivity and high toxicity, there are currently no practical uses for protactinium other than that of basic scientific research, and for this purpose, protactinium is generally extracted from spent nuclear fuel."
@@ -2602,7 +2652,12 @@
         "density": "19.1 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "While Klaproth was working in his laboratory in Berlin in 1789, he was able to precipitate a yellow compound by dissolving pitchblende in nitric acid and neutralizing the solution with sodium hydroxide.",
+            "Klaproth heated it with charcoal to obtain a black powder, which he thought was the newly discovered metal itself but was an oxide of Uranium.",
+            "In 1841, Eugène-Melchior Péligot isolated the first sample of uranium metal by heating uranium tetrachloride with potassium.",
+            "Henri Becquerel discovered radioactivity by using uranium in 1896."
+        ],
         "shells": [2, 8, 18, 32, 21, 9, 2],
         "uses": [
             "Phosphate fertilizers are made from material typically high in uranium, so they usually contain high amounts of it.",
@@ -2627,7 +2682,12 @@
         "density": "20.45 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "In early 1939, Edwin McMillan at the Berkeley Radiation Laboratory, decided to run an experiment bombarding uranium using the powerful 60-inch cyclotron built.",
+            "In early 1940, McMillan realized that his 1939 experiment with Segrè had failed to test the chemical reactions of the radioactive source with sufficient rigor.",
+            "Finally they proved that the unknown radioactive source originated from the decay of uranium and, coupled with the previous observation that the source was different chemically from all known elements, proved beyond all doubt that a new element had been discovered.",
+            "McMillan and Abelson published their results in a paper entitled Radioactive Element 93 in the Physical Review on May 27, 1940."
+        ],
         "shells": [2, 8, 18, 32, 22, 9, 2],
         "uses": [
             "Neptunium-237 is used to create plutonium-238, which is then used in special energy generators that can power satellites, spacecraft and lighthouses.",
@@ -2651,7 +2711,11 @@
         "density": "19.85 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Plutonium was first produced, isolated and then chemically identified between December 1940 and February 1941 by Glenn T. Seaborg, Edwin McMillan, Emilio Segrè, Joseph W. Kennedy, and Arthur Wahl.",
+            "It was produced by deuteron bombardment of uranium in the 60-inch cyclotron at the Berkeley Radiation Laboratory at the University of California.",
+            "In November 1943 some plutonium trifluoride was reduced to create the first sample of plutonium metal: a few micrograms of metallic beads."
+        ],
         "shells": [2, 8, 18, 32, 24, 8, 2],
         "uses": [
             "Plutonium provides electrical power on space probes and space vehicles.",
@@ -2676,7 +2740,11 @@
         "density": "12 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Americium was first intentionally synthesized, isolated and identified in late autumn 1944, at the University of California, Berkeley, by Glenn T. Seaborg, Leon O. Morgan, Ralph A. James, and Albert Ghiorso.",
+            "They used a 60-inch cyclotron at the University of California, Berkeley. The element was chemically identified at the Metallurgical Laboratory of the University of Chicago.",
+            "he first substantial amounts of metallic americium weighing 40–200 micrograms were not prepared until 1951 by reduction of americium(III) fluoride with barium metal in high vacuum at 1100 °C."
+        ],
         "shells": [2, 8, 18, 32, 25, 8, 2],
         "uses": [
             "Americium is maily used in smoke detectors.",
@@ -2700,7 +2768,11 @@
         "density": "13.51 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Curium was first intentionally synthesized, isolated and identified in 1944, at the University of California, Berkeley, by Glenn T. Seaborg, Ralph A. James, and Albert Ghiorso by using a 60-inch (150 cm) cyclotron.",
+            "Curium was chemically identified at the Metallurgical Laboratory at the University of Chicago. It was the third transuranium element to be discovered even though it is the fourth in the Actinide series",
+            "Louis Werner and Isadore Perlman created the first substantial sample of 30 µg curium-242 hydroxide at the University of California, Berkeley in 1947 by bombarding americium-241 with neutrons"
+        ],
         "shells": [2, 8, 18, 32, 25, 9, 2],
         "uses": [
             "Currently, curium is used primarily for basic scientific research. Some of its isotopes, however, have proven uses.",
@@ -2725,7 +2797,10 @@
         "density": "14.78 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Berkelium was first intentionally synthesized, isolated and identified in December 1949 by Glenn T. Seaborg, Albert Ghiorso, Stanley G. Thompson, and Kenneth Street. They used the 60-inch cyclotron at the University of California.",
+            "The discovery report by the Berkeley group suggests that element 97 be given the name berkelium (symbol Bk) after the city of Berkeley."
+        ],
         "shells": [2, 8, 18, 32, 27, 8, 2],
         "uses": [
             "Because it is artificially produced and only small amounts exist, berkelium’s primary use is in basic scientific research. It has proven quite useful in that regard.",
@@ -2748,7 +2823,11 @@
         "density": "15.1 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Californium was first synthesized at the University of California Radiation Laboratory in Berkeley, by the physics researchers Stanley G. Thompson, Kenneth Street, Albert Ghiorso, and Glenn T. Seaborg on or about February 9, 1950.",
+            "To produce californium, a microgram-sized target of curium-242 was bombarded with 35 MeV alpha particles in the 60-inch-diameter cyclotron at Berkeley, which produced californium-245 plus one free neutron.",
+            "Weighable quantities of californium were first produced by the irradiation of plutonium targets at the Materials Testing Reactor at the National Reactor Testing Station in eastern Idaho; and these findings were reported in 1954."
+        ],
         "shells": [2, 8, 18, 32, 28, 8, 2],
         "uses": [
             "Californium-252 neutron sources are used in nuclear reactors in order to begin nuclear fission.",
@@ -2772,7 +2851,11 @@
         "density": "8.84 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Einsteinium was first identified in December 1952 by Albert Ghiorso and co-workers at the University of California, Berkeley in collaboration with the Argonne and Los Alamos National Laboratories.",
+            "Isotopes of element 99 were produced in the Berkeley and Argonee laboratories, in a nuclear reaction between nitrogen-14 and uranium-238.",
+            "Element 99 had been jokingly nicknamed Pandemonium but the official name suggested by the Berkeley group derived from two prominent scientists was Einsteinium."
+        ],
         "shells": [2, 8, 18, 32, 29, 8, 2],
         "uses": [
             "As the most easily produced isotope of einsteinium is very unstable, commercial uses for the element have not been developed. Einsteinium is therefore used exclusively in research contexts, primarily in the production of other transuranium elements.",
@@ -2795,7 +2878,12 @@
         "density": "9.7 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Fermium was first discovered in the fallout from the 'Ivy Mike' nuclear test on 1 November 1952.",
+            "Initial examination of the debris from the explosion had shown the production of a new isotope of plutonium, Pu-244.",
+            "The identification of Plutonium raised the possibility that more neutrons could have been absorbed by the uranium nuclei, leading to new elements.",
+            "The Berkely Team decided to name the new element in honour of the recently deceased Enrico Fermi."
+        ],
         "shells": [2, 8, 18, 32, 30, 8, 2],
         "uses": [
             "Since fermium is found only in small quantities and all its isotopes have short half-lives, there is no commercial use for the element. It is, however, used in scientific research that expands the knowledge of the rest of the periodic table."
@@ -2817,7 +2905,11 @@
         "density": "10.3 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Mendelevium was first synthesized by Albert Ghiorso, Glenn T. Seaborg, Gregory Robert Choppin, Bernard G. Harvey, and team leader Stanley G. Thompson in early 1955 at the University of California, Berkeley.",
+            "The team produced 256-Md when they bombarded an 253-Es target consisting of only a billion einsteinium atoms with alpha particles in the Berkeley Radiation Laboratory's 60-inch cyclotron.",
+            "Md thus became the first isotope of any element to be synthesized one atom at a time. In total, seventeen mendelevium atoms were produced."
+        ],
         "shells": [2, 8, 18, 32, 31, 8, 2],
         "uses": [
             "Currently, there are no real uses for mendelevium, except in research. In time, mendelevium may be used for technology purposes and harvesting energy."
@@ -2839,7 +2931,12 @@
         "density": "9.9 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The first complete and incontrovertible report of Nobelium's detection only came in 1966 from the Joint Institute of Nuclear Research at Dubna.",
+            "The first announcement of the discovery of element 102 was announced by physicists at the Nobel Institute in Sweden in 1957.",
+            "In 1959, the Swedish team attempted to explain the Berkeley team's inability to detect element 102 in 1958, maintaining that they did discover it.",
+            "For element 102, it ratified the name nobelium on the basis that Alfred Nobel should be commemorated in this fashion."
+        ],
         "shells": [2, 8, 18, 32, 32, 8, 2],
         "uses": [
             "Nobelium has no uses outside research. Nobelium has no known biological role. It is toxic due to its radioactivity. Nobelium is made by bombarding curium with carbon in a device called a cyclotron."
@@ -2861,7 +2958,12 @@
         "density": "14.4 g/cm<sup>3</sup>",
         "category": "Actinides",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The first important work on element 103 was carried out at Berkeley by the nuclear-physics team of Albert Ghiorso, Torbjørn Sikkeland, Almon Larsh, Robert M. Latimer, and their co-workers on February 14, 1961.",
+            "The first atoms of lawrencium were reportedly produced by bombarding a three-milligram target consisting of three isotopes of the element californium with boron-10 and boron-11 nuclei.",
+            "Further experiments in 1969 at Dubna and in 1970 at Berkeley demonstrated an actinide chemistry for the new element, so that by 1970 it was known that element 103 is the last actinide.",
+            "In 1971, the IUPAC granted the discovery of lawrencium to the Lawrence Berkeley Laboratory, even though they did not have ideal data for the element's existence."
+        ],
         "shells": [2, 8, 18, 32, 32, 8, 3],
         "uses": [
             "Because lawrencium has only been produced in small quantities, its only use is for scientific research."
@@ -2883,7 +2985,11 @@
         "density": "17 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Rutherfordium was reportedly first detected in 1964 at the Joint Institute of Nuclear Research at Dubna.",
+            "Researchers there bombarded a plutonium-242 target with neon-22 ions and separated the reaction products by gradient thermochromatography after conversion to chlorides by interaction with ZrCl4.",
+            " The team identified spontaneous fission activity contained within a volatile chloride portraying eka-hafnium properties, later calculations indicated that the product was most likely rutherfordium-259,"
+        ],
         "shells": [2, 8, 18, 32, 32, 10, 2],
         "uses": [
             "At present, it is only used in research. Rutherfordium has no known biological role. Rutherfordium is a transuranium element. It is created by bombarding californium-249 with carbon-12 nuclei."
@@ -2905,7 +3011,12 @@
         "density": "21.6 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The first report of the discovery of element 105 came from the Joint Institute for Nuclear Research (JINR) in Dubna.",
+            "After observing the alpha decays of element 105, the researchers aimed to observe spontaneous fission (SF) of the element and study the resulting fission fragments.",
+            "In April 1970, a team at Lawrence Berkeley Laboratory, claimed to have synthesized element 105 by bombarding californium-249 with nitrogen-15 ions.",
+            "In 1996, IUPAC held another meeting, reconsidered all names in hand; it was approved and published in 1997. Element 105 was named dubnium (Db), after Dubna in Russia."
+        ],
         "shells": [2, 8, 18, 32, 32, 11, 2],
         "uses": [
             "At present, it is only used in research. Dubnium has no known biological role. Dubnium does not occur naturally. It is a transuranium element created by bombarding californium-249 with nitrogen-15 nuclei."
@@ -2924,10 +3035,15 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Lawrence Berkeley National Laboratory",
-        "density": "23–24 g/cm<sup>3</sup>",
+        "density": "23 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "At the Lawrence Livermore National Laboratory, a search for element 106 using oxygen-18 projectiles and the previously used californium-249 target was conducted.",
+            "Unambiguous evidence of element 106 was first reported in 1974 in which targets of lead-208 and lead-207 were bombarded with accelerated ions of chromium-54.",
+            "Neither team of discoverers chose to announce proposed names for the new elements. The dispute on discovery dragged on until 1992.",
+            "The name seaborgium and symbol Sg were announced at the 207th national meeting of the American Chemical Society in March 1994 by Kenneth Hulet."
+        ],
         "shells": [2, 8, 18, 32, 32, 12, 2],
         "uses": [
             "Presently, there are no uses or applications of Seaborgium. It is only used for research purposes. Biological use is yet to be known."
@@ -2946,10 +3062,14 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Gesellschaft für Schwerionenforschung",
-        "density": "26–27 g/cm<sup>3</sup>",
+        "density": "26 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Evidence of bohrium was first reported in 1976 by a Soviet research team in which targets of bismuth-209 and lead-208 were bombarded with accelerated nuclei of Cr-54 and Mn-55.",
+            "In 1981, a German research team led by Peter Armbruster and Gottfried Münzenberg at the GSI Helmholtz Centre bombarded a target of Bi-209 with accelerated nuclei of Cr-54 to produce 5 atoms of the isotope bohrium-262.",
+            "The IUPAC Transfermium Working Group recognised the GSI collaboration as official discoverers in their 1992 report."
+        ],
         "shells": [2, 8, 18, 32, 32, 13, 2],
         "uses": [
             "Bohrium is a synthetic element and therefore is not naturally found in the environment. Little is known about the element, its appearance is unknown, and it has no known uses."
@@ -2968,10 +3088,14 @@
         "boilingPoint": "unknown",
         "meltingPoint": "unknown",
         "discoveredBy": "Gesellschaft für Schwerionenforschung",
-        "density": "27–29 g/cm<sup>3</sup>",
+        "density": "28 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The synthesis of element 108 was first attempted in 1978 by a research team led by Oganessian at the JINR.",
+            "The team used a reaction that would generate element 108, from fusion of radium-226 and calcium-48.",
+            "Later in 1984, a research team led by Peter Armbruster and Gottfried Münzenberg at Gesellschaft für Schwerionenforschung  bombarded a lead (208-Pb) target with accelerated iron (58-Fe) nuclei."
+        ],
         "shells": [2, 8, 18, 32, 32, 14, 2],
         "uses": [
             "A highly radioactive metal, of which only a few atoms have ever been made. At present it is only used in research. Hassium has no known biological role."
@@ -2993,7 +3117,11 @@
         "density": "27–28 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Meitnerium was first synthesized on August 29, 1982, by a German research team at the Institute for Heavy Ion Research in Darmstadt.",
+            "The team bombarded a target of bismuth-209 with accelerated nuclei of iron-58 and detected a single atom of the isotope meitnerium-266.",
+            "In 1994 the name 'Meitnerium'(suggested by the GSI team in honor of Lise Meitner) was recommended by IUPAC, and was officially adopted in 1997."
+        ],
         "shells": [2, 8, 18, 32, 32, 15, 2],
         "uses": [
             "Currently, there are no real uses for meitnerium, except in research. In time, meitnerium might be used for technology purposes and harvesting energy."
@@ -3015,7 +3143,11 @@
         "density": "26–27 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Darmstadtium was first created on November 9, 1994, at the Institute for Heavy Ion Research in Darmstadt, Germany, by Peter Armbruster and Gottfried Münzenberg, under the direction of Sigurd Hofmann.",
+            "The team bombarded a lead-208 target with accelerated nuclei of nickel-62 in a heavy ion accelerator and detected a single atom of the isotope darmstadtium-269.",
+            "The name darmstadtium (Ds) was suggested by the GSI team in honor of the city of Darmstadt. It was officially recommended by IUPAC on August 16, 2003."
+        ],
         "shells": [2, 8, 18, 32, 32, 16, 2],
         "uses": [
             "Darmstadtium is highly radioactive, so the image is based on an abstracted atomic model and trails of sub-atomic particles. A highly radioactive metal, of which only a few atoms have ever been made. At present, it is only used in research. Darmstadtium has no known biological role."
@@ -3037,7 +3169,12 @@
         "density": "22–24 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "Roentgenium was first synthesized by a team led by Sigurd Hofmann at the GSI Helmholtz Centre in Darmstadt, Germany, on December 8, 1994.",
+            "The team bombarded a target of bismuth-209 with accelerated nuclei of nickel-64 and detected three nuclei of the isotope roentgenium-272.",
+            "This reaction had previously been conducted at the Joint Institute for Nuclear Research in Dubna in 1986, but no atoms of 272-Rg had then been observed.",
+            "The name roentgenium (Rg) was suggested by the GSI team in 2004, to honor the German physicist Wilhelm Conrad Röntgen. This name was accepted by IUPAC on November 1, 2004."
+        ],
         "shells": [2, 8, 18, 32, 32, 17, 2],
         "uses": [
             "At present, it is only used in research. Roentgenium has no known biological role. A man-made element of which only a few atoms have ever been created. It is made by fusing nickel and bismuth atoms in a heavy ion accelerator."
@@ -3059,7 +3196,12 @@
         "density": "14.0 g/cm<sup>3</sup>",
         "category": "Transition-metals",
         "state": "liquid(predicted)",
-        "history": [],
+        "history": [
+            "Copernicium was first created on February 9, 1996, at the GSI Helmholtz Centre Rese in Darmstadt, Germany.",
+            "This element was created by firing accelerated zinc-70 nuclei at a target made of lead-208 nuclei in a heavy ion accelerator.",
+            "In May 2000, the GSI successfully repeated the experiment to synthesize a further atom of copernicium-277.",
+            "On 19 February 2010, the 537th anniversary of Copernicus' birth, IUPAC officially accepted the proposed name and symbol."
+        ],
         "shells": [2, 8, 18, 32, 32, 18, 2],
         "uses": [
             "At present, it is only used in research. It has no known biological role. Copernicium is a man-made element of which only a few atoms have ever been made. It is formed by fusing lead and zinc atoms in a heavy ion accelerator."
@@ -3081,7 +3223,13 @@
         "density": "16 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The syntheses of elements 107 to 112 were made by cold fusion reactions, in which targets made of thallium, lead, and bismuth are bombarded with heavy ions of period 4 elements.",
+            "The first report of element 113 was in August 2003, when it was identified as an alpha decay product of element 115.",
+            "In December 2015, the conclusions of a new JWP report were published by IUPAC in a press release, in which element 113 was awarded to Riken.",
+            "Before the JWP recognition of their priority, the Japanese team had suggested various names: japonium, nishinanium, rikenium.",
+            "The name nihonium was chosen after an hour of deliberation: it comes from nihon."
+        ],
         "shells": [2, 8, 18, 32, 32, 18, 3],
         "uses": [
             "Currently, there is no commercial use of nihonium other than research within the laboratory. Because it has such a short life and is radioactive, there is very little known about it."
@@ -3103,10 +3251,14 @@
         "density": "9.928 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "liquid",
-        "history": [],
+        "history": [
+            "Flerovium was first synthesized in December 1998 by a team of scientists at the JINR in Dubna, led by Yuri Oganessian, who bombarded a target of plutonium-244 with accelerated nuclei of calcium-48.",
+            "A single atom of flerovium, decaying by alpha emission with a lifetime of 30.4 seconds, was detected.",
+            "The experiment was later repeated, but an isotope with these decay properties was never found again and hence the exact identity of this activity is unknown."
+        ],
         "shells": [2, 8, 18, 32, 32, 18, 4],
         "uses": [
-            " Relatively few atoms of flerovium have been synthesized, so its chemical properties are poorly understood, and a matter of ongoing investigation. There are no applications for flerovium outside of basic science research."
+            "Relatively few atoms of flerovium have been synthesized, so its chemical properties are poorly understood, and a matter of ongoing investigation. There are no applications for flerovium outside of basic science research."
         ],
         "description": "About 90 atoms of flerovium have been observed: 58 were synthesized directly, and the rest were made from the radioactive decay of heavier elements. All of these flerovium atoms have been shown to have mass numbers from 284 to 290. The most stable known flerovium isotope, flerovium-289, has a half-life of around 1.9 seconds, but it is possible that the unconfirmed flerovium-290 may have a longer half-life of 19 seconds; this would be one of the longest half-lives of any isotope of any element at these farthest reaches of the periodic table."
     },
@@ -3125,7 +3277,12 @@
         "density": "13.5 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The first successful synthesis of moscovium was by a joint team of Russian and American scientists in August 2003 at the JINR in Dubna, Russia, Headed by Russian nuclear physicist Yuri Oganessian.",
+            "The researchers on 2 February 2004, bombarded americium-243 with calcium-48 ions to produce four atoms of moscovium.",
+            "Two heavier isotopes of moscovium, 289-Mc and 290-Mc, were discovered in 2009–2010 as daughters of the tennessine isotopes 293-Ts and 294-Ts",
+            "In December 2015, the IUPAC/IUPAP Joint Working Party recognized the element's discovery and assigned the priority to the Dubna-Livermore collaboration of 2009–2010, giving them the right to suggest a permanent name for it."
+        ],
         "shells": [2, 8, 18, 32, 32, 18, 5],
         "uses": [
             "Moscovium is highly radioactive and has no known biological or industrial use beyond that of research. Both isotopes of moscovium have been shown to produce nihonium daughter nuclei after undergoing alpha decay."
@@ -3147,7 +3304,12 @@
         "density": "12.9 g/cm<sup>3</sup>",
         "category": "Post-Transition-Metals",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The first search for element 116, using the reaction between 248Cm and 48Ca, was performed in 1977 by Ken Hulet and his team at the Lawrence Livermore National Laboratory.",
+            "Other unsuccessful attempts for discovering element 116 were made by various scientists.",
+            "Livermorium was first synthesized on July 19, 2000, when scientists at Dubna (JINR) bombarded a curium-248 target with accelerated calcium-48 ions. A single atom was produced.",
+            "The team repeated the experiment in April–May 2005 and detected 8 atoms of livermorium. The name livermorium and the symbol Lv were adopted on 23 May 2012."
+        ],
         "shells": [2, 8, 18, 32, 32, 18, 6],
         "uses": [
             "At present, it is only used in research. It has no known biological role. Livermorium does not occur naturally. It is made by bombarding curium atoms with calcium."
@@ -3164,12 +3326,17 @@
         "discovered": "2010",
         "appearance": "semimetallic",
         "boilingPoint": "610 ",
-        "meltingPoint": "350–550 ",
+        "meltingPoint": "350",
         "discoveredBy": "Joint Insitute for Nuclear Research(Russia)",
         "density": "7.1–7.3 g/cm<sup>3</sup>",
         "category": "Halogens",
         "state": "solid",
-        "history": [],
+        "history": [
+            "In January 2010, scientists at the Flerov Laboratory of Nuclear Reactions announced internally that they had detected the decay of a new element with atomic number 117 via two decay chains.",
+            "The Dubna team repeated the experiment in 2012, creating seven atoms of element 117 and confirming their earlier synthesis of element 118.",
+            "In December 2015, the JWP officially recognized the discovery of 293-117 and the listed discoverers — JINR, LLNL, and ORNL — were given the right to suggest an official name for the element.",
+            "In March 2016, the discovery team agreed on a conference call involving representatives from the parties involved on the name \"tennessine\" for element 117."
+        ],
         "shells": [2, 8, 18, 32, 32, 18, 7],
         "uses": [
             "Since only a few atoms of tennessine have ever been produced, it currently has no uses outside of basic scientific research."
@@ -3191,7 +3358,12 @@
         "density": "6.6–7.4 g/cm<sup>3</sup>",
         "category": "Noble-gases",
         "state": "solid",
-        "history": [],
+        "history": [
+            "The first genuine decay of atoms of oganesson was observed in 2002 at the JINR in Dubna, by a joint team of Russian and American scientists, Headed by Yuri Oganessian.",
+            "On 9 October 2006, the researchers announced that they had indirectly detected a total of three nuclei of oganesson-294.",
+            "In December 2015, the Joint Working Party of international scientific bodies IUPAC and IUPAP recognized the element's discovery and assigned the priority of the discovery to the Dubna–Livermore collaboration.",
+            "In June 2016, IUPAC announced that the discoverers planned to give the element the name oganesson (Og). The name became official on 28 November 2016."
+        ],
         "shells": [2, 8, 18, 32, 32, 18, 8],
         "uses": [
             "Since only a few atoms of oganesson have ever been made, it has no practical uses outside of scientific study."
