@@ -193,7 +193,7 @@ jsonData
                 return 1 + 's' + element;
             }
             let prevNoblegas = new String(document.querySelector('.n' + finalAns).dataset.symbol).valueOf()
-            return '[' + cprevNoblegas + ']' + ' ' + str;
+            return '[' + prevNoblegas + ']' + ' ' + str;
         }
     }); 
     
